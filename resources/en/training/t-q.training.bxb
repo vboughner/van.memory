@@ -1,0 +1,5 @@
+train (t-q5pp5kgr8ylodycwjhsjb8y1t) {
+  utterance ("[g:RecallResponse] remind me when is the (last day of school)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1556660585649)
+}

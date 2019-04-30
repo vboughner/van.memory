@@ -1,0 +1,3 @@
+text (MemorizeResponse) {
+  description (The resulting output after memorizing something)
+}

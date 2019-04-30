@@ -1,0 +1,10 @@
+train (t-nho8r6v4qbyupw41z1tmfj8hj) {
+  utterance ("[g:MemorizeResponse] store that (i like fish tacos from una mas)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1556659941895)
+}
+train (t-nqwc401m34d1qnyel4g6480nm) {
+  utterance ("[g:MemorizeResponse] memorize (all the toothbrushes are in the cabinet)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1556659277916)
+}

@@ -1,0 +1,18 @@
+capsule {
+  id (van.memory)
+  version (0.1.0)
+  format (3)
+  capsule-imports {
+  }
+  targets {
+    target (bixby-mobile-en-US)
+  }
+  runtime-flags {
+    support-halt-effect-in-computed-inputs
+    modern-prompt-rejection
+  }
+  permissions {
+    full-utterance-access
+    guest-access-allowed(ALWAYS)
+  }
+}
