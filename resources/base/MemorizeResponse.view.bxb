@@ -1,0 +1,10 @@
+result-view {
+  match: MemorizeResponse (this) {
+  }
+
+  render {
+    nothing
+  }
+
+  message ("#{value(this)}")
+}

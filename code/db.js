@@ -32,12 +32,24 @@ db.loadMemories = function(userId) {
     return [
       {
         text: 'symons birthday is march 27th',
+        whenStored: 10004560,
       },
       {
         text: 'davids birthday is december 23rd',
+        whenStored: 10008300,
+
       },
       {
         text: 'i hid the cookies in the cupboard under the sink',
+        whenStored: 10001200,
+      },
+      {
+        text: 'i took my medication at 2 oclock',
+        whenStored: 10003200,
+      },
+      {
+        text: 'i left the keys in the mess drawer in the kitchen',
+        whenStored: 10001155,
       },
     ]
   } else {

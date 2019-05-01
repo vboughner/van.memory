@@ -1,0 +1,10 @@
+result-view {
+  match: RecallResponse (this) {
+  }
+
+  render {
+    nothing
+  }
+
+  message ("#{value(this)}")
+}
