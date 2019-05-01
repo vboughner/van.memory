@@ -1,19 +1,21 @@
+'use strict'
+
 /**
- * Gets a verbal response when user wishes to recall information from memory.
+ * Gets response when user wishes to recall information from memory.
  */
-module.exports.function = function recallAction (recallInput, $vivContext) {
-  var console = require('console');
-  var utility = require("util.js");
-  var db = require("db.js")
-  var find = require("find.js")
-  var cleanedInput = utility.cleanString(recallInput);
-  console.log("Exact Input: " + recallInput);
-  console.log("Cleaned Input: " + cleanedInput);
-  var memories = db.loadMemories($vivContext.userId);
-  var bestMemories = find.findTextInMemories(cleanedInput, memories);
+module.exports.function = function recallAction(recallInput, $vivContext) {
+  const console = require('console');
+  const utility = require("util.js");
+  const db = require("db.js")
+  const find = require("find.js")
+  const cleanedInput = utility.cleanString(recallInput);
+  console.log("recallAction exact input is:", recallInput);
+  console.log("recallAction cleaned input is", cleanedInput);
+  const memories = db.loadMemories($vivContext.userId);
+  const bestMemories = find.findTextInMemories(cleanedInput, memories);
   if (bestMemories && bestMemories.length > 0) {
-    console.log('final sorted memories are', bestMemories)
-    var numWordsInInput = cleanedInput.split(' ').length;
+    console.log('recallAction final sorted memories are', bestMemories)
+    const numWordsInInput = cleanedInput.split(' ').length;
     // TODO: add in an indicator of how long ago you told me
     // TODO: add layouts that show the other possible options
     if (bestMemories[0].numWords === 0) {

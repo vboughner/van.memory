@@ -1,4 +1,6 @@
-var utility = {};
+'use strict'
+
+const utility = {};
 
 // user inputs typically need to be cleaned up before use
 utility.cleanString = function(utterance) {

@@ -1,4 +1,6 @@
-var db = {};
+'use strict'
+
+const db = {};
 
 // memories in the database look like this:
 // {
@@ -10,7 +12,7 @@ var db = {};
 // store a line of text in the db as another memory,
 // returns true if successful, false if not successful
 db.storeMemory = function(userId, text) {
-  var console = require('console');
+  const console = require('console');
   if (userId !== null && text !== null) {
     console.log('db.storeMemory stored a memory for userId', userId, text)
     // TODO: implement db store
@@ -24,7 +26,7 @@ db.storeMemory = function(userId, text) {
 // load everything from memory in the db for this user, returns an array of
 // objects that represent the memories and when they were stored
 db.loadMemories = function(userId) {
-  var console = require('console');
+  const console = require('console');
   if (userId !== null) {
     console.log('db.loadMemories recalling all memories for userId', userId)
     // TODO: replace with real database load

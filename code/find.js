@@ -1,4 +1,6 @@
-var find = {}
+'use strict'
+
+const find = {}
 
 // once built up by analysis by functions in this file, the memories passed as output
 // from findTextInMemories look something like this:
@@ -17,13 +19,13 @@ var find = {}
 // distance property that reflects the differences between each text in the
 // array and the given text
 function augmentMemoriesWithDistance(text, memories) {
-  var console = require('console');
-  var textLib = require('textLib');
+  const console = require('console');
+  const textLib = require('textLib');
   if (text !== null && text.length > 0 && memories && memories.length > 0) {
-    var retval = [];
-    for (var i = 0; i < memories.length; i++) {
+    const retval = [];
+    for (let i = 0; i < memories.length; i++) {
       if (memories[i].text) {
-        var distance = textLib.levenshteinDistance(memories[i].text, text);
+        const distance = textLib.levenshteinDistance(memories[i].text, text);
         retval.push(Object.assign({}, memories[i], { distance: distance }));
       } else {
         console.error('augmentMemoriesWithDistance: no text property on memory, index', i);
@@ -39,13 +41,13 @@ function augmentMemoriesWithDistance(text, memories) {
 // given an array of memories, returns a similar array, but includes a new numWords property
 // that reflects how many of the given words have been found within each memory
 function augmentMemoriesWithNumWords(words, memories) {
-  var console = require('console');
+  const console = require('console');
   if (words && words.length > 0 && memories && memories.length > 0) {
-    var retval = [];
-    for (var i = 0; i < memories.length; i++) {
+    const retval = [];
+    for (let i = 0; i < memories.length; i++) {
       if (memories[i].text) {
-        var numWords = 0;
-        for (var w = 0; w < words.length; w++) {
+        let numWords = 0;
+        for (let w = 0; w < words.length; w++) {
           if (memories[i].text.includes(words[w])) {
             numWords++;
           }
@@ -63,16 +65,25 @@ function augmentMemoriesWithNumWords(words, memories) {
 }
 
 // comparison function for an array sort, given two memories, comparies them by distance,
-// number of words from the input that are found, as well as how long ago the memory was stored
-// TODO: use whenStored
-// TODO: use numWords
-function compareDistanceAndTimeInAugmentedMemories(a, b) {
+// number of words from the input that are found, as well as how long ago the memory was stored,
+// having the highest number of words from the input that are included is the most important
+function compareAugmentedMemories(a, b) {
+  const console = require('console');
+  // num words is critical and checked first
+  if (a.numWords > b.numWords) {
+    return -1;
+  }
+  if (a.numWords < b.numWords) {
+    return 1;
+  }
+  // distance breaks ties
   if (a.distance < b.distance) {
     return -1;
   }
   if (a.distance > b.distance) {
     return 1;
   }
+  // TODO: take into account when stored?
   return 0;
 }
 
@@ -81,11 +92,12 @@ function compareDistanceAndTimeInAugmentedMemories(a, b) {
 // when the memory was stored and how many input words are in the memory.
 // returns a new array of memories in the right order, best ones first
 function sortAugmentedMemories(memories) {
-  var console = require('console');
+  const console = require('console');
   if (memories && memories.length > 0) {
-    var retval = memories.slice();
-    retval.sort(compareDistanceAndTimeInAugmentedMemories);
-    console.log('sortAugmentedMemories result is', retval)
+    let retval = memories.slice();
+    console.log('before the sort result is', retval)
+    retval.sort(compareAugmentedMemories);
+    console.log('after the sort result is', retval)
     return retval;
   } else {
     console.error('sortAugmentedMemories given empty memories')
@@ -96,13 +108,13 @@ function sortAugmentedMemories(memories) {
 // given a line of text containing words to search for, look through the array
 // of memory objects for the memories that match, with the best match first
 find.findTextInMemories = function(text, memories) {
-  var console = require('console');
-  var textLib = require('textLib');
+  const console = require('console');
+  const textLib = require('textLib');
   if (text !== null && text.length > 0 && memories && memories.length > 0) {
-    var augmentedMemories = augmentMemoriesWithDistance(text, memories);
-    var words = text.split(' ');
+    let augmentedMemories = augmentMemoriesWithDistance(text, memories);
+    const words = text.split(' ');
     augmentedMemories = augmentMemoriesWithNumWords(words, augmentedMemories);
-    var sortedMemories = sortAugmentedMemories(augmentedMemories);
+    const sortedMemories = sortAugmentedMemories(augmentedMemories);
     return sortedMemories;
   } else {
     console.error('findTextInMemories has issues with inputs:', text, memories)

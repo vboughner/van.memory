@@ -1,14 +1,16 @@
+'use strict'
+
 /**
- * Gets a verbal response when saving information to memory.
+ * Gets response when saving information to memory.
  */
-module.exports.function = function memorizeAction (memorizeInput, $vivContext) {
-  var console = require('console');
-  var utility = require("util.js");
-  var db = require("db.js")
-  var cleanedInput = utility.cleanString(memorizeInput);
-  console.log("Exact Input: " + memorizeInput);
-  console.log("Cleaned Input: " + cleanedInput);
-  var success = db.storeMemory($vivContext.userId, cleanedInput)
+module.exports.function = function memorizeAction(memorizeInput, $vivContext) {
+  const console = require('console');
+  const utility = require("util.js");
+  const db = require("db.js")
+  const cleanedInput = utility.cleanString(memorizeInput);
+  console.log("memorizeAction exact input is:", memorizeInput);
+  console.log("memorizeAction cleaned input is", cleanedInput);
+  const success = db.storeMemory($vivContext.userId, cleanedInput)
   if (success) {
     return "Okay, I will remember you said " + cleanedInput;
   } else {
