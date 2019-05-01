@@ -9,7 +9,7 @@ const db = {};
 //     text: 'my mothers birthday is in February',
 // }
 
-// store a line of text in the db as another memory,
+// stores a line of text in the db as another memory,
 // returns true if successful, false if not successful
 db.storeMemory = function(userId, text) {
   const console = require('console');
@@ -23,14 +23,13 @@ db.storeMemory = function(userId, text) {
   }
 }
 
-// load everything from memory in the db for this user, returns an array of
+// loads everything from memory in the db for this user, returns an array of
 // objects that represent the memories and when they were stored
 db.loadMemories = function(userId) {
   const console = require('console');
   if (userId !== null) {
     console.log('db.loadMemories recalling all memories for userId', userId)
     // TODO: replace with real database load
-    // TODO: add whenStored property to the returned objects
     return [
       {
         text: 'symons birthday is march 27th',
@@ -60,14 +59,14 @@ db.loadMemories = function(userId) {
   }
 }
 
-// remove one memory from the database, given the original memory object made when recalling it,
+// removes one memory from the database, given the original memory object made when recalling it,
 // returns true if successful, false if not successful
 db.eraseOneMemory = function(memory) {
   // TODO: implement
   return false;
 }
 
-// remove all memories for a user from the database,
+// removes all memories for a user from the database,
 // returns true if successful, false if not successful
 db.eraseAllMemories = function(userId) {
   // TODO: implement
