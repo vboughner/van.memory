@@ -19,9 +19,9 @@ module.exports.function = function recallAction(recallInput, $vivContext) {
     // TODO: add in an indicator of how long ago you told me
     // TODO: add layouts that show the other possible options
     if (bestMemories[0].numWords === 0) {
-      return "You asked me to recall " + cleanedInput + '. I do not have a memory that contains anything like that.';
+      return "You asked me to recall " + cleanedInput + '. I do not have a memory of anything like that.';
     } else if (bestMemories[0].numWords < numWordsInInput) {
-      return "You asked me to recall " + cleanedInput + '. The closed thing I can remember is that you told me ' + bestMemories[0].text + '.';
+      return "You asked me to recall " + cleanedInput + '. The closest thing I can remember is that you told me ' + bestMemories[0].text + '.';
     } else {
       return "You asked me to recall " + cleanedInput + '. You told me ' + bestMemories[0].text + '.';
     }

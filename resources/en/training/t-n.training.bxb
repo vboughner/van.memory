@@ -3,6 +3,11 @@ train (t-nho8r6v4qbyupw41z1tmfj8hj) {
   plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
   last-modified (1556659941895)
 }
+train (t-not66tdwml3k2o856seu6jmx7) {
+  utterance ("[g:RecallResponse] recall (what fred said)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1556749987250)
+}
 train (t-nqwc401m34d1qnyel4g6480nm) {
   utterance ("[g:MemorizeResponse] memorize (all the toothbrushes are in the cabinet)[v:MemorizeInputConcept]")
   plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
