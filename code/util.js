@@ -1,8 +1,8 @@
 'use strict'
 
-const utility = {};
+const util = {};
 
-utility.cleanString = function(utterance) {
+util.cleanString = function(utterance) {
   if (utterance !== null) {
     utterance = utterance.toLowerCase();
     utterance = utterance.replace(/[,?.!;']/g,"");
@@ -11,4 +11,15 @@ utility.cleanString = function(utterance) {
   return utterance;
 }
 
-module.exports = utility;
+util.getConfigAndSecrets = function() {
+  const config = require('config');
+  const whereami = config.get('whereami');
+  const secret = require('secret');
+  const secretClientApiKey = secret.get('secretClientApiKey');
+  return {
+    whereami: whereami,
+    secretClientApiKey: secretClientApiKey,
+  }
+}
+
+module.exports = util;
