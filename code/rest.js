@@ -23,9 +23,9 @@ rest.storeStatement = function(userId, deviceId, text) {
     const response = http.postUrl(configAndSecrets['questionUrl'], params, options)
     const responseText = JSON.parse(response['responseText'])
     const body = responseText['body']
-    const answer = body['answer']
-    console.log('answer:', answer)
-    return answer
+    console.log('body:', body)
+    const englishDebug = body['englishDebug']
+    return englishDebug
   } else {
     console.error('rest.storeMemory received null userId or text')
     return "Unfortunately, I had a problem and could not store what you said. Please try again."
@@ -52,9 +52,9 @@ rest.askQuestion = function(userId, text) {
     const response = http.postUrl(configAndSecrets['statementUrl'], params, options)
     const responseText = JSON.parse(response['responseText'])
     const body = responseText['body']
-    const answer = body['answer']
-    console.log('answer:', answer)
-    return answer
+    console.log('body:', body)
+    const englishDebug = body['englishDebug']
+    return englishDebug
   } else {
     console.error('rest.askQuestion received null userId or text')
     return 'Unfortunately, I had a problem and do not know who is asking this question.'
