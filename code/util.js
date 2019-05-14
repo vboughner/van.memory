@@ -4,8 +4,8 @@ const util = {};
 
 util.cleanString = function(utterance) {
   if (utterance !== null) {
-    utterance = utterance.toLowerCase();
-    utterance = utterance.replace(/[,?.!;']/g,"");
+    // utterance = utterance.toLowerCase();
+    // utterance = utterance.replace(/[,?.!;']/g,"");
     utterance = utterance.trim();
   }
   return utterance;
