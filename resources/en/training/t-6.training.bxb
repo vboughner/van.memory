@@ -1,3 +1,8 @@
+train (t-66mqqsaj1sftjv3hs8jcnthpw) {
+  utterance ("[g:RecallResponse] are there (cookies)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1557796444200)
+}
 train (t-6tq8hxf5j9xvj4flk5xbetqc2) {
   utterance ("[g:RecallResponse] when does (my bus come)[v:RecallInputConcept]")
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)

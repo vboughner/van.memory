@@ -1,5 +1,5 @@
 action (RecallAction) {
-  type (Calculation)
+  type (Search)
   collect {
     input (recallInput) {
       type (RecallInputConcept)

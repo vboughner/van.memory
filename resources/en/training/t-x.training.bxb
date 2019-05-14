@@ -3,3 +3,8 @@ train (t-x1plu7zvz6e0guaucbvu6kow8) {
   plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
   last-modified (1556659281210)
 }
+train (t-xhxbwygf4s9yeej79cdwwpw4q) {
+  utterance ("[g:RecallResponse] is there a (5 oclock bus)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1557796416138)
+}
