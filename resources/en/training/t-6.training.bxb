@@ -1,0 +1,5 @@
+train (t-6tq8hxf5j9xvj4flk5xbetqc2) {
+  utterance ("[g:RecallResponse] when does (my bus come)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1557792375504)
+}

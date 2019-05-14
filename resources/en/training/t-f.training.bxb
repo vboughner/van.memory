@@ -1,3 +1,8 @@
+train (t-fek0toq71iqumc2jba822q310) {
+  utterance ("[g:RecallResponse] how should I (bake lasagna)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1557791586903)
+}
 train (t-fufgulxesiqyuo7jfpgwoi5cg) {
   utterance ("[g:RecallResponse] where is the (car)[v:RecallInputConcept]")
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)

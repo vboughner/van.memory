@@ -3,3 +3,13 @@ train (t-jdzm128v5w8rp5z57oe8nhm9i) {
   plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
   last-modified (1556659291913)
 }
+train (t-juxyjswj2yvhajsfh1jpc4or5) {
+  utterance ("[g:RecallResponse] remind me what do I know about (alex's birthday)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1557790986285)
+}
+train (t-jva2expzh35idai5igw9uvb3v) {
+  utterance ("[g:RecallResponse] how many (calories does a banana have)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1557793116150)
+}

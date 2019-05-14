@@ -1,3 +1,8 @@
+train (t-n47w364cjkwxu1dbo0q2r15e6) {
+  utterance ("[g:RecallInputConcept:prompt] (alex's birthday)[v:RecallInputConcept]")
+  plan (Y2BikC1LzNPLTc3NL6rUC0pNTszJ8cwrKC1xzs9LTi0oISTNCIQMDDxAzATEQDYA)
+  last-modified (1557790983963)
+}
 train (t-nho8r6v4qbyupw41z1tmfj8hj) {
   utterance ("[g:MemorizeResponse] store that (i like fish tacos from una mas)[v:MemorizeInputConcept]")
   plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
