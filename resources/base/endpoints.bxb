@@ -9,5 +9,10 @@ endpoints {
        accepted-inputs (recallInput, $vivContext)
        local-endpoint ("RecallAction.js")
      }
+
+     action-endpoint (ListAction) {
+       accepted-inputs ($vivContext)
+       local-endpoint ("ListAction.js")
+     }
    }
 }

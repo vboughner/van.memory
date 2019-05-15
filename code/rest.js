@@ -73,4 +73,48 @@ rest.askQuestion = function(userId, text) {
   }
 }
 
+rest.recallAll = function(userId) {
+  const console = require('console')
+  if (userId !== null) {
+    const http = require('http')
+    const util = require('util')
+    const configAndSecrets = util.getConfigAndSecrets()
+    console.log('recall')
+    const params = {
+      recall: true,
+      userId: userId,
+      secretClientApiKey: configAndSecrets['secretClientApiKey'],
+      clientVersion: clientVersion,
+    }
+    const options = {
+      format: 'json',
+      passAsJson: true,
+      returnHeaders: true,
+    }
+    const response = http.postUrl(configAndSecrets['recallUrl'], params, options)
+    const responseText = JSON.parse(response['responseText'])
+    const body = responseText['body']
+    console.log('body:', body)
+    if (body['success'] && body['answers']) {
+      const answers = body['answers']
+      const memories = []
+      for (let i = 0; i < answers.length; i++) {
+        memories.push({
+          text: answers[i].text,
+          whenStored: answers[i].whenStored,
+        })
+      }
+      return {
+        memories: memories,
+      }
+    } else {
+      console.error('rest.recallAll received an error: ', body['errorCode'], body['errorMessage'])
+      return []
+    }    
+  } else {
+    console.error('rest.recallAll received null userId')
+    return []
+  }
+}
+
 module.exports = rest

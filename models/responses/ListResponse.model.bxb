@@ -1,0 +1,7 @@
+structure (ListResponse) {
+  description (content of all memories in the database)
+  property (memories) {
+    type (Memory)
+    min (Optional) max (Many)
+  }
+}
