@@ -1,0 +1,27 @@
+result-view {
+  match: ListResponse (this) {
+    min (Required) max (One)
+  }
+
+  message {
+    template ("Here are memories I found:")
+  }
+
+  render {
+    list-of (this.memories) {
+      where-each (item) {
+        layout-macro (memory-summary) {
+          param (memory) {
+            expression (item)
+          }
+        }
+      }
+    }
+  }
+
+  conversation-drivers {
+    conversation-driver {
+      template ("Recall all memories")
+    }
+  }
+}

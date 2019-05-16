@@ -1,0 +1,20 @@
+layout-macro-def (memory-summary) {
+  params {
+    param (memory) {
+      type (Memory)
+      min (Required) max (One)
+    }
+  }
+  content {
+    cell-card {
+      slot2 {
+        content {
+          order (PrimarySecondary)
+          primary ("#{value(memory.text)}")
+          secondary ("#{value(memory.whenStored)}")
+        }
+      }
+    }
+  }
+}
+
