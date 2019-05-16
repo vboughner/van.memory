@@ -3,9 +3,9 @@
 const rest = {}
 
 const CLIENT_VERSION = '1.0.0'
-const STORE_STATEMENT_URL = '/statement'
-const ASK_QUESTION_URL = '/question'
-const RECALL_ALL_URL = '/recall'
+const MEMORIZE_URL = '/statement'
+const RECALL_URL = '/question'
+const LIST_URL = '/list'
 
 postQuery = function(urlSuffix, additionalParams) {
   const console = require('console')
@@ -38,7 +38,7 @@ postQuery = function(urlSuffix, additionalParams) {
   }
 }
 
-rest.storeStatement = function(userId, deviceId, text) {
+rest.memorize = function(userId, deviceId, text) {
   const console = require('console')
   if (userId !== null && text !== null) {
     const params = {
@@ -46,7 +46,7 @@ rest.storeStatement = function(userId, deviceId, text) {
       userId: userId,
       deviceId: deviceId,
     }
-    const body = postQuery(STORE_STATEMENT_URL, params)
+    const body = postQuery(MEMORIZE_URL, params)
     if (body['success']) {
       return body['englishDebug']
     } else {
@@ -59,14 +59,14 @@ rest.storeStatement = function(userId, deviceId, text) {
   }
 }
 
-rest.askQuestion = function(userId, text) {
+rest.recall = function(userId, text) {
   const console = require('console')
   if (userId !== null && text !== null) {
     const params = {
       question: text,
       userId: userId,
     }
-    const body = postQuery(ASK_QUESTION_URL, params)
+    const body = postQuery(RECALL_URL, params)
     if (body['success']) {
       return body['englishDebug']
     } else {
@@ -79,14 +79,14 @@ rest.askQuestion = function(userId, text) {
   }
 }
 
-rest.recallAll = function(userId) {
+rest.list = function(userId) {
   const console = require('console')
   if (userId !== null) {
     const params = {
-      recall: true,
+      list: true,
       userId: userId,
     }
-    const body = postQuery(RECALL_ALL_URL, params)
+    const body = postQuery(LIST_URL, params)
     if (body['success'] && body['answers']) {
       const answers = body['answers']
       const memories = []
@@ -101,11 +101,11 @@ rest.recallAll = function(userId) {
         memories: memories,
       }
     } else {
-      console.error('rest.recallAll received an error: ', body['errorCode'], body['errorMessage'])
+      console.error('rest.list received an error: ', body['errorCode'], body['errorMessage'])
       return []
     }    
   } else {
-    console.error('rest.recallAll received null userId')
+    console.error('rest.list received null userId')
     return []
   }
 }

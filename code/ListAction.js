@@ -5,6 +5,6 @@
  */
 module.exports.function = function listAction ($vivContext) {
   const rest = require("rest.js")
-  const response = rest.recallAll($vivContext.userId)
+  const response = rest.list($vivContext.userId)
   return response
 }
