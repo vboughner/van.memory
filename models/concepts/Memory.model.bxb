@@ -8,4 +8,8 @@ structure (Memory) {
     type (MemoryWhenStored)
     min (Required) max (One)
   }
+  property (howLongAgo) {
+    type (MemoryHowLongAgo)
+    min (Required) max (One)
+  }
 }

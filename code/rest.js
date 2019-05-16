@@ -94,6 +94,7 @@ rest.recallAll = function(userId) {
         memories.push({
           text: answers[i].text,
           whenStored: answers[i].whenStored,
+          howLongAgo: answers[i].howLongAgo,
         })
       }
       return {

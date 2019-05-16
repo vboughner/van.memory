@@ -11,7 +11,7 @@ layout-macro-def (memory-summary) {
         content {
           order (PrimarySecondary)
           primary ("#{value(memory.text)}")
-          secondary ("#{value(memory.whenStored)}")
+          secondary ("#{value(memory.howLongAgo)}")
         }
       }
     }
