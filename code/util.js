@@ -13,18 +13,13 @@ util.cleanString = function(utterance) {
 
 util.getConfigAndSecrets = function() {
   const config = require('config');
-  const whereami = config.get('whereami');
-  const questionUrl = config.get('questionUrl');
-  const statementUrl = config.get('statementUrl');
-  const recallUrl = config.get('recallUrl');
-
   const secret = require('secret');
+  const whereami = config.get('whereami');
+  const brainLambdaUrl = config.get('brainLambdaUrl');
   const secretClientApiKey = secret.get('secretClientApiKey');
   return {
     whereami: whereami,
-    questionUrl: questionUrl,
-    statementUrl: statementUrl,
-    recallUrl: recallUrl,
+    brainLambdaUrl: brainLambdaUrl,
     secretClientApiKey: secretClientApiKey,
   }
 }

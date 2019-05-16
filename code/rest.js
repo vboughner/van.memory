@@ -2,31 +2,51 @@
 
 const rest = {}
 
-const clientVersion = '1.0.0'
+const CLIENT_VERSION = '1.0.0'
+const STORE_STATEMENT_URL = '/statement'
+const ASK_QUESTION_URL = '/question'
+const RECALL_ALL_URL = '/recall'
 
-rest.storeStatement = function(userId, deviceId, text) {
+postQuery = function(urlSuffix, additionalParams) {
   const console = require('console')
-  if (userId !== null && text !== null) {
+  console.log('urlSuffix', urlSuffix)
+  console.log('additionalParams', additionalParams)
+  if (urlSuffix !== null && params !== null) {
     const http = require('http')
     const util = require('util')
     const configAndSecrets = util.getConfigAndSecrets()
-    console.log('statement:', text)
+    const secretClientApiKey = configAndSecrets['secretClientApiKey']
     const params = {
-      statement: text,
-      userId: userId,
-      deviceId: deviceId,
-      secretClientApiKey: configAndSecrets['secretClientApiKey'],
-      clientVersion: clientVersion,
+      secretClientApiKey: secretClientApiKey,
+      clientVersion: CLIENT_VERSION,
     }
+    const combinedParams = Object.assign(params, additionalParams)
     const options = {
       format: 'json',
       passAsJson: true,
       returnHeaders: true,
     }
-    const response = http.postUrl(configAndSecrets['questionUrl'], params, options)
+    const combinedUrl = configAndSecrets['brainLambdaUrl'] + urlSuffix
+    const response = http.postUrl(combinedUrl, combinedParams, options)
     const responseText = JSON.parse(response['responseText'])
     const body = responseText['body']
     console.log('body:', body)
+    return body
+  } else {
+    console.error('rest.postQuery received null urlSuffix or null additionalParams')
+    return {}
+  }
+}
+
+rest.storeStatement = function(userId, deviceId, text) {
+  const console = require('console')
+  if (userId !== null && text !== null) {
+    const params = {
+      statement: text,
+      userId: userId,
+      deviceId: deviceId,
+    }
+    const body = postQuery(STORE_STATEMENT_URL, params)
     if (body['success']) {
       return body['englishDebug']
     } else {
@@ -42,25 +62,11 @@ rest.storeStatement = function(userId, deviceId, text) {
 rest.askQuestion = function(userId, text) {
   const console = require('console')
   if (userId !== null && text !== null) {
-    const http = require('http')
-    const util = require('util')
-    const configAndSecrets = util.getConfigAndSecrets()
-    console.log('question:', text)
     const params = {
       question: text,
       userId: userId,
-      secretClientApiKey: configAndSecrets['secretClientApiKey'],
-      clientVersion: clientVersion,
     }
-    const options = {
-      format: 'json',
-      passAsJson: true,
-      returnHeaders: true,
-    }
-    const response = http.postUrl(configAndSecrets['statementUrl'], params, options)
-    const responseText = JSON.parse(response['responseText'])
-    const body = responseText['body']
-    console.log('body:', body)
+    const body = postQuery(ASK_QUESTION_URL, params)
     if (body['success']) {
       return body['englishDebug']
     } else {
@@ -76,25 +82,11 @@ rest.askQuestion = function(userId, text) {
 rest.recallAll = function(userId) {
   const console = require('console')
   if (userId !== null) {
-    const http = require('http')
-    const util = require('util')
-    const configAndSecrets = util.getConfigAndSecrets()
-    console.log('recall')
     const params = {
       recall: true,
       userId: userId,
-      secretClientApiKey: configAndSecrets['secretClientApiKey'],
-      clientVersion: clientVersion,
     }
-    const options = {
-      format: 'json',
-      passAsJson: true,
-      returnHeaders: true,
-    }
-    const response = http.postUrl(configAndSecrets['recallUrl'], params, options)
-    const responseText = JSON.parse(response['responseText'])
-    const body = responseText['body']
-    console.log('body:', body)
+    const body = postQuery(RECALL_ALL_URL, params)
     if (body['success'] && body['answers']) {
       const answers = body['answers']
       const memories = []
