@@ -1,0 +1,36 @@
+Terms of Use for My Brain capsule for Bixby
+
+These Terms of Service are between you and Van Boughner, the developer of My Brain capsule for Bixby.
+
+By using or accessing the capsule, you agree to these terms, as updated from time to time.
+Van Boughner reserves the right, at his sole discretion, to modify these terms at any time without
+prior notice to you. If you do not agree to the terms as modified, you must stop using the capsule.
+Your continued use of the Capsule following any modification of these terms constitutes
+acceptance of those changes. You understand that the use of the Capsule is voluntary.
+
+Please ensure that others do not interact with the capsule on your behalf, and, if you do not want to be overheard,
+ensure that you are out of earshot when interacting with the capsule.
+
+It is possible that Bixby (and the equipment Bixby is installed on) and/or Samsung will record your interactions
+with the Capsule or with Bixby. Consult your agreements with Samsung for more details about how interactions are
+treated by Samsung and your Bixby-enabled device.
+
+The capsule is provided on an "as is," "without any warranty," and "without any liability" basis.
+You bear the risk of using it. Van Boughner does not guarantee the quality, accuracy, completeness, or
+timeliness of the capsule, or warrant that the functionality or operation of the capsule will be uninterrupted or
+free from error, or that any defects in the capsule will be corrected, or that the capsule or the servers that make
+it available are free of viruses or other harmful conditions or components. The capsule may occasionally be
+restricted, interrupted, or discontinued due to various conditions, due to situations beyond his control.
+
+You shall indemnify, defend, and hold harmless Van Boughner from and against all claims, losses, damages
+and expenses (including without limitation reasonable attorneys' fees) arising out of or in connection
+with your use of the device or capsule.
+
+The capsule is controlled and operated in the United States of America. This agreement is governed by and
+interpreted according to the laws of the state of California.
+
+If any provision of this agreement is held invalid, void or unenforceable, then that provision will be
+considered severable from the remaining provisions, and the remaining provisions shall remain in full
+force and effect.
+
+Thank you for your kind attention.

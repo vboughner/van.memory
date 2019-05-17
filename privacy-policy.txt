@@ -1,0 +1,77 @@
+Privacy Policy for My Brain Bixby Skill
+
+This privacy policy describes what information this application obtains, and how it is used.
+
+What Information is Stored
+
+This application uses your Samsung user id, device id, and the current date and time,
+to store memories that you specify into a database. As such, you alone have control over
+what information about yourself or people you know is stored when you use this application.
+
+The database will contain only information that you have explicitly stated, while the using
+the capsule.  No personal information, such as your name, address, or phone number will ever be
+stored, unless you specifically choose to include it when speaking to the application.
+
+You should not store sensitive or personal information using this application.
+Information stored in the database is available to the developers of the application,
+and associated with your user id. While your name is never stored, it may be possible
+to determine your user id with your name. You should not store sensitive, personal,
+classified, or confidential information using this capsule.
+
+This application may collect certain information automatically, as all Bixby capsules do,
+including, but not limited to, the type of Devices you use, your Device unique IDs,
+the IP address of your Devices, your Device operating system, the type of mobile
+Internet browsers you use, and information about the way you use the application.
+
+How To Opt Out
+
+If you’d like to delete everything you have provided to this application, say to your
+device, "Bixby, tell My Brain to forget everything", and confirm it when prompted.
+All information you have stored will be erased from the live database.
+
+Information stored in our database backups may exist for a while, but will not be available
+through the application. In addition, those backups will be deleted within a reasonable
+amount of time. There is no guarantee this information will remain secure indefinitely
+Your safest alternative is not store anything truly sensitive in the first place.
+
+Third Parties
+
+Only aggregated, anonymized data will ever be shared with third parties, such as how many
+users there are, and how many memories have been stored. No personally identifying
+information will ever be shared with third parties.
+
+Children
+
+We do not use our application to knowingly solicit data from or market to children
+under the age of 13. If a parent or guardian becomes aware that his or her child has
+provided us with information without their consent, he or she should delete such
+information by saying to the device, "Bixby, tell My Brain to forget everything",
+and confirm it when prompted.
+
+Security
+
+We are concerned about safeguarding the confidentiality of your information.
+We provide physical, electronic, and procedural safeguards to protect information we process and maintain.
+For example, we limit access to this information to authorized developers who need to know that
+information in order to operate, develop or improve the application.
+
+Our developers will make every effort to keep your information private. Nevertheless,
+please be aware that no security system can prevent all potential security breaches.
+
+Changes
+
+This privacy policy may be updated from time to time. We will notify you of any
+changes to this policy by posting the new privacy policy here.
+
+You are advised to consult this privacy policy regularly for any changes,
+as continued use is deemed approval of all changes.
+
+Your Consent
+
+By using our application, you are consenting to our use of your information as
+described above, and as amended in this policy from time to time.
+
+If you reside outside the United States your information will be transferred, processed and
+stored there under United States privacy standards.
+
+Thank you for your kind attention.

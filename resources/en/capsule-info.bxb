@@ -1,0 +1,11 @@
+description {
+  name (My Brain)
+  displayName (My Brain)
+  companyName (Van)
+  iconUrl (my-brain-512.png)
+  description ("Ask My Brain to remember things for you and recall them using Bixby with your voice.")
+  dispatch-name (My Brain)
+  dispatch-aliases {
+    alias (My Memory)
+  }
+}
