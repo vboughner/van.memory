@@ -1,7 +1,5 @@
 action (DeleteAllAction) {
   type (Search)
-  collect {
-  }
   description (Bixby deletes all memories)
   output (DeleteAllResponse)
 }

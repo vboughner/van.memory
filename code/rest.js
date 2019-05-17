@@ -51,11 +51,11 @@ rest.memorize = function(userId, deviceId, text) {
     if (body['success']) {
       return body['englishDebug']
     } else {
-      console.error('rest.storeMemory received an error: ', body['errorCode'], body['errorMessage'])
+      console.error('rest.memorize received an error: ', body['errorCode'], body['errorMessage'])
       return body['errorMessage'] || body['englishDebug']
     }
   } else {
-    console.error('rest.storeMemory received null userId or text')
+    console.error('rest.memorize received null userId or text')
     return 'Unfortunately, I had a problem and could not store what you said. Please try again.'
   }
 }
@@ -71,11 +71,11 @@ rest.recall = function(userId, text) {
     if (body['success']) {
       return body['englishDebug']
     } else {
-      console.error('rest.askQuestion received an error: ', body['errorCode'], body['errorMessage'])
+      console.error('rest.recall received an error: ', body['errorCode'], body['errorMessage'])
       return body['errorMessage'] || body['englishDebug']
     }    
   } else {
-    console.error('rest.askQuestion received null userId or text')
+    console.error('rest.recall received null userId or text')
     return 'Unfortunately, I had a problem and do not know who is asking this question.'
   }
 }
@@ -126,7 +126,7 @@ rest.deleteAll = function(userId) {
       return body['englishDebug']
     }    
   } else {
-    console.error('rest.deleteAllreceived null userId')
+    console.error('rest.deleteAll received null userId')
     return 'Unfortunately, I had a problem and do not know who is asking to delete memories.'
   }
 }

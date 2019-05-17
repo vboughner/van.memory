@@ -1,8 +1,10 @@
 hints {
   uncategorized {
     utterance ("Remember that my mother's birthday is January 22nd")
-    utterance ("What is my mother's birthday?")
-    utterance ("My mother is expecting a picnic on April fourth")
+    utterance ("Remind me when is my mother's birthday?")
+    utterance ("Remember that my mother is expecting a picnic on April fourth")
     utterance ("When is my mother expecting a picnic?")
+    utterance ("Store that I put the cookies in the back of the 2nd shelf on the right")
+    utterance ("Recall where I put the cookies")
   }
 }
