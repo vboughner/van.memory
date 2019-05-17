@@ -8,3 +8,8 @@ train (t-6tq8hxf5j9xvj4flk5xbetqc2) {
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
   last-modified (1557792375504)
 }
+train (t-6z4qcbsb5r6nmj3w3qphhjl5w) {
+  utterance ("[g:RecallResponse] what do I have on (Saturday)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1558041846771)
+}

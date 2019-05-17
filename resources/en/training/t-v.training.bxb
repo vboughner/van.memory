@@ -3,3 +3,8 @@ train (t-v0g355djswwt8ii45h5wb92z8) {
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
   last-modified (1556660548812)
 }
+train (t-vd498eoftsobpf949rm64uq8f) {
+  utterance ([g:DeleteAllResponse] delete all memories)
+  plan (Y2BkkClLzNPLTc3NL6rUc0nNSS1JdczJCUotLsjPK05lAAFGEAEA)
+  last-modified (1558053006686)
+}

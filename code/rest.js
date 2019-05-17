@@ -6,6 +6,7 @@ const CLIENT_VERSION = '1.0.0'
 const MEMORIZE_URL = '/statement'
 const RECALL_URL = '/question'
 const LIST_URL = '/list'
+const DELETE_ALL_URL = '/delete-all'
 
 postQuery = function(urlSuffix, additionalParams) {
   const console = require('console')
@@ -55,7 +56,7 @@ rest.memorize = function(userId, deviceId, text) {
     }
   } else {
     console.error('rest.storeMemory received null userId or text')
-    return "Unfortunately, I had a problem and could not store what you said. Please try again."
+    return 'Unfortunately, I had a problem and could not store what you said. Please try again.'
   }
 }
 
@@ -107,6 +108,26 @@ rest.list = function(userId) {
   } else {
     console.error('rest.list received null userId')
     return []
+  }
+}
+
+rest.deleteAll = function(userId) {
+  const console = require('console')
+  if (userId !== null) {
+    const params = {
+      deleteAll: true,
+      userId: userId,
+    }
+    const body = postQuery(DELETE_ALL_URL, params)
+    if (body['success']) {
+      return body['englishDebug']
+    } else {
+      console.error('rest.deleteAll received an error: ', body['errorCode'], body['errorMessage'])
+      return body['englishDebug']
+    }    
+  } else {
+    console.error('rest.deleteAllreceived null userId')
+    return 'Unfortunately, I had a problem and do not know who is asking to delete memories.'
   }
 }
 

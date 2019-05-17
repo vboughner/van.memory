@@ -14,5 +14,10 @@ endpoints {
        accepted-inputs ($vivContext)
        local-endpoint ("ListAction.js")
      }
-   }
+
+     action-endpoint (DeleteAllAction) {
+       accepted-inputs ($vivContext)
+       local-endpoint ("DeleteAllAction.js")
+     }
+  }
 }
