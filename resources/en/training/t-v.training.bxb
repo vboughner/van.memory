@@ -4,12 +4,12 @@ train (t-v0g355djswwt8ii45h5wb92z8) {
   last-modified (1556660548812)
 }
 train (t-vch6bwj27pgpc2beglc8z1kp0) {
-  utterance ([g:DeleteAllResponse] forget everything)
-  plan (Y2BkkClLzNPLTc3NL6rUc0nNSS1JdczJCUotLsjPK05lAAFGEAEA)
-  last-modified (1558108300858)
+  utterance ([g:DeleteAllAction] forget everything)
+  plan (Y2BikClLzNPLTc3NL6rUc0nNSS1JdczJCUotLsjPK05lkMIm65hckpmfx8AIhAxQDCQB)
+  last-modified (1558389076014)
 }
 train (t-vd498eoftsobpf949rm64uq8f) {
-  utterance ([g:DeleteAllResponse] delete all memories)
-  plan (Y2BkkClLzNPLTc3NL6rUc0nNSS1JdczJCUotLsjPK05lAAFGEAEA)
-  last-modified (1558053006686)
+  utterance ([g:DeleteAllAction] delete all memories)
+  plan (Y2BikClLzNPLTc3NL6rUc0nNSS1JdczJCUotLsjPK05lkMIm65hckpmfx8AIhAxQDCQB)
+  last-modified (1558389061154)
 }

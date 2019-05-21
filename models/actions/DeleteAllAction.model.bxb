@@ -1,5 +1,6 @@
 action (DeleteAllAction) {
-  type (Search)
+  type (Commit)
   description (Bixby deletes all memories)
+  confirmed-by (DeleteAllConfirmation)
   output (DeleteAllResponse)
 }

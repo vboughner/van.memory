@@ -4,3 +4,4 @@ dialog (Progress) {
   }
   template("Deleting all memories...")
 }
+
