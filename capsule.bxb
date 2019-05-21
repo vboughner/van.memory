@@ -4,6 +4,7 @@ capsule {
   format (3)
   targets {
     target (bixby-mobile-en-US)
+    target (bixby-speaker-en-US)
   }
   runtime-flags {
     concepts-inherit-super-type-features

@@ -1,0 +1,21 @@
+result-view {
+  match: ListResponse (this) {
+    min (Required) max (One)
+  }
+
+  message {
+    if (size (this.memories) == 0) {
+      template ("There are no memories stored yet. Ask me to remember something.")
+    } else {
+      if (size (this.memories) == 1) {
+        template ("There is just one memory stored so far.")
+      } else {
+        template ("There are #{size(this.memories)} memories stored.")
+      }
+    }
+  }
+
+  render {
+    nothing
+  }
+}
