@@ -4,24 +4,30 @@ result-view {
   }
 
   message {
-    template ("Here are memories I found:")
-  }
-
-  render {
-    list-of (this.memories) {
-      where-each (item) {
-        layout-macro (memory-summary) {
-          param (memory) {
-            expression (item)
-          }
-        }
+    if (size (this.memories) == 0) {
+      template ("There are no memories stored yet. Ask me to remember something.")
+    } else {
+      if (size (this.memories) == 1) {
+        template ("There is just one memory stored so far:")
+      } else {
+        template ("Here are memories I found:")
       }
     }
   }
 
-  conversation-drivers {
-    conversation-driver {
-      template ("Recall all memories")
+  render {
+    if (size (this.memories) == 0) {
+      nothing
+    } else {
+      list-of (this.memories) {
+        where-each (item) {
+          layout-macro (memory-summary) {
+            param (memory) {
+              expression (item)
+            }
+          }
+        }
+      }
     }
   }
 }

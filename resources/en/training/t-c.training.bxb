@@ -1,3 +1,8 @@
+train (t-cqu8asqhdqe6pmchtt14tkdw3) {
+  utterance ([g:DeleteAllAction] delete everything)
+  plan (Y2BikClLzNPLTc3NL6rUc0nNSS1JdczJCUotLsjPK05lkMIm65hckpmfx8AIhAxQDCQB)
+  last-modified (1558458012570)
+}
 train (t-cy3q7g593fn6auj4x15dkxoxp) {
   utterance ("[g:RecallResponse] recall (my phone number)[v:RecallInputConcept]")
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)

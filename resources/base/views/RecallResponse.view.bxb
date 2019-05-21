@@ -7,4 +7,10 @@ result-view {
   }
 
   message ("#{value(this)}")
+
+  conversation-drivers {
+    conversation-driver {
+      template ("List all memories")
+    }
+  }
 }
