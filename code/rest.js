@@ -73,7 +73,7 @@ rest.recall = function(userId, text) {
     } else {
       console.error('rest.recall received an error: ', body['errorCode'], body['errorMessage'])
       return body['errorMessage'] || body['englishDebug']
-    }    
+    }
   } else {
     console.error('rest.recall received null userId or text')
     return 'Unfortunately, I had a problem and do not know who is asking this question.'
@@ -104,7 +104,7 @@ rest.list = function(userId) {
     } else {
       console.error('rest.list received an error: ', body['errorCode'], body['errorMessage'])
       return []
-    }    
+    }
   } else {
     console.error('rest.list received null userId')
     return []
@@ -124,7 +124,7 @@ rest.deleteAll = function(userId) {
     } else {
       console.error('rest.deleteAll received an error: ', body['errorCode'], body['errorMessage'])
       return body['englishDebug']
-    }    
+    }
   } else {
     console.error('rest.deleteAll received null userId')
     return 'Unfortunately, I had a problem and do not know who is asking to delete memories.'

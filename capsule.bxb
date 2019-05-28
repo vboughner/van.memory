@@ -11,4 +11,15 @@ capsule {
     support-halt-effect-in-computed-inputs
     modern-prompt-rejection
   }
+  marketplace-constraints {
+    country-constraints {
+      allowed-list {
+        allow (US)
+        allow (CA)
+      }
+    }
+  }
+  store-sections {
+    section (Productivity)
+  }
 }

@@ -1,4 +1,4 @@
 dialog (Confirmation) {
   match: DeleteAllAction
-  template("Go ahead and delete all memories?")
+  template("Are you sure you want to delete all memories?")
 }
