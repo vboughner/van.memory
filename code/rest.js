@@ -8,8 +8,9 @@ const RECALL_URL = '/question'
 const LIST_URL = '/list'
 const DELETE_ALL_URL = '/delete-all'
 
-postQuery = function(urlSuffix, additionalParams) {
+postQuery = function($vivContext, urlSuffix, additionalParams) {
   const console = require('console')
+  console.log('$vivContext', $vivContext)
   console.log('urlSuffix', urlSuffix)
   console.log('additionalParams', additionalParams)
   if (urlSuffix !== null && params !== null) {
@@ -20,6 +21,12 @@ postQuery = function(urlSuffix, additionalParams) {
     const params = {
       secretClientApiKey: secretClientApiKey,
       clientVersion: CLIENT_VERSION,
+      userId: $vivContext.userId,
+      deviceModel: $vivContext.deviceModel,
+      canTypeId: $vivContext.canTypeId,
+      handsFree: $vivContext.handsFree,
+      timezone: $vivContext.timezone,
+      storeCountry: $vivContext.storeCountry,
     }
     const combinedParams = Object.assign(params, additionalParams)
     const options = {
@@ -39,15 +46,13 @@ postQuery = function(urlSuffix, additionalParams) {
   }
 }
 
-rest.memorize = function(userId, deviceId, text) {
+rest.memorize = function($vivContext, text) {
   const console = require('console')
-  if (userId !== null && text !== null) {
+  if ($vivContext !== null && text !== null) {
     const params = {
       statement: text,
-      userId: userId,
-      deviceId: deviceId,
     }
-    const body = postQuery(MEMORIZE_URL, params)
+    const body = postQuery($vivContext, MEMORIZE_URL, params)
     if (body['success']) {
       return body['englishDebug']
     } else {
@@ -55,19 +60,18 @@ rest.memorize = function(userId, deviceId, text) {
       return body['errorMessage'] || body['englishDebug']
     }
   } else {
-    console.error('rest.memorize received null userId or text')
+    console.error('rest.memorize received null $vivContext or text')
     return 'Unfortunately, I had a problem and could not store what you said. Please try again.'
   }
 }
 
-rest.recall = function(userId, text) {
+rest.recall = function($vivContext, text) {
   const console = require('console')
-  if (userId !== null && text !== null) {
+  if ($vivContext !== null && text !== null) {
     const params = {
       question: text,
-      userId: userId,
     }
-    const body = postQuery(RECALL_URL, params)
+    const body = postQuery($vivContext, RECALL_URL, params)
     if (body['success']) {
       return body['englishDebug']
     } else {
@@ -75,19 +79,18 @@ rest.recall = function(userId, text) {
       return body['errorMessage'] || body['englishDebug']
     }
   } else {
-    console.error('rest.recall received null userId or text')
+    console.error('rest.recall received null $vivContext or text')
     return 'Unfortunately, I had a problem and do not know who is asking this question.'
   }
 }
 
-rest.list = function(userId) {
+rest.list = function($vivContext) {
   const console = require('console')
-  if (userId !== null) {
+  if ($vivContext !== null) {
     const params = {
       list: true,
-      userId: userId,
     }
-    const body = postQuery(LIST_URL, params)
+    const body = postQuery($vivContext, LIST_URL, params)
     if (body['success'] && body['answers']) {
       const answers = body['answers']
       const memories = []
@@ -106,27 +109,26 @@ rest.list = function(userId) {
       return []
     }
   } else {
-    console.error('rest.list received null userId')
+    console.error('rest.list received null $vivContext')
     return []
   }
 }
 
-rest.deleteAll = function(userId) {
+rest.deleteAll = function($vivContext) {
   const console = require('console')
-  if (userId !== null) {
+  if ($vivContext !== null) {
     const params = {
       deleteAll: true,
-      userId: userId,
     }
-    const body = postQuery(DELETE_ALL_URL, params)
+    const body = postQuery($vivContext, DELETE_ALL_URL, params)
     if (body['success']) {
       return body['englishDebug']
     } else {
       console.error('rest.deleteAll received an error: ', body['errorCode'], body['errorMessage'])
-      return body['englishDebug']
+      return body['errorMessage'] || body['englishDebug']
     }
   } else {
-    console.error('rest.deleteAll received null userId')
+    console.error('rest.deleteAll received null $vivContext')
     return 'Unfortunately, I had a problem and do not know who is asking to delete memories.'
   }
 }

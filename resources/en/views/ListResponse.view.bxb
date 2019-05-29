@@ -10,7 +10,7 @@ result-view {
       if (size (this.memories) == 1) {
         template ("There is just one memory stored so far:")
       } else {
-        template ("Here are memories I found:")
+        template ("I found #{size(this.memories)} memories:")
       }
     }
   }

@@ -1,12 +1,12 @@
 endpoints {
    action-endpoints {
      action-endpoint (MemorizeAction) {
-       accepted-inputs (memorizeInput, $vivContext)
+       accepted-inputs ($vivContext, memorizeInput)
        local-endpoint ("MemorizeAction.js")
      }
 
      action-endpoint (RecallAction) {
-       accepted-inputs (recallInput, $vivContext)
+       accepted-inputs ($vivContext, recallInput)
        local-endpoint ("RecallAction.js")
      }
 
