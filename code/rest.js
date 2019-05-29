@@ -54,10 +54,10 @@ rest.memorize = function($vivContext, text) {
     }
     const body = postQuery($vivContext, MEMORIZE_URL, params)
     if (body['success']) {
-      return body['englishDebug']
+      return body['speech']
     } else {
       console.error('rest.memorize received an error: ', body['errorCode'], body['errorMessage'])
-      return body['errorMessage'] || body['englishDebug']
+      return body['errorMessage'] || body['speech']
     }
   } else {
     console.error('rest.memorize received null $vivContext or text')
@@ -73,10 +73,10 @@ rest.recall = function($vivContext, text) {
     }
     const body = postQuery($vivContext, RECALL_URL, params)
     if (body['success']) {
-      return body['englishDebug']
+      return body['speech']
     } else {
       console.error('rest.recall received an error: ', body['errorCode'], body['errorMessage'])
-      return body['errorMessage'] || body['englishDebug']
+      return body['errorMessage'] || body['speech']
     }
   } else {
     console.error('rest.recall received null $vivContext or text')
@@ -122,10 +122,10 @@ rest.deleteAll = function($vivContext) {
     }
     const body = postQuery($vivContext, DELETE_ALL_URL, params)
     if (body['success']) {
-      return body['englishDebug']
+      return body['speech']
     } else {
       console.error('rest.deleteAll received an error: ', body['errorCode'], body['errorMessage'])
-      return body['errorMessage'] || body['englishDebug']
+      return body['errorMessage'] || body['speech']
     }
   } else {
     console.error('rest.deleteAll received null $vivContext')
