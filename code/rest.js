@@ -107,7 +107,7 @@ rest.memorize = function($vivContext, statement) {
         memory: {
           text: body['text'],
           whenStored: body['whenStored'],
-          howLongAgo: body['howLongAgo'] || 'a moment ago', // TODO: add this in the brain lambda and remove from here
+          howLongAgo: body['howLongAgo'],
         },
         speech: body['speech'],
       }
