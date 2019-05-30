@@ -4,15 +4,7 @@ result-view {
   }
 
   message {
-    if (size (this.memories) == 0) {
-      template ("There are no memories stored yet. Ask me to remember something.")
-    } else {
-      if (size (this.memories) == 1) {
-        template ("There is just one memory stored so far:")
-      } else {
-        template ("I found #{size(this.memories)} memories:")
-      }
-    }
+    template ("#{value(this.speech)}")
   }
 
   render {

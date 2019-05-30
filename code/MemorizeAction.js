@@ -8,5 +8,5 @@ module.exports.function = function memorizeAction($vivContext, memorizeInput) {
   const rest = require("rest.js")
   const cleanedInput = util.cleanString(memorizeInput)
   const response = rest.memorize($vivContext, cleanedInput)
-  return response.speech
+  return response
 }

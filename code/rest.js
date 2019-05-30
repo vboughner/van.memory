@@ -15,7 +15,7 @@ const DELETE_ALL_URL = '/delete-all'
  * @param $vivContext
  * @param urlSuffix
  * @param additionalParams
- * @returns {object}
+ * @returns {Object}
  */
 const postQuery = function($vivContext, urlSuffix, additionalParams) {
   const console = require('console')
@@ -56,21 +56,43 @@ const postQuery = function($vivContext, urlSuffix, additionalParams) {
 }
 
 /**
- * Gets a statement memorized and returns an object that contains the response text as
+ * Makes a new array so that the elements contain only what is defined in Memory concept.
+ *
+ * @param {Array} answers
+ * @returns {Array}
+ */
+const makeMemoriesFromAnswers = function(answers) {
+  if (answers && answers.length > 0) {
+    const memories = []
+    for (let i = 0; i < answers.length; i++) {
+      memories.push({
+        text: answers[i].text,
+        whenStored: answers[i].whenStored,
+        howLongAgo: answers[i].howLongAgo,
+      })
+    }
+    return memories
+  }
+  return answers
+}
+
+/**
+ * Gets a statement memorized and returns an object that contains the response speech as
  * well as information about the item just memorized:
  *
  * {
  *   success,
- *   statement,
- *   text,
- *   whenStored,
- *   howLongAgo,
+ *   memory: {
+ *     text,
+ *     whenStored,
+ *     howLongAgo,
+ *   }
  *   speech,
  * }
  *
  * @param $vivContext
  * @param statement
- * @returns {object}
+ * @returns {Object}
  */
 rest.memorize = function($vivContext, statement) {
   const console = require('console')
@@ -82,20 +104,22 @@ rest.memorize = function($vivContext, statement) {
     if (body['success']) {
       return {
         success: body['success'],
-        statement: statement,
-        text: statement,
-        whenStored: body['whenStored'],
-        howLongAgo: body['howLongAgo'],
+        memory: {
+          text: body['text'],
+          whenStored: body['whenStored'],
+          howLongAgo: body['howLongAgo'] || 'a moment ago', // TODO: add this in the brain lambda and remove from here
+        },
         speech: body['speech'],
       }
     } else {
       console.error('rest.memorize received an error: ', body['errorCode'], body['errorMessage'])
       return {
         success: body['success'],
-        statement: statement,
-        text: statement,
-        whenStored: '',
-        howLongAgo: '',
+        memory: {
+          text: '',
+          whenStored: '',
+          howLongAgo: '',
+        },
         speech: body['errorMessage'] || body['speech']
       }
     }
@@ -103,10 +127,11 @@ rest.memorize = function($vivContext, statement) {
     console.error('rest.memorize received null $vivContext or statement')
     return {
       success: false,
-      statement: statement,
-      text: statement,
-      whenStored: '',
-      howLongAgo: '',
+      memory: {
+        text: '',
+        whenStored: '',
+        howLongAgo: '',
+      },
       speech: 'Unfortunately, I had a problem and could not store what you said. Please try again.',
     }
   }
@@ -114,17 +139,13 @@ rest.memorize = function($vivContext, statement) {
 
 /**
  * Recalls a previously memorized statement, returns an object that contains the response text as
- * well as information about the item memorized, as well as an array of all the answers.
- * The first answer in the array is the same as the highlighted items and speech.
+ * well an array of all the answers. The first answer in the array is the best answer.
  *
  * {
  *   success,
  *   question,
- *   text,
- *   whenStored,
- *   howLongAgo,
  *   speech,
- *   answers: [
+ *   memories: [
  *     {
  *       text,
  *       whenStored,
@@ -138,7 +159,7 @@ rest.memorize = function($vivContext, statement) {
  *
  * @param $vivContext
  * @param question
- * @returns {object}
+ * @returns {Object}
  */
 rest.recall = function($vivContext, question) {
   const console = require('console')
@@ -148,26 +169,20 @@ rest.recall = function($vivContext, question) {
     }
     const body = postQuery($vivContext, RECALL_URL, params)
     if (body['success']) {
-      const bestAnswer = body['answers'][0]
+      const memories = makeMemoriesFromAnswers(body['answers'])
       return {
         success: body['success'],
         question: question,
-        text: bestAnswer['text'],
-        whenStored: bestAnswer['whenStored'],
-        howLongAgo: bestAnswer['howLongAgo'],
         speech: body['speech'],
-        answers: body['answers'],
+        memories: memories,
       }
     } else {
       console.error('rest.recall received an error: ', body['errorCode'], body['errorMessage'])
       return {
         success: body['success'],
         question: question,
-        text: '',
-        whenStored: 0,
-        howLongAgo: '',
         speech: body['errorMessage'] || body['speech'],
-        answers: [],
+        memories: [],
       }
     }
   } else {
@@ -175,11 +190,8 @@ rest.recall = function($vivContext, question) {
     return {
       success: false,
       question: question,
-      text: '',
-      whenStored: 0,
-      howLongAgo: '',
       speech: 'Unfortunately, I had a problem and do not know who is asking this question.',
-      answers: [],
+      memories: [],
     }
   }
 }
@@ -201,7 +213,7 @@ rest.recall = function($vivContext, question) {
  * }
  *
  * @param $vivContext
- * @returns {array}
+ * @returns {Object}
  */
 rest.list = function($vivContext) {
   const console = require('console')
@@ -211,15 +223,7 @@ rest.list = function($vivContext) {
     }
     const body = postQuery($vivContext, LIST_URL, params)
     if (body['success'] && body['answers']) {
-      const answers = body['answers']
-      const memories = [] // new array required so it contains only what is defined in ListResponse concept
-      for (let i = 0; i < answers.length; i++) {
-        memories.push({
-          text: answers[i].text,
-          whenStored: answers[i].whenStored,
-          howLongAgo: answers[i].howLongAgo,
-        })
-      }
+      const memories = makeMemoriesFromAnswers(body['answers'])
       return {
         success: body['success'],
         memories: memories,

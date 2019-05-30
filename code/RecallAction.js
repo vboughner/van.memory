@@ -8,5 +8,5 @@ module.exports.function = function recallAction($vivContext, recallInput) {
   const rest = require("rest.js")
   const cleanedInput = util.cleanString(recallInput)
   const response = rest.recall($vivContext, cleanedInput)
-  return response.speech
+  return response
 }

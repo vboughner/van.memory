@@ -2,9 +2,13 @@ result-view {
   match: MemorizeResponse (this) {
   }
 
-  render {
-    nothing
-  }
+  message ("#{value(this.speech)}")
 
-  message ("#{value(this)}")
+  render {
+    layout-macro (memory-summary) {
+      param (memory) {
+        expression (this.memory)
+      }
+    }
+  }
 }

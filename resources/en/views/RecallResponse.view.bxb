@@ -2,11 +2,25 @@ result-view {
   match: RecallResponse (this) {
   }
 
-  render {
-    nothing
+  message {
+    template ("#{value(this.speech)}")
   }
 
-  message ("#{value(this)}")
+  render {
+    if (size (this.memories) == 0) {
+      nothing
+    } else {
+      list-of (this.memories) {
+        where-each (item) {
+          layout-macro (memory-summary) {
+            param (memory) {
+              expression (item)
+            }
+          }
+        }
+      }
+    }
+  }
 
   conversation-drivers {
     conversation-driver {
