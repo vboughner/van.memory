@@ -1,0 +1,5 @@
+action (RecallLastMemoryAction) {
+  type (Search)
+  description (Bixby recalls the last thing that was memorized)
+  output (RecallLastMemoryResponse)
+}

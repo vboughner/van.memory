@@ -1,0 +1,5 @@
+train (t-pjkv0ixcxzkfsabhtqne2ibk0) {
+  utterance ([g:RecallLastMemoryResponse] what was the last thing you memorized)
+  plan (Y2BkUC5LzNPLTc3NL6rUC0pNTszJ8UksLvEFCwSlFhfk5xWnMoAAI4gAAA==)
+  last-modified (1559176024940)
+}

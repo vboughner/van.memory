@@ -1,0 +1,3 @@
+text (RecallLastMemoryResponse) {
+  description (The resulting output after recalling most recent memory)
+}
