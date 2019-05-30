@@ -3,7 +3,11 @@ result-view {
   }
 
   message {
-    template ("#{value(this.speech)}")
+    if (size (this.memories) < 2) {
+      template ("#{value(this.speech)}")
+    } else {
+      template ("#{value(this.speech)} Here are all memories that sound similar:")
+    }
   }
 
   render {
