@@ -1,3 +1,14 @@
-text (RecallLastMemoryResponse) {
+structure (RecallLastMemoryResponse) {
   description (The resulting output after recalling most recent memory)
-}
+  property (success) {
+    type (SuccessConcept)
+    min (Required) max (One)
+  }
+  property (speech) {
+    type (SpeechConcept)
+    min (Required) max (One)
+  }
+  property (memory) {
+    type (Memory)
+    min (Optional) max (One)
+  }}

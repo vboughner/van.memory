@@ -11,9 +11,23 @@ module.exports.function = function recallLastMemoryAction($vivContext) {
   const memories = response && response.memories
   if (memories && memories.length > 0) {
     const text = memories[0].text
+    const whenStored = memories[0].whenStored
     const howLongAgo = memories[0].howLongAgo
-    return "You stored the most recent memory " + howLongAgo + ". You told me: " + text + "."
+    const speech = "You stored the most recent memory " + howLongAgo + ". You told me: " + text + "."
+    return {
+      success: true,
+      speech: speech,
+      memory: {
+        text: text,
+        whenStored: whenStored,
+        howLongAgo: howLongAgo,
+      }
+    }
   } else {
-    return "I can't find any stored memories."
+    return {
+      success: false,
+      speech: "I can't find any stored memories.",
+      memory: null,
+    }
   }
 }

@@ -2,11 +2,19 @@ result-view {
   match: RecallLastMemoryResponse (this) {
   }
 
-  render {
-    nothing
-  }
+  message ("#{value(this.speech)}")
 
-  message ("#{value(this)}")
+  render {
+    if (this.success) {
+      layout-macro (memory-summary) {
+        param (memory) {
+          expression (this.memory)
+        }
+      }
+    } else {
+      nothing
+    }
+  }
 
   conversation-drivers {
     conversation-driver {
