@@ -7,6 +7,12 @@ layout-macro-def (memory-summary) {
   }
   content {
     cell-card {
+      slot1 {
+        image {
+          url ("head-brains.png")
+          shape (Square)
+        }
+      }
       slot2 {
         content {
           order (PrimarySecondary)
