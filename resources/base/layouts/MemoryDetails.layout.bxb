@@ -1,4 +1,5 @@
-layout-macro-def (memory-summary) {
+// TODO: use this for something
+layout-macro-def (memory-details) {
   params {
     param (memory) {
       type (Memory)
@@ -21,7 +22,12 @@ layout-macro-def (memory-summary) {
           secondary ("#{value(memory.howLongAgo)}")
         }
       }
+      slot3 {
+        image {
+          url ("head-brains.png")
+          shape (Square)
+        }
+      }
     }
   }
 }
-

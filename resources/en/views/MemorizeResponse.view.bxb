@@ -11,4 +11,10 @@ result-view {
       }
     }
   }
+
+  conversation-drivers {
+    conversation-driver {
+      template ("List all memories")
+    }
+  }
 }

@@ -11,15 +11,11 @@ result-view {
   }
 
   render {
-    if (size (this.memories) == 0) {
-      nothing
-    } else {
-      list-of (this.memories) {
-        where-each (item) {
-          layout-macro (memory-summary) {
-            param (memory) {
-              expression (item)
-            }
+    list-of (this.memories) {
+      where-each (item) {
+        layout-macro (memory-summary) {
+          param (memory) {
+            expression (item)
           }
         }
       }
