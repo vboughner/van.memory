@@ -16,10 +16,8 @@ result-view {
   }
 
   conversation-drivers {
-    if ("size(result) == 1") {
-      conversation-driver {
-        template ("Delete this memory")
-      }
+    conversation-driver {
+      template("List all memories")
     }
   }
 }
