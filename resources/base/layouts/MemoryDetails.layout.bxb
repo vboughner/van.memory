@@ -36,6 +36,14 @@ layout-macro-def (memory-details) {
             style (Detail_L_Soft)
           }
         }
+        single-line {
+          text {
+            value {
+              template ("#{value(memory.whenStored)}")
+            }
+            style (Detail_M_Soft)
+          }
+        }
       }
     }
   }
