@@ -17,7 +17,7 @@ result-view {
 
   conversation-drivers {
     conversation-driver {
-      template("List all memories")
+      template("Delete this memory")
     }
   }
 }

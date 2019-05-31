@@ -20,6 +20,11 @@ endpoints {
        local-endpoint ("DeleteAllAction.js")
      }
 
+     action-endpoint (DeleteOneAction) {
+       accepted-inputs ($vivContext, whenStored)
+       local-endpoint ("DeleteOneAction.js")
+     }
+
      action-endpoint (RecallLastMemoryAction) {
        accepted-inputs ($vivContext)
        local-endpoint ("RecallLastMemoryAction.js")

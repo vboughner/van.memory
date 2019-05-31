@@ -7,14 +7,15 @@ const MEMORIZE_URL = '/statement'
 const RECALL_URL = '/question'
 const LIST_URL = '/list'
 const DELETE_ALL_URL = '/delete-all'
+const DELETE_ONE_URL = '/delete-one'
 
 /**
  * Makes a REST api call, given the urlSuffix (which describes which api method is called), as well
  * as additional parameters that help define the call. Returns the body of the response.
  *
  * @param $vivContext
- * @param urlSuffix
- * @param additionalParams
+ * @param {string} urlSuffix
+ * @param {Object} additionalParams
  * @returns {Object}
  */
 const postQuery = function($vivContext, urlSuffix, additionalParams) {
@@ -91,7 +92,7 @@ const makeMemoriesFromAnswers = function(answers) {
  * }
  *
  * @param $vivContext
- * @param statement
+ * @param {string} statement
  * @returns {Object}
  */
 rest.memorize = function($vivContext, statement) {
@@ -158,7 +159,7 @@ rest.memorize = function($vivContext, statement) {
  * }
  *
  * @param $vivContext
- * @param question
+ * @param {string} question
  * @returns {Object}
  */
 rest.recall = function($vivContext, question) {
@@ -269,6 +270,33 @@ rest.deleteAll = function($vivContext) {
   } else {
     console.error('rest.deleteAll received null $vivContext')
     return 'Unfortunately, I had a problem and do not know who is asking to delete memories.'
+  }
+}
+
+/**
+ * Deletes one memory, returns a simple speech string describing the effort.
+ *
+ * @param $vivContext
+ * @param {number} whenStored
+ * @returns {string}
+ */
+rest.deleteOne = function($vivContext, whenStored) {
+  const console = require('console')
+  if ($vivContext !== null && whenStored !== null) {
+    const params = {
+      deleteOne: true,
+      whenStored: whenStored,
+    }
+    const body = postQuery($vivContext, DELETE_ONE_URL, params)
+    if (body['success']) {
+      return body['speech']
+    } else {
+      console.error('rest.deleteOne received an error: ', body['errorCode'], body['errorMessage'])
+      return body['errorMessage'] || body['speech']
+    }
+  } else {
+    console.error('rest.deleteOne received null $vivContext or null whenStored')
+    return 'Unfortunately, I had a problem and do not know who is asking to delete a memory.'
   }
 }
 
