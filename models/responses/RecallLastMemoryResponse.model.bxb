@@ -8,7 +8,8 @@ structure (RecallLastMemoryResponse) {
     type (SpeechConcept)
     min (Required) max (One)
   }
-  property (memory) {
+  property (memories) {
     type (Memory)
-    min (Optional) max (One)
-  }}
+    min (Optional) max (Many)
+  }
+}

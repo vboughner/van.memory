@@ -17,17 +17,19 @@ module.exports.function = function recallLastMemoryAction($vivContext) {
     return {
       success: true,
       speech: speech,
-      memory: {
-        text: text,
-        whenStored: whenStored,
-        howLongAgo: howLongAgo,
-      }
+      memories: [
+        {
+          text: text,
+          whenStored: whenStored,
+          howLongAgo: howLongAgo,
+        },
+      ],
     }
   } else {
     return {
       success: false,
       speech: "I can't find any stored memories.",
-      memory: null,
+      memories: [],
     }
   }
 }

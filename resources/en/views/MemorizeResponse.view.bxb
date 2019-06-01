@@ -5,10 +5,18 @@ result-view {
   message ("#{value(this.speech)}")
 
   render {
-    layout-macro (memory-summary) {
-      param (memory) {
-        expression (this.memory)
+    if (this.success) {
+      list-of (this.memories) {
+        where-each (item) {
+          layout-macro (memory-summary) {
+            param (memory) {
+              expression (item)
+            }
+          }
+        }
       }
+    } else {
+      nothing
     }
   }
 

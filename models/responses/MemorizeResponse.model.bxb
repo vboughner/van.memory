@@ -4,12 +4,12 @@ structure (MemorizeResponse) {
     type (SuccessConcept)
     min (Required) max (One)
   }
-  property (memory) {
-    type (Memory)
-    min (Required) max (One)
-  }
   property (speech) {
     type (SpeechConcept)
     min (Required) max (One)
+  }
+  property (memories) {
+    type (Memory)
+    min (Optional) max (Many)
   }
 }

@@ -6,9 +6,13 @@ result-view {
 
   render {
     if (this.success) {
-      layout-macro (memory-summary) {
-        param (memory) {
-          expression (this.memory)
+      list-of (this.memories) {
+        where-each (item) {
+          layout-macro (memory-summary) {
+            param (memory) {
+              expression (item)
+            }
+          }
         }
       }
     } else {

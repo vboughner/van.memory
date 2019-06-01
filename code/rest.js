@@ -83,11 +83,13 @@ const makeMemoriesFromAnswers = function(answers) {
  *
  * {
  *   success,
- *   memory: {
- *     text,
- *     whenStored,
- *     howLongAgo,
- *   }
+ *   memories: [
+ *     {
+ *       text,
+ *       whenStored,
+ *       howLongAgo,
+ *     },
+ *   ],
  *   speech,
  * }
  *
@@ -105,22 +107,20 @@ rest.memorize = function($vivContext, statement) {
     if (body['success']) {
       return {
         success: body['success'],
-        memory: {
-          text: body['text'],
-          whenStored: body['whenStored'],
-          howLongAgo: body['howLongAgo'],
-        },
+        memories: [
+          {
+            text: body['text'],
+            whenStored: body['whenStored'],
+            howLongAgo: body['howLongAgo'],
+          },
+        ],
         speech: body['speech'],
       }
     } else {
       console.error('rest.memorize received an error: ', body['errorCode'], body['errorMessage'])
       return {
         success: body['success'],
-        memory: {
-          text: '',
-          whenStored: '',
-          howLongAgo: '',
-        },
+        memories: [],
         speech: body['errorMessage'] || body['speech']
       }
     }
@@ -128,11 +128,7 @@ rest.memorize = function($vivContext, statement) {
     console.error('rest.memorize received null $vivContext or statement')
     return {
       success: false,
-      memory: {
-        text: '',
-        whenStored: '',
-        howLongAgo: '',
-      },
+      memories: [],
       speech: 'Unfortunately, I had a problem and could not store what you said. Please try again.',
     }
   }
