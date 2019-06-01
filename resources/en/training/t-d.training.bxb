@@ -4,7 +4,7 @@ train (t-d69ft3nmyh694vyvfn1sp44uf) {
   last-modified (1557961967461)
 }
 train (t-dxe19jecfoxrgwk55jz13sd1z) {
-  utterance ("[g:DeleteOneResponse] delete memory (15214112337)[v:MemoryWhenStored]")
+  utterance ("[g:DeleteOneResponse] delete this memory")
   plan (Y2BmkClLzNPLTc3NL6rUc0nNSS1J9c9LDUotLsjPK05lkMIm65hckpmfxyCNJOcLpsIzUvOCS/KLUlMYmBgYgZgBSDIygAATBAMA)
   last-modified (1559288998419)
 }

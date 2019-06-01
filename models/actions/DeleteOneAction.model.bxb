@@ -2,8 +2,8 @@ action (DeleteOneAction) {
   type (Search)
   description (Bixby deletes a single memory)
   collect {
-    input (whenStored) {
-      type (MemoryWhenStored)
+    input (memory) {
+      type (Memory)
       min (Required) max (One)
     }
   }

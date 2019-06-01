@@ -276,12 +276,12 @@ rest.deleteAll = function($vivContext) {
  * @param {number} whenStored
  * @returns {string}
  */
-rest.deleteOne = function($vivContext, whenStored) {
+rest.deleteOne = function($vivContext, memory) {
   const console = require('console')
-  if ($vivContext !== null && whenStored !== null) {
+  if ($vivContext !== null && memory && memory.whenStored !== null) {
     const params = {
       deleteOne: true,
-      whenStored: whenStored,
+      whenStored: memory.whenStored,
     }
     const body = postQuery($vivContext, DELETE_ONE_URL, params)
     if (body['success']) {
@@ -291,7 +291,7 @@ rest.deleteOne = function($vivContext, whenStored) {
       return body['errorMessage'] || body['speech']
     }
   } else {
-    console.error('rest.deleteOne received null $vivContext or null whenStored')
+    console.error('rest.deleteOne received null $vivContext, memory, or memory.whenStored')
     return 'Unfortunately, I had a problem and do not know who is asking to delete a memory.'
   }
 }

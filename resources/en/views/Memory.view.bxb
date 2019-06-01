@@ -17,7 +17,7 @@ result-view {
 
   conversation-drivers {
     conversation-driver {
-      template("Delete memory #{value(result.whenStored)}")
+      template("Delete this memory")
     }
   }
 }
