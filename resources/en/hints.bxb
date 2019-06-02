@@ -5,6 +5,13 @@ hints {
     utterance ("Remember that my mother is expecting a picnic on April fourth")
     utterance ("When is my mother expecting a picnic?")
     utterance ("Store that I put the cookies in the back of the 2nd shelf on the right")
-    utterance ("Recall where I put the cookies")
+    utterance ("Where did I put the cookies?")
+    utterance ("Tell me about the cookies")
+    utterance ("Keep in mind that I took my vitamins")
+    utterance ("Recall when I said I took my vitamins")
+    utterance ("What was the last memory I stored?")
+    utterance ("How many memories are stored?")
+    utterance ("List all memories")
+    utterance ("Delete all memories")
   }
 }
