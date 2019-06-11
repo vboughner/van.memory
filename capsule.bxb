@@ -1,6 +1,6 @@
 capsule {
   id (van.memory)
-  version (1.0.3)
+  version (1.0.4)
   format (3)
   targets {
     target (bixby-mobile-en-US)
