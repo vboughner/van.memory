@@ -1,0 +1,7 @@
+data:
+  sixtree: |-
+    intent {
+      goal { DeleteAllConfirmation }
+      value { DeleteAllConfirmation (false) }
+    }
+type: intent

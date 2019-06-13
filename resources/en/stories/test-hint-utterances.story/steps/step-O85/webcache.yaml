@@ -1,0 +1,22 @@
+- request:
+    headers:
+      Accept-Charset: UTF-8
+      Accept-Encoding: gzip
+      Content-Type: application/json
+      User-Agent: Mozilla/5.0 (compatible) gzip
+    method: POST
+    requestBodyFilename: webcache/4k553qtnv5.execute-api.us-east-1.amazonaws.com-1-req.json
+    url: 'https://4k553qtnv5.execute-api.us-east-1.amazonaws.com/dev/statement'
+  response:
+    headers:
+      $status: HTTP/1.1 200 OK
+      Access-Control-Allow-Origin: '*'
+      Connection: close
+      Content-Length: '312'
+      Content-Type: application/json
+      Date: 'Thu, 13 Jun 2019 16:15:53 GMT'
+      X-Amzn-Trace-Id: Root=1-5d0276b9-f7854f0c739f0a98128c09f8;Sampled=0
+      x-amz-apigw-id: bOd86GE9IAMF4pA=
+      x-amzn-RequestId: 842550d7-8df6-11e9-ad6b-2fdae24d7165
+    responseFilename: webcache/4k553qtnv5.execute-api.us-east-1.amazonaws.com-1-res.json
+    status: 200
