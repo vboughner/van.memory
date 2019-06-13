@@ -15,4 +15,11 @@ capsule-info {
     keyword (remember)
     keyword (recall)
   }
+  screenshots {
+    asset (screenshot1.png)
+    asset (screenshot2.png)
+    asset (screenshot3.png)
+    asset (screenshot4.png)
+    asset (screenshot5.png)
+  }
 }
