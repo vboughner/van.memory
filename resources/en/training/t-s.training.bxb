@@ -1,5 +1,10 @@
+train (t-sbaltsfmuclesxo3v9r5peo34) {
+  utterance ("[g:RecallResponse] what about (valentine's day)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1560441083967)
+}
 train (t-sxmjh968aldd9m5hydse2h375) {
-  utterance ([g:ListResponse] show me all memories)
+  utterance ([g:ListResponse] show all memories)
   plan (Y2BkEC9LzNPLTc3NL6rU88ksLglKLS7IzytOZQABRhABAA==)
-  last-modified (1557961951162)
+  last-modified (1560439327708)
 }

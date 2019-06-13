@@ -3,3 +3,8 @@ train (t-uxwk4m7yxhsn1kp6pv1pusdrc) {
   plan (Y2BkEC9LzNPLTc3NL6rU88ksLglKLS7IzytOZQABRhABAA==)
   last-modified (1557961994676)
 }
+train (t-uytymlgf9qh5u2hmd2z8k3oag) {
+  utterance ("[g:RecallInputConcept:prompt] (my mother's birthday)[v:RecallInputConcept]")
+  plan (Y2BikC1LzNPLTc3NL6rUC0pNTszJ8cwrKC1xzs9LTi0oISTNCIQMDDxAzATEQDYA)
+  last-modified (1560440229970)
+}

@@ -1,15 +1,15 @@
-description {
-  displayName (My Brain)
-  companyName (Van Boughner)
-  iconUrl (head-brains.png)
+capsule-info {
+  display-name (My Brain)
+  developer-name (Van Boughner)
+  icon-asset (head-brains.png)
   description ("Ask My Brain to remember things for you and recall them using your voice with Bixby.")
   dispatch-name (My Brain)
   dispatch-aliases {
     alias (My Memory)
   }
   privacy-policy-url (https://vanboughner.com/my-brain-privacy-policy-for-bixby)
-  termsUrl (https://vanboughner.com/my-brain-terms-of-service-for-bixby)
-  websiteUrl(https://vanboughner.com)
+  terms-url (https://vanboughner.com/my-brain-terms-of-service-for-bixby)
+  website-url(https://vanboughner.com)
   search-keywords {
     keyword (memory)
     keyword (remember)

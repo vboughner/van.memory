@@ -1,7 +1,7 @@
 train (t-47fi2fa83s5xiisl1xnee45w7) {
-  utterance ("[g:RecallResponse] how hot should I (cook lasagna)[v:RecallInputConcept] at")
+  utterance ("[g:RecallResponse] how hot should I (cook lasagna)[v:RecallInputConcept]")
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
-  last-modified (1557791585612)
+  last-modified (1560438987634)
 }
 train (t-4ph3pnqwge8drdbab05k97r0f) {
   utterance ([g:ListResponse] how many memories)

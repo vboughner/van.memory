@@ -1,7 +1,7 @@
 train (t-cqu8asqhdqe6pmchtt14tkdw3) {
-  utterance ([g:DeleteAllAction] delete everything)
+  utterance ([g:DeleteAllAction] delete all memories)
   plan (Y2BikClLzNPLTc3NL6rUc0nNSS1JdczJCUotLsjPK05lkMIm65hckpmfx8AIhAxQDCQB)
-  last-modified (1558458012570)
+  last-modified (1560439108058)
 }
 train (t-cy3q7g593fn6auj4x15dkxoxp) {
   utterance ("[g:RecallResponse] recall (my phone number)[v:RecallInputConcept]")
