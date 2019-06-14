@@ -1,3 +1,8 @@
+train (t-94q0n5e6bdga1pkeeowc01efk) {
+  utterance ([g:DeleteSomeResponse:continue:RecallResponse] delete this memory)
+  plan (Y2BkkC1LzNPLTc3NL6rUc0nNSS1JDc7PTQ1KLS7IzytOZQABRhABAA==)
+  last-modified (1560475329499)
+}
 train (t-9bp2i2yh0q1eh04jhdkt42qtk) {
   utterance ("[g:RecallResponse] when is (davids birthday)[v:RecallInputConcept]")
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)

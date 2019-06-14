@@ -1,0 +1,3 @@
+text (DeleteSomeResponse) {
+  description (resulting output from deleting some memories)
+}

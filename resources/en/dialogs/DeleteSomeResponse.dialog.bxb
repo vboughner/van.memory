@@ -1,0 +1,6 @@
+dialog (Progress) {
+  match {
+    DeleteSomeResponse
+  }
+  template("Deleting...")
+}

@@ -1,0 +1,5 @@
+train (t-tebiv93c37x8a5wx24gozaqza) {
+  utterance ([g:DeleteAllAction:continue:ListResponse] delete these memories)
+  plan (Y2BikClLzNPLTc3NL6rUc0nNSS1JdczJCUotLsjPK05lkMIm65hckpmfx8AIhAxQDCQB)
+  last-modified (1560475642164)
+}
