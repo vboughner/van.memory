@@ -2,5 +2,5 @@ dialog (Progress) {
   match {
     DeleteSomeResponse
   }
-  template("Deleting...")
+  template("Deleting what was shown...")
 }

@@ -1,5 +1,6 @@
 action (DeleteSomeAction) {
-  type (Search)
+  type (Commit)
+  confirmed-by (DeleteSomeConfirmation)
   description (Bixby deletes one or more memories)
   collect {
     input (recallResponse) {

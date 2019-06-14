@@ -1,0 +1,4 @@
+dialog (Confirmation) {
+  match: DeleteSomeAction
+  template("Are you sure you want to delete what was shown?")
+}
