@@ -43,6 +43,7 @@ const postQuery = function($vivContext, urlSuffix, additionalParams) {
       format: 'json',
       passAsJson: true,
       returnHeaders: true,
+      cacheTime: 0,
     }
     const combinedUrl = configAndSecrets['brainLambdaUrl'] + urlSuffix
     const response = http.postUrl(combinedUrl, combinedParams, options)
