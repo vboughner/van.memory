@@ -42,15 +42,12 @@ const postQuery = function($vivContext, urlSuffix, additionalParams) {
     const options = {
       format: 'json',
       passAsJson: true,
-      returnHeaders: true,
       cacheTime: 0,
     }
     const combinedUrl = configAndSecrets['brainLambdaUrl'] + urlSuffix
     const response = http.postUrl(combinedUrl, combinedParams, options)
-    const responseText = JSON.parse(response['responseText'])
-    const body = responseText['body']
-    console.log('body:', body)
-    return body
+    // response contains properties set in the brain lambda code: statusCode and body
+    return response.body
   } else {
     console.error('rest.postQuery received null urlSuffix or null additionalParams')
     return {}
@@ -225,7 +222,7 @@ rest.list = function($vivContext) {
       return {
         success: body['success'],
         memories: memories,
-        speech: body['speech'],
+        speech: body['speech'] + ($vivContext.handsFree ? ' Would you like me to read them out?' : ''),
       }
     } else {
       console.error('rest.list received an error: ', body['errorCode'], body['errorMessage'])
