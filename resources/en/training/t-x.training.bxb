@@ -18,6 +18,11 @@ train (t-xhxbwygf4s9yeej79cdwwpw4q) {
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
   last-modified (1557796416138)
 }
+train (t-xq9nf6188rtow5kb92qimro1a) {
+  utterance ([g:ListResponse] tell me my memories)
+  plan (Y2BkEC9LzNPLTc3NL6rU88ksLglKLS7IzytOZQABRhABAA==)
+  last-modified (1561766912501)
+}
 train (t-xv9iwpsoxwb8fbaia9zz0kyow) {
   utterance ([g:ListResponse] list every memory)
   plan (Y2BkEC9LzNPLTc3NL6rU88ksLglKLS7IzytOZQABRhABAA==)
