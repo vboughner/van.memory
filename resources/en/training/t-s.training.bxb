@@ -3,6 +3,11 @@ train (t-sbaltsfmuclesxo3v9r5peo34) {
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
   last-modified (1560441083967)
 }
+train (t-sffdnyrjdt3r11zdsw9y7jl7l) {
+  utterance ([g:VersionResponse] what version)
+  plan (Y2BkkCpLzNPLTc3NL6rUC0stKs7MzwtKLS7IzytOZQABRhABAA==)
+  last-modified (1561772956965)
+}
 train (t-slr9b5v1sh9qosnocc9dajsad) {
   utterance ([g:ListResponse] what are my memories)
   plan (Y2BkEC9LzNPLTc3NL6rU88ksLglKLS7IzytOZQABRhABAA==)

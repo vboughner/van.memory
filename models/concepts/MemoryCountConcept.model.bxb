@@ -1,0 +1,3 @@
+integer (MemoryCountConcept) {
+  description (how many memories are currently stored)
+}

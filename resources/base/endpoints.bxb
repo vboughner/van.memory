@@ -34,5 +34,10 @@ endpoints {
        accepted-inputs ($vivContext)
        local-endpoint ("RecallLastMemoryAction.js")
      }
+
+     action-endpoint (VersionAction) {
+       accepted-inputs ($vivContext)
+       local-endpoint ("VersionAction.js")
+     }
   }
 }

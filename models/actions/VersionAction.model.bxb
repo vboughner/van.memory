@@ -1,0 +1,5 @@
+action (VersionAction) {
+  type (Search)
+  description (get client and server versions and other information about capsule)
+  output (VersionResponse)
+}

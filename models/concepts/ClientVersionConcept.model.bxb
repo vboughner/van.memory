@@ -1,0 +1,3 @@
+text (ClientVersionConcept) {
+  description (current client version)
+}

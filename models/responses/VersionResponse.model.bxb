@@ -1,0 +1,19 @@
+structure (VersionResponse) {
+  description (The output of get version inquiry)
+  property (success) {
+    type (SuccessConcept)
+    min (Required) max (One)
+  }
+  property (memoryCount) {
+    type (MemoryCountConcept)
+    min (Required) max (One)
+  }
+  property (serverVersion) {
+    type (ServerVersionConcept)
+    min (Required) max (One)
+  }
+  property (clientVersion) {
+    type (ClientVersionConcept)
+    min (Optional) max (Many)
+  }
+}

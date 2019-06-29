@@ -294,4 +294,29 @@ rest.deleteOne = function($vivContext, memory) {
   }
 }
 
+/**
+ * Get server version and other helpful information.
+ */
+rest.getVersion = function($vivContext) {
+  const console = require('console')
+  const params = {
+    list: true,
+  }
+  const body = postQuery($vivContext, LIST_URL, params)
+  if (body['success']) {
+    return {
+      success: true,
+      serverVersion: body['serverVersion'],
+      memoryCount: body['answers'] ? body['answers'].length : 0,
+    }
+  } else {
+    console.error('rest.getVersion received an error: ', body['errorCode'], body['errorMessage'])
+    return {
+      success: false,
+      serverVersion: 'unknown',
+      memoryCount: 0,
+    }
+  }
+}
+
 module.exports = rest
