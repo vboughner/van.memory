@@ -1,6 +1,6 @@
 action (DeleteAllAction) {
   type (Commit)
   description (Bixby deletes all memories)
-  confirmed-by (DeleteAllConfirmation)
+  confirmed-by (DeleteConfirmation)
   output (DeleteAllResponse)
 }

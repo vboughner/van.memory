@@ -1,4 +1,0 @@
-boolean (DeleteAllConfirmation) {
-  description (The confirmation boolean used for confirming a delete all action)
-  extends (viv.core.Confirmation)
-}
