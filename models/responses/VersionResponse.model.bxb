@@ -4,6 +4,10 @@ structure (VersionResponse) {
     type (SuccessConcept)
     min (Required) max (One)
   }
+  property (speech) {
+    type (SpeechConcept)
+    min (Required) max (One)
+  }  
   property (memoryCount) {
     type (MemoryCountConcept)
     min (Required) max (One)
@@ -11,9 +15,5 @@ structure (VersionResponse) {
   property (serverVersion) {
     type (ServerVersionConcept)
     min (Required) max (One)
-  }
-  property (clientVersion) {
-    type (ClientVersionConcept)
-    min (Optional) max (Many)
   }
 }

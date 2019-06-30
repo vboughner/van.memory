@@ -1,0 +1,18 @@
+result-view {
+  match: VersionResponse (this) {
+  }
+
+  message {
+    template ("#{value(this.speech)}")
+  }
+
+  render {
+    nothing
+  }
+
+  conversation-drivers {
+    conversation-driver {
+      template ("List all memories")
+    }
+  }
+}
