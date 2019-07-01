@@ -1,0 +1,9 @@
+data:
+  geo:
+    latitude: 32.987506
+    longitude: -96.700365
+  time: '1970-01-18T16:16:03.060Z'
+  tz: Africa/Abidjan
+steps:
+  step-VQH:
+    step-WPJ: ~
