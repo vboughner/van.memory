@@ -222,7 +222,7 @@ rest.list = function($vivContext) {
       return {
         success: body['success'],
         memories: memories,
-        speech: body['speech'] + ($vivContext.handsFree ? ' Would you like me to read them out?' : ''),
+        speech: body['speech'],
       }
     } else {
       console.error('rest.list received an error: ', body['errorCode'], body['errorMessage'])
