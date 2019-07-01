@@ -1,0 +1,3 @@
+text (DeleteJustMemorizedResponse) {
+  description (speech output from deleting the memory that was just added)
+}

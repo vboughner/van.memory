@@ -3,3 +3,8 @@ train (t-23lqik10fmsm345ah8zu21zfs) {
   plan (Y2BmkC1LzNPLTc3NL6rUc0nNSS1JDc7PTQ1KLS7IzytOZZDGKu2YXJKZn8cgiSQZlJqcmJMD18fEwAjEDECSkYEBRgMA)
   last-modified (1560530066217)
 }
+train (t-2b5wnhj86cb6pv1e4ap7uuo7h) {
+  utterance ([g:DeleteJustMemorizedAction:continue:MemorizeResponse] delete this memory)
+  plan (Y2BmkC1LzNPLTc3NL6rUc0nNSS1JDc7PTQ1KLS7IzytOZVDBkPYqLS7xBQlkVqWmOCaXZObnMUgjqYLJwY1gYmAEYgYgycjAAKMB)
+  last-modified (1562021032887)
+}

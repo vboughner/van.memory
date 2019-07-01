@@ -1,0 +1,6 @@
+dialog (Progress) {
+  match {
+    DeleteJustMemorizedResponse
+  }
+  template("Deleting the memory...")
+}

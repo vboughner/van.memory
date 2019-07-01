@@ -1,0 +1,4 @@
+dialog (Confirmation) {
+  match: DeleteJustMemorizedAction
+  template("You just asked me to remember that. Are you sure you want to delete it?")
+}
