@@ -1,0 +1,4 @@
+- enabled: true
+  fatal: true
+  file: assertions/list-all.js
+  program: mocha
