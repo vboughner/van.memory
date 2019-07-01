@@ -1,0 +1,4 @@
+dialog (Confirmation) {
+  match: DeleteLastMemoryAction
+  template("Are you sure you want to delete the most recently stored memory?")
+}

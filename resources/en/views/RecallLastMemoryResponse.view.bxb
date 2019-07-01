@@ -24,5 +24,10 @@ result-view {
     conversation-driver {
       template ("List all memories")
     }
+    if (this.success) {
+      conversation-driver {
+        template ("Delete this memory")
+      }
+    }
   }
 }

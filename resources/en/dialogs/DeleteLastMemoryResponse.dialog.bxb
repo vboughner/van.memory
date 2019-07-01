@@ -1,0 +1,6 @@
+dialog (Progress) {
+  match {
+    DeleteLastMemoryResponse
+  }
+  template("Deleting most recently stored memory...")
+}

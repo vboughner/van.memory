@@ -26,13 +26,15 @@ result-view {
     conversation-driver {
       template ("List all memories")
     }
-    if (size (this.memories) < 2) {
-      conversation-driver {
-        template ("Delete this memory")
-      }
-    } else {
-      conversation-driver {
-        template ("Delete these memories")
+    if (this.success) {
+      if (size (this.memories) < 2) {
+        conversation-driver {
+          template ("Delete this memory")
+        }
+      } else {
+        conversation-driver {
+          template ("Delete these memories")
+        }
       }
     }
   }

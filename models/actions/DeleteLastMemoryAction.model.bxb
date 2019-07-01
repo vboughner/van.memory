@@ -1,0 +1,12 @@
+action (DeleteLastMemoryAction) {
+  type (Commit)
+  confirmed-by (DeleteConfirmation)
+  description (Bixby deletes the last memory stored)
+  collect {
+    input (recallLastMemoryResponse) {
+      type (RecallLastMemoryResponse)
+      min (Required) max (One)
+    }
+  }
+  output (DeleteLastMemoryResponse)
+}

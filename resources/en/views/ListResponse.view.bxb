@@ -22,6 +22,9 @@ result-view {
   conversation-drivers {
     if (size (this.memories) > 0) {
       conversation-driver {
+        template ("Most recent memory")
+      }
+      conversation-driver {
         template ("Delete all memories")
       }
     }

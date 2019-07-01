@@ -1,0 +1,3 @@
+text (DeleteLastMemoryResponse) {
+  description (speech output from deleting the last memory that was stored)
+}
