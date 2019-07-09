@@ -2,7 +2,7 @@ capsule-info {
   display-name (My Brain)
   developer-name (Van Boughner)
   icon-asset (head-brains.png)
-  description ("Ask My Brain to remember things for you and recall them using your voice with Bixby.")
+  description ("Ask My Brain to remember things for you and recall them later. My Brain can help you remember things about people, where you put things, or when you last did something. It helps to include a couple of key words in your memory that you can use later in a question to recall it.")
   dispatch-name (My Brain)
   dispatch-aliases {
     alias (My Memory)
