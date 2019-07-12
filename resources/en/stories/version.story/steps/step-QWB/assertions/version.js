@@ -6,7 +6,7 @@
  */
 
 describe('version', () => {
-  const dialogText = 'My brain lambda version is'
+  const dialogText = 'My Brain lambda version is'
 
   it(`starts with "${dialogText}"`, () => {
     // get the dialog from the `step` global
@@ -15,6 +15,6 @@ describe('version', () => {
     const { dialogs } = step
     expect(dialogs.length).toBeGreaterThan(0)
     const [ { text } ] = step.dialogs.slice(-1)
-    expect(text).toStartWith(dialogText)
+    expect(text.substring(0, dialogText.length)).toBe(dialogText)
   })
 })
