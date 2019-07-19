@@ -1,6 +1,8 @@
 action (DeleteLastMemoryAction) {
   type (Commit)
-  confirmed-by (DeleteConfirmation)
+  confirm {
+    by (DeleteConfirmation)
+  }
   description (Bixby deletes the last memory stored)
   collect {
     input (recallLastMemoryResponse) {

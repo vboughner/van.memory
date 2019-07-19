@@ -1,6 +1,8 @@
 action (DeleteJustMemorizedAction) {
   type (Commit)
-  confirmed-by (DeleteConfirmation)
+  confirm {
+    by (DeleteConfirmation)
+  }
   description (Bixby deletes the memory that was just memorized)
   collect {
     input (memorizeResponse) {
