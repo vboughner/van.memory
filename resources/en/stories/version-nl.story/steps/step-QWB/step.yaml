@@ -1,0 +1,4 @@
+data:
+  nl: brain lambda version
+label: Get Version
+type: intent

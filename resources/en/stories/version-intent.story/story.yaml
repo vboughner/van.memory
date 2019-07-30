@@ -1,0 +1,10 @@
+data:
+  deviceIsInHandsFreeMode: false
+  geo:
+    latitude: '37.334502'
+    longitude: '-121.890654'
+  time: '2019-07-30T22:22:55.736Z'
+  tz: America/Los_Angeles
+steps:
+  step-BD2: ~
+version: 2

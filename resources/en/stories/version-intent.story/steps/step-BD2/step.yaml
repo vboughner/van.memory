@@ -1,0 +1,6 @@
+data:
+  sixtree: |-
+    intent {
+      goal: VersionResponse
+    }
+type: intent
