@@ -13,14 +13,14 @@ layout-macro-def (memory-summary) {
           value {
             template ("#{value(memory.text)}")
           }
-          style (Title_S)
+          style (Detail_L)
         }
         single-line {
           text {
             value {
               template ("#{value(memory.howLongAgo)}")
             }
-            style (Detail_M)
+            style (Detail_M_Soft)
           }
         }
       }

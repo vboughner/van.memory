@@ -3,7 +3,7 @@ result-view {
   }
 
   message {
-    template ("I'll remember this.") {
+    template ("I'll remember what you said.") {
       speech ("#{value(this.speech)}")
     }
   }
