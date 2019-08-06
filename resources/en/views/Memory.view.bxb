@@ -7,9 +7,22 @@ result-view {
   render {
     // size is always 1 because this view is only attainable when drilling into a single memory from a list
     if (size(result) == 1) {
-      layout-macro (memory-details) {
-        param (memory) {
-          expression (result)
+      layout {
+        section {
+          content {
+            paragraph {
+              value {
+                template ("#{value(result.text)}")
+              }
+              style (Detail_L)
+            }
+            paragraph {
+              value {
+                template ("#{value(result.howLongAgo)}")
+              }
+              style (Detail_M_Soft)
+            }
+          }
         }
       }
     }
