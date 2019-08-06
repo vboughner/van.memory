@@ -2,7 +2,7 @@
 
 const rest = {}
 
-const CLIENT_VERSION = '1.0.0'
+const CLIENT_VERSION = '1.1.0'
 const MEMORIZE_URL = '/statement'
 const RECALL_URL = '/question'
 const LIST_URL = '/list'
@@ -23,7 +23,7 @@ const postQuery = function($vivContext, urlSuffix, additionalParams) {
   console.log('$vivContext', $vivContext)
   console.log('urlSuffix', urlSuffix)
   console.log('additionalParams', additionalParams)
-  if (urlSuffix !== null && params !== null) {
+  if (urlSuffix !== null && additionalParams !== null) {
     const http = require('http')
     const util = require('util')
     const configAndSecrets = util.getConfigAndSecrets()
@@ -37,6 +37,7 @@ const postQuery = function($vivContext, urlSuffix, additionalParams) {
       handsFree: $vivContext.handsFree,
       timezone: $vivContext.timezone,
       storeCountry: $vivContext.storeCountry,
+      utterance: $vivContext.utterance,
     }
     const combinedParams = Object.assign(params, additionalParams)
     const options = {

@@ -1,12 +1,9 @@
 capsule {
   id (van.memory)
-  version (1.0.10)
+  version (1.1.0)
   format (3)
   targets {
     target (bixby-mobile-en-US)
-//  target (bixby-watch-en-US)
-//  target (bixby-fridge-en-US)
-//  target (bixby-tv-en-US)
   }
   runtime-flags {
     concepts-inherit-super-type-features
@@ -14,14 +11,6 @@ capsule {
     modern-prompt-rejection
     modern-default-view-behavior
     no-filtering-with-validation
-  }
-  marketplace-constraints {
-    country-constraints {
-      allowed-list {
-        allow (US)
-        allow (CA)
-      }
-    }
   }
   store-sections {
     section (Productivity)
