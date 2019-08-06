@@ -2,5 +2,5 @@ dialog (Progress) {
   match {
     RecallLastMemoryResponse
   }
-  template("")
+  template("Recalling most recent memory...")
 }

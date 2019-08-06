@@ -2,5 +2,5 @@ dialog (Progress) {
   match {
     ListResponse
   }
-  template("")
+  template("Getting memories...")
 }

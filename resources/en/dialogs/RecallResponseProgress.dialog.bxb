@@ -2,5 +2,5 @@ dialog (Progress) {
   match {
     RecallResponse
   }
-  template("")
+  template("Recalling memories...")
 }

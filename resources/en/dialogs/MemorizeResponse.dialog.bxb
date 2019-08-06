@@ -2,5 +2,5 @@ dialog (Progress) {
   match {
     MemorizeResponse
   }
-  template("")
+  template("Storing memory...")
 }
