@@ -6,7 +6,7 @@ result-view {
 
   render {
     // size is always 1 because this view is only attainable when drilling into a single memory from a list
-    if (size(result) == 1) {
+    if (size (result) == 1) {
       layout {
         section {
           content {

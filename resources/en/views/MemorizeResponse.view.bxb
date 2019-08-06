@@ -3,8 +3,12 @@ result-view {
   }
 
   message {
-    template ("I'll remember what you said.") {
-      speech ("#{value(this.speech)}")
+    if (this.success) {
+      template ("I'll remember what you said.") {
+        speech ("#{value(this.speech)}")
+      }
+    } else {
+      template ("#{value(this.speech)}")
     }
   }
 

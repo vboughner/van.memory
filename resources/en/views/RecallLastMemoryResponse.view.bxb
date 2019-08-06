@@ -3,8 +3,12 @@ result-view {
   }
 
   message {
-    template ("Here's the most recent memory.") {
-      speech ("#{value(this.speech)}")
+    if (this.success) {
+      template ("Here's the most recent memory.") {
+        speech ("#{value(this.speech)}")
+      }
+    } else {
+      template ("#{value(this.speech)}")
     }
   }
 

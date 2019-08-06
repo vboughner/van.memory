@@ -3,7 +3,9 @@ result-view {
   }
 
   message {
-    if (size (this.memories) < 2) {
+    if (size (this.memories) == 0) {
+      template ("#{value(this.speech)}")
+    } else-if (size (this.memories) == 1) {
       template ("Here's the best match.") {
         speech ("#{value(this.speech)}")
       }
@@ -30,15 +32,13 @@ result-view {
     conversation-driver {
       template ("List all memories")
     }
-    if (this.success) {
-      if (size (this.memories) < 2) {
-        conversation-driver {
-          template ("Delete this memory")
-        }
-      } else {
-        conversation-driver {
-          template ("Delete these memories")
-        }
+    if (size (this.memories) == 1) {
+      conversation-driver {
+        template ("Delete this memory")
+      }
+    } else-if (size (this.memories) > 1) {
+      conversation-driver {
+        template ("Delete these memories")
       }
     }
   }
