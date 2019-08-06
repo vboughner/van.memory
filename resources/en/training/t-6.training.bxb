@@ -1,3 +1,8 @@
+train (t-64dgl0fsho8m4kre9i78lq3xd) {
+  utterance ([g:RecallLastMemoryResponse] what was the last thing I remembered)
+  plan (Y2BkUC5LzNPLTc3NL6rUC0pNTszJ8UksLvEFCwSlFhfk5xWnMoAAI4gAAA==)
+  last-modified (1565105814954)
+}
 train (t-6c53fbr3y8vr80sflqmf0no28) {
   utterance ([g:VersionResponse] my brain lambda version)
   plan (Y2BkkCpLzNPLTc3NL6rUC0stKs7MzwtKLS7IzytOZQABRhABAA==)

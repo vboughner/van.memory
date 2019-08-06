@@ -1,3 +1,8 @@
+train (t-a3up9jpx7odaij10v7937sr6j) {
+  utterance ([g:DeleteOneResponse:continue:Memory] delete)
+  plan (Y2BkkClLzNPLTc3NL6rUc0nNSS1J9c9LDUotLsjPK05lAAFGEAEA)
+  last-modified (1565105540092)
+}
 train (t-ailmxtkhy5yrhh5gm5226iuuv) {
   utterance ("[g:DeleteConfirmation:prompt] (yes)[v:DeleteConfirmation:true]")
   plan (Y2BikC1LzNPLTc3NL6rUc0nNSS1Jdc7PS8ssyk0syczPIyTNCIQMDDxAzATEQDYA)

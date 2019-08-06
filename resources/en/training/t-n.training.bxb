@@ -18,3 +18,8 @@ train (t-nqwc401m34d1qnyel4g6480nm) {
   plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
   last-modified (1556659277916)
 }
+train (t-nxky8pm0zqwubyjvyqyqotxsy) {
+  utterance ([g:DeleteJustMemorizedAction:continue:MemorizeResponse] delete)
+  plan (Y2BmUCtLzNPLTc3NL6rUc0nNSS1J9SotLvEFCWRWpaYEpRYX5OcVpzKo4FfnmFySmZ/HII2kCiYHN4KJgRGIGYAkIwMDjAYA)
+  last-modified (1565105684478)
+}

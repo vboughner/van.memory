@@ -1,3 +1,8 @@
+train (t-d3x6tsri5rgtoq8jm23zdshe0) {
+  utterance ([g:DeleteLastMemoryAction:continue:RecallLastMemoryResponse] delete)
+  plan (Y2BmUC5LzNPLTc3NL6rUc0nNSS1J9UksLvEFCwSlFhfk5xWnMijiUeSYXJKZn4diTlBqcmJODhZzmBgYgZgBSDIyMMBoAA==)
+  last-modified (1565105587283)
+}
 train (t-d69ft3nmyh694vyvfn1sp44uf) {
   utterance ([g:ListResponse] list all memories)
   plan (Y2BkEC9LzNPLTc3NL6rU88ksLglKLS7IzytOZQABRhABAA==)
