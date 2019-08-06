@@ -2,7 +2,11 @@ result-view {
   match: RecallLastMemoryResponse (this) {
   }
 
-  message ("#{value(this.speech)}")
+  message {
+    template ("Here's the most recent memory.") {
+      speech ("#{value(this.speech)}")
+    }
+  }
 
   render {
     if (this.success) {

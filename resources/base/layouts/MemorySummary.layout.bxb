@@ -7,21 +7,23 @@ layout-macro-def (memory-summary) {
   }
 
   content {
-    cell-card {
-      slot1 {
-        image {
-          url ("head-brains.png")
-          shape (Square)
+    compound-card {
+      content {
+        paragraph {
+          value {
+            template ("#{value(memory.text)}")
+          }
+          style (Title_S)
         }
-      }
-      slot2 {
-        content {
-          order (PrimarySecondary)
-          primary ("#{value(memory.text)}")
-          secondary ("#{value(memory.howLongAgo)}")
+        single-line {
+          text {
+            value {
+              template ("#{value(memory.howLongAgo)}")
+            }
+            style (Detail_M)
+          }
         }
       }
     }
   }
 }
-

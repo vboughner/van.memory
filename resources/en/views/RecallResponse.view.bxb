@@ -4,9 +4,13 @@ result-view {
 
   message {
     if (size (this.memories) < 2) {
-      template ("#{value(this.speech)}")
+      template ("Here's the best match.") {
+        speech ("#{value(this.speech)}")
+      }
     } else {
-      template ("#{value(this.speech)} Here are all memories that sound similar:")
+      template ("Here are similar memories.") {
+        speech ("#{value(this.speech)} Here are all memories that sound similar:")
+      }
     }
   }
 

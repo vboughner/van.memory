@@ -2,7 +2,11 @@ result-view {
   match: MemorizeResponse (this) {
   }
 
-  message ("#{value(this.speech)}")
+  message {
+    template ("I'll remember this.") {
+      speech ("#{value(this.speech)}")
+    }
+  }
 
   render {
     if (this.success) {
