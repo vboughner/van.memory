@@ -1,0 +1,4 @@
+- enabled: true
+  fatal: true
+  file: assertions/sense.js
+  program: mocha

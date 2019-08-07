@@ -3,6 +3,11 @@ train (t-n47w364cjkwxu1dbo0q2r15e6) {
   plan (Y2BikC1LzNPLTc3NL6rUC0pNTszJ8cwrKC1xzs9LTi0oISTNCIQMDDxAzATEQDYA)
   last-modified (1560439240055)
 }
+train (t-nhba9b0joj83rl7kectrm9dxk) {
+  utterance ("[g:RecallResponse] find (vitmains)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1565191514599)
+}
 train (t-nho8r6v4qbyupw41z1tmfj8hj) {
   utterance ("[g:MemorizeResponse] remember that (I like fish tacos from una mas)[v:MemorizeInputConcept]")
   plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)

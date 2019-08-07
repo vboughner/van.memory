@@ -3,3 +3,8 @@ train (t-gakd5dr4zjqekz9pqxyi8ux62) {
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
   last-modified (1560439715681)
 }
+train (t-gwnwnkvh1oecnfosbkt8805fb) {
+  utterance ("[g:RecallResponse] find (my mother's birthday)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1565191367118)
+}

@@ -1,0 +1,5 @@
+train (t-e8s7jb4fylhzs0trjz771ztng) {
+  utterance ("[g:RecallResponse] look for (my car)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1565189901977)
+}

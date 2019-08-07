@@ -8,3 +8,8 @@ train (t-14q85wvazgh385qv5886avrx0) {
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
   last-modified (1558394214820)
 }
+train (t-16eax2tger2ggl1m7wf0e8cxv) {
+  utterance ("[g:RecallResponse] search (car parking)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1565189974474)
+}

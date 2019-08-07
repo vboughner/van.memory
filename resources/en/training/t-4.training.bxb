@@ -8,6 +8,11 @@ train (t-4gol4by9vid2hujehjadbcda3) {
   plan (Y2BikC1LzNPLTc3NL6rUc0nNSS1Jdc7PS8ssyk0syczPIyTNCIQMDDxAzATEQDYA)
   last-modified (1561931915629)
 }
+train (t-4lvn8blfdsf42fou7itwoeop5) {
+  utterance ("[g:RecallResponse] look for (my workout routine)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1565189741229)
+}
 train (t-4ph3pnqwge8drdbab05k97r0f) {
   utterance ([g:ListResponse] how many memories)
   plan (Y2BkEC9LzNPLTc3NL6rU88ksLglKLS7IzytOZQABRhABAA==)

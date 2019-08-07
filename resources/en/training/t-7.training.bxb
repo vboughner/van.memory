@@ -3,6 +3,11 @@ train (t-73edehgpaw7ufika4f3u2ex7b) {
   plan (Y2BkUC5LzNPLTc3NL6rUC0pNTszJ8UksLvEFCwSlFhfk5xWnMoAAI4gAAA==)
   last-modified (1562023533044)
 }
+train (t-7ju6bot18m6heqj34orphzwiu) {
+  utterance ("[g:RecallResponse] look at (Fred's birthday)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1565190105147)
+}
 train (t-7zucmcmyzlondinp1yjr9n0t0) {
   utterance ("[g:RecallResponse] what is (my mother's birthday)[v:RecallInputConcept]")
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
