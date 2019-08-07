@@ -1,0 +1,15 @@
+data:
+  deviceIsInHandsFreeMode: true
+  geo:
+    latitude: 32.987506
+    longitude: -96.700365
+  time: '2018-05-26T19:31:00.000Z'
+  tz: Africa/Abidjan
+steps:
+  step-PFA:
+    step-9AZ:
+      step-7UU:
+        step-K2F:
+          step-NIJ: ~
+          step-TDO: ~
+version: 2
