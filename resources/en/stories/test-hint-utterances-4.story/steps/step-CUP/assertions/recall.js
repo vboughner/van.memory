@@ -5,7 +5,7 @@
 
 describe('recall', () => {
   const displayedText = 'Here\'s the best match.'
-  const spokenText = 'You told me a few seconds ago: the cookies are in the back of the 2nd shelf on the right.'
+  const spokenText = 'You told me a few seconds ago: I need to buy potatoes.'
 
   it(`matches the displayed and spoken text`, () => {
     // get the dialog from the `step` global
