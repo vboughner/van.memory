@@ -1,9 +1,10 @@
 capsule {
   id (van.memory)
-  version (1.1.0)
+  version (1.2.0)
   format (3)
   targets {
     target (bixby-mobile-en-US)
+    target (bixby-speaker-en-US)
   }
   runtime-flags {
     concepts-inherit-super-type-features

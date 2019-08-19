@@ -9,7 +9,24 @@ result-view {
 
   render {
     list-of (this.memories) {
+      navigation-mode {
+        if ($handsFree) {
+          read-many-and-next {
+            page-size (5)
+            list-summary ("#{value(this.speech)}")
+            page-content {
+              underflow-statement (This is the first memory.)
+              overflow-statement (Those are all the memories.)
+              overflow-question (What would you like to do?)
+              next-page-question (Would you like to hear more memories?)
+            }
+          }
+        }
+      }
       where-each (item) {
+        spoken-summary {
+          template ("#{value(item.text)}")
+        }
         layout-macro (memory-summary) {
           param (memory) {
             expression (item)

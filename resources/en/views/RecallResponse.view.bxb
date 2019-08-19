@@ -18,7 +18,22 @@ result-view {
 
   render {
     list-of (this.memories) {
+      navigation-mode {
+        if ($handsFree) {
+          read-one-and-next {
+            page-content {
+              underflow-statement (This is the first memory.)
+              overflow-statement (Those are all the memories.)
+              overflow-question (What would you like to do?)
+              next-item-question (Would you like another similar memory?)
+            }
+          }
+        }
+      }
       where-each (item) {
+        spoken-summary {
+          template ("You told me #{value(item.howLongAgo)}, #{value(item.text)}")
+        }        
         layout-macro (memory-summary) {
           param (memory) {
             expression (item)

@@ -2,12 +2,8 @@
 
 const rest = {}
 
-const CLIENT_VERSION = '1.1.0'
-const MEMORIZE_URL = '/statement'
-const RECALL_URL = '/question'
-const LIST_URL = '/list'
-const DELETE_ALL_URL = '/delete-all'
-const DELETE_ONE_URL = '/delete-one'
+const CLIENT_VERSION = '1.2.0'
+const SERVICE_URL = '/list'
 
 /**
  * Makes a REST api call, given the urlSuffix (which describes which api method is called), as well
@@ -37,7 +33,6 @@ const postQuery = function($vivContext, urlSuffix, additionalParams) {
       handsFree: $vivContext.handsFree,
       timezone: $vivContext.timezone,
       storeCountry: $vivContext.storeCountry,
-      utterance: $vivContext.utterance,
     }
     const combinedParams = Object.assign(params, additionalParams)
     const options = {
@@ -102,7 +97,7 @@ rest.memorize = function($vivContext, statement) {
     const params = {
       statement: statement,
     }
-    const body = postQuery($vivContext, MEMORIZE_URL, params)
+    const body = postQuery($vivContext, SERVICE_URL, params)
     if (body['success']) {
       return {
         success: body['success'],
@@ -163,7 +158,7 @@ rest.recall = function($vivContext, question) {
     const params = {
       question: question,
     }
-    const body = postQuery($vivContext, RECALL_URL, params)
+    const body = postQuery($vivContext, SERVICE_URL, params)
     if (body['success']) {
       const memories = makeMemoriesFromAnswers(body['answers'])
       return {
@@ -217,7 +212,7 @@ rest.list = function($vivContext) {
     const params = {
       list: true,
     }
-    const body = postQuery($vivContext, LIST_URL, params)
+    const body = postQuery($vivContext, SERVICE_URL, params)
     if (body['success'] && body['answers']) {
       const memories = makeMemoriesFromAnswers(body['answers'])
       return {
@@ -255,7 +250,7 @@ rest.deleteAll = function($vivContext) {
     const params = {
       deleteAll: true,
     }
-    const body = postQuery($vivContext, DELETE_ALL_URL, params)
+    const body = postQuery($vivContext, SERVICE_URL, params)
     if (body['success']) {
       return body['speech']
     } else {
@@ -282,7 +277,7 @@ rest.deleteOne = function($vivContext, memory) {
       deleteOne: true,
       whenStored: memory.whenStored,
     }
-    const body = postQuery($vivContext, DELETE_ONE_URL, params)
+    const body = postQuery($vivContext, SERVICE_URL, params)
     if (body['success']) {
       return body['speech']
     } else {
@@ -303,7 +298,7 @@ rest.getVersion = function($vivContext) {
   const params = {
     list: true,
   }
-  const body = postQuery($vivContext, LIST_URL, params)
+  const body = postQuery($vivContext, SERVICE_URL, params)
   if (body['success']) {
     return {
       success: true,
