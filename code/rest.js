@@ -5,6 +5,9 @@ const rest = {}
 const CLIENT_VERSION = '1.2.0'
 const SERVICE_URL = '/list'
 
+var types = require('types.js')
+var console = require('console')
+
 /**
  * Makes a REST api call, given the urlSuffix (which describes which api method is called), as well
  * as additional parameters that help define the call. Returns the body of the response.
@@ -15,7 +18,6 @@ const SERVICE_URL = '/list'
  * @returns {Object}
  */
 const postQuery = function($vivContext, urlSuffix, additionalParams) {
-  const console = require('console')
   console.log('$vivContext', $vivContext)
   console.log('urlSuffix', urlSuffix)
   console.log('additionalParams', additionalParams)
@@ -92,9 +94,9 @@ const makeMemoriesFromAnswers = function(answers) {
  * @returns {Object}
  */
 rest.memorize = function($vivContext, statement) {
-  const console = require('console')
   if ($vivContext !== null && statement !== null) {
     const params = {
+      actionType: types.ACTION_TYPE_MEMORIZE,
       statement: statement,
     }
     const body = postQuery($vivContext, SERVICE_URL, params)
@@ -153,9 +155,9 @@ rest.memorize = function($vivContext, statement) {
  * @returns {Object}
  */
 rest.recall = function($vivContext, question) {
-  const console = require('console')
   if ($vivContext !== null && question !== null) {
     const params = {
+      actionType: types.ACTION_TYPE_RECALL,
       question: question,
     }
     const body = postQuery($vivContext, SERVICE_URL, params)
@@ -207,10 +209,9 @@ rest.recall = function($vivContext, question) {
  * @returns {Object}
  */
 rest.list = function($vivContext) {
-  const console = require('console')
   if ($vivContext !== null) {
     const params = {
-      list: true,
+      actionType: types.ACTION_TYPE_LIST,
     }
     const body = postQuery($vivContext, SERVICE_URL, params)
     if (body['success'] && body['answers']) {
@@ -245,10 +246,9 @@ rest.list = function($vivContext) {
  * @returns {string}
  */
 rest.deleteAll = function($vivContext) {
-  const console = require('console')
   if ($vivContext !== null) {
     const params = {
-      deleteAll: true,
+      actionType: types.ACTION_TYPE_DELETE_ALL,
     }
     const body = postQuery($vivContext, SERVICE_URL, params)
     if (body['success']) {
@@ -271,10 +271,9 @@ rest.deleteAll = function($vivContext) {
  * @returns {string}
  */
 rest.deleteOne = function($vivContext, memory) {
-  const console = require('console')
   if ($vivContext !== null && memory && memory.whenStored !== null) {
     const params = {
-      deleteOne: true,
+      actionType: types.ACTION_TYPE_DELETE_ONE,
       whenStored: memory.whenStored,
     }
     const body = postQuery($vivContext, SERVICE_URL, params)
@@ -294,9 +293,8 @@ rest.deleteOne = function($vivContext, memory) {
  * Get server version and other helpful information.
  */
 rest.getVersion = function($vivContext) {
-  const console = require('console')
   const params = {
-    list: true,
+    actionType: types.ACTION_TYPE_LIST,
   }
   const body = postQuery($vivContext, SERVICE_URL, params)
   if (body['success']) {
