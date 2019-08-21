@@ -1,4 +1,8 @@
 dialog (Confirmation) {
   match: DeleteSomeAction
-  template("Are you sure you want to delete what was shown?")
+  if ($handsFree) {
+    template("Are you sure you want to delete everything that matched?")
+  } else {
+    template("Are you sure you want to delete what was shown?")
+  }
 }
