@@ -1,0 +1,4 @@
+dialog (Value) {
+  match: Memory (this)
+  template("#{value (this.text)}")
+}

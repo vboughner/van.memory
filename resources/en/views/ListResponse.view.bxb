@@ -14,7 +14,28 @@ result-view {
           read-many-and-next {
             page-size (5)
             list-summary ("#{value(this.speech)}")
-            page-content {
+            page-content (page) {
+              page-marker {
+                if (size(page) >= 1) {
+                  if (size(this.memories) > 5) {
+                    if (isFirstNavPage(page)) {
+                      template ("The first #{size(page)} memories are:")
+                    } else-if (isLastNavPage(page)) {
+                      if (size(page) == 1) {
+                        template ("The last memory is:")
+                      } else {
+                        template ("The last #{size(page)} memories are:")
+                      }
+                    } else {
+                      template ("The next #{size(page)} memories are:")
+                    }
+                  } else-if (size(this.memories) == 1) {
+                    template ("This memory is:")
+                  } else {
+                    template ("These memories are:")
+                  }
+                }
+              }
               underflow-statement (This is the first memory.)
               overflow-statement (Those are all the memories.)
               overflow-question (What would you like to do?)
@@ -24,9 +45,6 @@ result-view {
         }
       }
       where-each (item) {
-        spoken-summary {
-          template ("#{value(item.text)}")
-        }
         layout-macro (memory-summary) {
           param (memory) {
             expression (item)
