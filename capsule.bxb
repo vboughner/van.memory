@@ -12,6 +12,7 @@ capsule {
     modern-prompt-rejection
     modern-default-view-behavior
     no-filtering-with-validation
+    use-input-views-for-selection-list-detail
   }
   store-sections {
     section (Productivity)
