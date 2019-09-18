@@ -6,8 +6,12 @@ result-view {
     if (size (this.memories) == 0) {
       template ("#{value(this.speech)}")
     } else-if (size (this.memories) == 1) {
-      template ("Here's the best match.") {
-        speech ("#{value(this.speech)}")
+      if ($handsFree) {
+        template ("Here's the best match.")
+      } else {
+        template ("Here's the best match.") {
+          speech ("#{value(this.speech)}")
+        }
       }
     } else {
       template ("Here are similar memories.") {
