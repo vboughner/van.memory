@@ -5,7 +5,7 @@
 
 describe('match', () => {
   const displayedText = 'Here\'s the best match.'
-  const spokenText = 'You told me a few seconds ago: my mother\'s birthday is January 22nd.'
+  const spokenText = 'You told me a few seconds ago: my mother\'s birthday is January 22nd'
   const endCharCount = -30 // just test these characters at the end, the beginning may differ
 
   it(`matches the displayed and spoken text`, () => {

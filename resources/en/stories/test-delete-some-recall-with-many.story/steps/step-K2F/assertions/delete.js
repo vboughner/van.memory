@@ -4,7 +4,7 @@
  */
 
 describe('delete', () => {
-  const dialogText = 'Are you sure you want to delete what was shown?'
+  const dialogText = 'Are you sure you want to delete everything that matched?'
 
   it(`matches "${dialogText}"`, () => {
     // get the dialog from the `step` global
