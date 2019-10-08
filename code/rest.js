@@ -35,6 +35,7 @@ const postQuery = function($vivContext, urlSuffix, additionalParams) {
       handsFree: $vivContext.handsFree,
       timezone: $vivContext.timezone,
       storeCountry: $vivContext.storeCountry,
+      vivContext: $vivContext,
     }
     const combinedParams = Object.assign(params, additionalParams)
     const options = {
