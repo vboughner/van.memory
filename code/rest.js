@@ -2,7 +2,7 @@
 
 const rest = {}
 
-const CLIENT_VERSION = '1.2.0'
+const CLIENT_VERSION = '1.3.0'
 const SERVICE_URL = '/list'
 
 var types = require('types.js')
@@ -29,12 +29,6 @@ const postQuery = function($vivContext, urlSuffix, additionalParams) {
     const params = {
       secretClientApiKey: secretClientApiKey,
       clientVersion: CLIENT_VERSION,
-      userId: $vivContext.userId,
-      deviceModel: $vivContext.deviceModel,
-      canTypeId: $vivContext.canTypeId,
-      handsFree: $vivContext.handsFree,
-      timezone: $vivContext.timezone,
-      storeCountry: $vivContext.storeCountry,
       vivContext: $vivContext,
     }
     const combinedParams = Object.assign(params, additionalParams)
