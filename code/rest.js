@@ -2,7 +2,7 @@
 
 const rest = {}
 
-const CLIENT_VERSION = '1.3.0'
+const CLIENT_VERSION = '1.4.0'
 const SERVICE_URL = '/list'
 
 var types = require('types.js')
@@ -304,6 +304,28 @@ rest.getVersion = function($vivContext) {
       success: false,
       serverVersion: 'unknown',
       memoryCount: 0,
+    }
+  }
+}
+
+/**
+ * Get helpful information about how to use capsule.
+ */
+rest.help = function($vivContext) {
+  const params = {
+    actionType: types.ACTION_TYPE_HELP,
+  }
+  const body = postQuery($vivContext, SERVICE_URL, params)
+  if (body['success']) {
+    return {
+      success: true,
+      speech: body['speech'],
+    }
+  } else {
+    console.error('rest.help received an error: ', body['errorCode'], body['errorMessage'])
+    return {
+      success: false,
+      speech: 'I cannot contact the server. Please try again later.',
     }
   }
 }

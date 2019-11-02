@@ -49,5 +49,10 @@ endpoints {
        accepted-inputs ($vivContext)
        local-endpoint ("VersionAction.js")
      }
+
+     action-endpoint (HelpAction) {
+       accepted-inputs ($vivContext)
+       local-endpoint ("HelpAction.js")
+     }
   }
 }

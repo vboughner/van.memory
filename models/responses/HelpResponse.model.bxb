@@ -1,0 +1,11 @@
+structure (HelpResponse) {
+  description (helpful information about how to proceed with this capsule)
+  property (success) {
+    type (SuccessConcept)
+    min (Required) max (One)
+  }
+  property (speech) {
+    type (SpeechConcept)
+    min (Required) max (One)
+  }
+}

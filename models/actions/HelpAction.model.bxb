@@ -1,0 +1,5 @@
+action (HelpAction) {
+  description (gives help and suggests something to do)
+  type(Search)
+  output (HelpResponse)
+}
