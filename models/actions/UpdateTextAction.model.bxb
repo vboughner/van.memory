@@ -2,8 +2,8 @@ action (UpdateTextAction) {
   description (call to update the text of a memory)
   type (Search)
   collect {
-    input (whenStored) {
-      type (MemoryWhenStored)
+    input (memory) {
+      type (Memory)
       min (Required) max (One)
     }
     input (replacementText) {

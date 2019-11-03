@@ -1,0 +1,26 @@
+input-view {
+  match {
+    ReplacementText (this) {
+      to-input: UpdateTextAction
+    }
+  }
+  message {
+    template ("What should the memory be?")
+  }
+  render {
+    form {
+      elements {
+        textarea {
+          id (replacementText)
+          label (Replacement Memory Text)
+          type (ReplacementText)
+          value ("initial content")
+        }
+      }
+      on-submit {
+        goal: ReplacementText
+        value: viv.core.FormElement(replacementText)
+      }
+    }
+  }
+}

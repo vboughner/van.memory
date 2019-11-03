@@ -56,7 +56,7 @@ endpoints {
      }
 
      action-endpoint (UpdateTextAction) {
-       accepted-inputs ($vivContext, whenStored, replacementText)
+       accepted-inputs ($vivContext, memory, replacementText)
        local-endpoint ("UpdateTextAction.js")
      }
   }

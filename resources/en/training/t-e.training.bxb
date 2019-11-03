@@ -3,3 +3,8 @@ train (t-e8s7jb4fylhzs0trjz771ztng) {
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
   last-modified (1565189901977)
 }
+train (t-ephxlgnk3ylai7364x50zw2fh) {
+  utterance ([g:UpdateTextResponse:continue:Memory] edit this memory)
+  plan (Y2BkkC1LzNPLTc3NL6rUCy1ISSxJDUmtKAlKLS7IzytOZQABRhABAA==)
+  last-modified (1572804965076)
+}

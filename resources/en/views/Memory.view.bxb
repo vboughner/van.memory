@@ -30,6 +30,9 @@ result-view {
 
   conversation-drivers {
     conversation-driver {
+      template("Edit this memory")
+    }
+    conversation-driver {
       template("Delete this memory")
     }
   }
