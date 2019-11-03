@@ -330,4 +330,35 @@ rest.help = function($vivContext) {
   }
 }
 
+/**
+ * Update the text of a memory.
+ */
+rest.updateText = function($vivContext, whenStored, replacementText) {
+  const params = {
+    actionType: types.ACTION_TYPE_UPDATE_TEXT,
+    whenStored: whenStored,
+    replacementText: replacementText,
+  }
+  const body = postQuery($vivContext, SERVICE_URL, params)
+  if (body['success']) {
+    return {
+      success: true,
+      memories: [
+        {
+          text: body['text'],
+          whenStored: body['whenStored'],
+          howLongAgo: body['howLongAgo'],
+        },
+      ],
+      speech: body['speech'],
+    }
+  } else {
+    console.error('rest.updateText received an error: ', body['errorCode'], body['errorMessage'])
+    return {
+      success: false,
+      speech: 'I cannot contact the server. Please try again later.',
+    }
+  }
+}
+
 module.exports = rest

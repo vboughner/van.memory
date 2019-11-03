@@ -54,5 +54,10 @@ endpoints {
        accepted-inputs ($vivContext)
        local-endpoint ("HelpAction.js")
      }
+
+     action-endpoint (UpdateTextAction) {
+       accepted-inputs ($vivContext, whenStored, replacementText)
+       local-endpoint ("UpdateTextAction.js")
+     }
   }
 }
