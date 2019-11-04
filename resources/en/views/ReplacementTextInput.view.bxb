@@ -5,22 +5,23 @@ input-view {
     }
   }
   message {
-    template ("What should the memory be?")
+    template ("What is the text?")
   }
   render {
     form {
       elements {
         textarea {
           id (replacementText)
-          label (Replacement Memory Text)
+          label (Memory)
           type (ReplacementText)
-          value ("initial content")
+          value ("initial content here")
         }
       }
       on-submit {
         goal: ReplacementText
         value: viv.core.FormElement(replacementText)
       }
+      submit-button (Update)
     }
   }
 }
