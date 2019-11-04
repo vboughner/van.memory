@@ -1,11 +1,11 @@
 input-view {
   match {
     ReplacementText (this) {
-      to-input: UpdateTextAction
+      to-input: UpdateTextAction (action)
     }
   }
   message {
-    template ("What is the text?")
+    template ("What is the updated memory?")
   }
   render {
     form {
@@ -14,14 +14,14 @@ input-view {
           id (replacementText)
           label (Memory)
           type (ReplacementText)
-          value ("initial content here")
+          value ("#{raw(action.memory.text)}")
         }
       }
       on-submit {
         goal: ReplacementText
         value: viv.core.FormElement(replacementText)
       }
-      submit-button (Update)
+      submit-button (Save)
     }
   }
 }
