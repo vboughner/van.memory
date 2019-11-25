@@ -19,6 +19,13 @@ capsule {
   }
   store-sections {
     section (Productivity)
+    section (Utilities)
   }
   default-action (HelpAction)
+  device-models {
+    all
+  }
+  store-countries {
+    all
+  }
 }
