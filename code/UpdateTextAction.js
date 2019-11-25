@@ -6,6 +6,13 @@
 module.exports.function = function updateTextAction($vivContext, memory, replacementText) {
   const util = require("util.js")
   const rest = require("rest.js")
-  const response = rest.updateText($vivContext, memory.whenStored, replacementText)
-  return response
+  if (replacementText.valueOf() !== memory.text.valueOf()) {
+    return rest.updateText($vivContext, memory.whenStored, replacementText)
+  } else {
+    return {
+      success: false,
+      memories: [ memory ],
+      speech: 'That memory remains unchanged.',
+    }
+  }
 }
