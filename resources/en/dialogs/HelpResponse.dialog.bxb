@@ -1,6 +1,0 @@
-dialog (Progress) {
-  match {
-    HelpResponse
-  }
-  template("")
-}

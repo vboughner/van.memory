@@ -3,8 +3,9 @@
 /**
  * Gets help about how to use the capsule.
  */
-module.exports.function = function helpAction($vivContext) {
-  const rest = require("rest.js")
-  const response = rest.help($vivContext)
-  return response
+module.exports.function = function helpAction() {
+  return {
+    success: true,
+    speech: "Tell me to remember something, and I'll remember it. Ask me a question that includes a few words from that memory, and I'll find it for you.",
+  }
 }

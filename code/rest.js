@@ -105,14 +105,14 @@ rest.memorize = function($vivContext, statement) {
             howLongAgo: body['howLongAgo'],
           },
         ],
-        speech: body['speech'],
+        speech: 'I will remember that you said: ' + body['text'] + '.',
       }
     } else {
       console.error('rest.memorize received an error: ', body['errorCode'], body['errorMessage'])
       return {
         success: body['success'],
         memories: [],
-        speech: body['errorMessage'] || body['speech']
+        speech: 'I ran into a problem and could not store what you said.'
       }
     }
   } else {
@@ -161,15 +161,22 @@ rest.recall = function($vivContext, question) {
       return {
         success: body['success'],
         question: question,
-        speech: body['speech'],
+        speech: 'You told me ' + memories[0].howLongAgo + ': ' + memories[0].text + '.',
         memories: memories,
       }
     } else {
       console.error('rest.recall received an error: ', body['errorCode'], body['errorMessage'])
+      let speech = "I can't find a memory that makes sense as an answer for that."
+      if (body['memoryCount'] === 0) {
+        speech = 'There are no memories, please ask me to remember something first.'
+      }
+      else if (body['searchText']) {
+        speech = "I can't find a memory that matches a search for " + body['searchText'] + ". Please try another question."
+      }
       return {
         success: body['success'],
         question: question,
-        speech: body['errorMessage'] || body['speech'],
+        speech: speech,
         memories: [],
       }
     }
@@ -211,17 +218,20 @@ rest.list = function($vivContext) {
     const body = postQuery($vivContext, SERVICE_URL, params)
     if (body['success'] && body['answers']) {
       const memories = makeMemoriesFromAnswers(body['answers'])
+      const speech = memories.length > 0
+          ? 'You have ' + memories.length + (memories.length > 1 ? ' memories.' : ' memory.')
+          : 'There are no memories.'
       return {
         success: body['success'],
         memories: memories,
-        speech: body['speech'],
+        speech: speech,
       }
     } else {
       console.error('rest.list received an error: ', body['errorCode'], body['errorMessage'])
       return {
         success: false,
         memories: [],
-        speech: body['errorMessage'] || body['speech'],
+        speech: 'There was a problem and I could not retrieve the memories.'
       }
     }
   } else {
@@ -247,10 +257,10 @@ rest.deleteAll = function($vivContext) {
     }
     const body = postQuery($vivContext, SERVICE_URL, params)
     if (body['success']) {
-      return body['speech']
+      return 'I deleted all memories.'
     } else {
       console.error('rest.deleteAll received an error: ', body['errorCode'], body['errorMessage'])
-      return body['errorMessage'] || body['speech']
+      return 'There was a problem and I could not delete all memories.'
     }
   } else {
     console.error('rest.deleteAll received null $vivContext')
@@ -273,10 +283,10 @@ rest.deleteOne = function($vivContext, memory) {
     }
     const body = postQuery($vivContext, SERVICE_URL, params)
     if (body['success']) {
-      return body['speech']
+      return 'I deleted that memory.'
     } else {
       console.error('rest.deleteOne received an error: ', body['errorCode'], body['errorMessage'])
-      return body['errorMessage'] || body['speech']
+      return 'There was a problem and I could not delete that memory.'
     }
   } else {
     console.error('rest.deleteOne received null $vivContext, memory, or memory.whenStored')
@@ -309,28 +319,6 @@ rest.getVersion = function($vivContext) {
 }
 
 /**
- * Get helpful information about how to use capsule.
- */
-rest.help = function($vivContext) {
-  const params = {
-    actionType: types.ACTION_TYPE_HELP,
-  }
-  const body = postQuery($vivContext, SERVICE_URL, params)
-  if (body['success']) {
-    return {
-      success: true,
-      speech: body['speech'],
-    }
-  } else {
-    console.error('rest.help received an error: ', body['errorCode'], body['errorMessage'])
-    return {
-      success: false,
-      speech: 'I cannot contact the server. Please try again later.',
-    }
-  }
-}
-
-/**
  * Update the text of a memory.
  */
 rest.updateText = function($vivContext, whenStored, replacementText) {
@@ -350,13 +338,13 @@ rest.updateText = function($vivContext, whenStored, replacementText) {
           howLongAgo: body['howLongAgo'],
         },
       ],
-      speech: body['speech'],
+      speech: 'I updated that memory, and will remember that you said: ' + body['text'] + '.',
     }
   } else {
     console.error('rest.updateText received an error: ', body['errorCode'], body['errorMessage'])
     return {
       success: false,
-      speech: 'I cannot contact the server. Please try again later.',
+      speech: 'There was a problem and I could not update that memory.',
     }
   }
 }
