@@ -287,7 +287,7 @@ rest.deleteOne = function($vivContext, memory) {
 }
 
 /**
- * Get server version and other helpful information.
+ * Get server version and number of memories.
  */
 rest.getVersion = function($vivContext) {
   const params = {

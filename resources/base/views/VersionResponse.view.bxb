@@ -2,7 +2,15 @@ result-view {
   match: VersionResponse (this)
 
   message {
-    template ("#{value(this.speech)}")
+    if (this.success) {
+      template-macro (VERSION_IS) {
+        param (serverVersion) {
+          expression (this.serverVersion)
+        }
+      }
+    } else {
+      template-macro (VERSION_PROBLEM)
+    }
   }
 
   render {

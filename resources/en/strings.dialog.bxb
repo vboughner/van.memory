@@ -304,6 +304,25 @@ template-macro-def (UPDATED_MEMORY_SPOKEN) {
   }
 }
 
+template-macro-def (VERSION_IS) {
+  params {
+    param (serverVersion) {
+      type (core.Text)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("My Brain lambda version is #{value(serverVersion)}")
+  }
+}
+
+template-macro-def (VERSION_PROBLEM) {
+  content {
+    template ("I had a problem trying to get the server version.")
+  }
+}
+
 template-macro-def (CV_LIST_ALL_MEMORIES) {
   content {
     template ("List all memories")
