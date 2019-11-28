@@ -4,8 +4,5 @@ structure (HelpResponse) {
     type (SuccessConcept)
     min (Required) max (One)
   }
-  property (speech) {
-    type (SpeechConcept)
-    min (Required) max (One)
-  }
+
 }

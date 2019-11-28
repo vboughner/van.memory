@@ -2,7 +2,7 @@ result-view {
   match: HelpResponse (this)
 
   message {
-    template ("#{value(this.speech)}")
+    template-macro (HELP_TEXT)
   }
 
   render {

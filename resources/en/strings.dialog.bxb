@@ -323,6 +323,12 @@ template-macro-def (VERSION_PROBLEM) {
   }
 }
 
+template-macro-def (HELP_TEXT) {
+  content {
+    template("Tell me to remember something, and I'll remember it. Ask me a question that includes a few words from that memory, and I'll find it for you.")
+  }
+}
+
 template-macro-def (CV_LIST_ALL_MEMORIES) {
   content {
     template ("List all memories")
