@@ -4,7 +4,7 @@
  */
 
 describe('no-answer', () => {
-  const dialogText = 'I don\'t have a memory that makes sense as an answer for that.'
+  const dialogText = 'I can\'t find a memory that matches a search for supercalifragalistic. Please try another question.'
 
   it(`matches "${dialogText}"`, () => {
     // get the dialog from the `step` global
