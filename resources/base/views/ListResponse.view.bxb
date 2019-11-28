@@ -1,11 +1,15 @@
 result-view {
-  match: ListResponse (this) {
-    min (Required)
-    max (One)
-  }
+  match: ListResponse (this)
 
   message {
-    template ("#{value(this.speech)}")
+    template-macro (LIST_MEMORIES) {
+      param (success) {
+        expression (this.success)
+      }
+      param (memories) {
+        expression (this.memories)
+      }
+    }
   }
 
   render {
@@ -14,7 +18,16 @@ result-view {
         if ($handsFree) {
           read-many-and-next {
             page-size (5)
-            list-summary ("#{value(this.speech)}")
+            list-summary {
+              template-macro (LIST_MEMORIES) {
+                param (success) {
+                  expression (this.success)
+                }
+                param (memories) {
+                  expression (this.memories)
+                }
+              }
+            }
             page-content (page) {
               page-marker {
                 if (size(page) >= 1) {

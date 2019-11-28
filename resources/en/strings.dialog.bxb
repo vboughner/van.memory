@@ -329,6 +329,34 @@ template-macro-def (HELP_TEXT) {
   }
 }
 
+template-macro-def (LIST_MEMORIES) {
+  params {
+    param (success) {
+      type (core.Boolean)
+      min (Required)
+      max(One)
+    }
+    param (memories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
+    }
+  }
+  content {
+    if (success) {
+      if (size(memories) == 0) {
+        template ("There are no memories.")
+      } else-if (size(memories) == 1) {
+        template ("You have 1 memory.")
+      } else {
+        template ("You have #{size(memories)} memories.")
+      }
+    } else {
+      template("There was a problem and I could not retrieve the memories.")
+    }
+  }
+}
+
 template-macro-def (CV_LIST_ALL_MEMORIES) {
   content {
     template ("List all memories")

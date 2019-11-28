@@ -189,7 +189,6 @@ rest.recall = function($vivContext, question) {
  *
  * {
  *   success,
- *   speech,
  *   memories: [
  *     {
  *       text,
@@ -210,30 +209,20 @@ rest.list = function($vivContext) {
     const body = postQuery($vivContext, SERVICE_URL, params)
     if (body['success'] && body['answers']) {
       const memories = makeMemoriesFromAnswers(body['answers'])
-      const speech = memories.length > 0
-          ? 'You have ' + memories.length + (memories.length > 1 ? ' memories.' : ' memory.')
-          : 'There are no memories.'
       return {
         success: body['success'],
         memories: memories,
-        speech: speech,
       }
     } else {
       console.error('rest.list received an error: ', body['errorCode'], body['errorMessage'])
-      return {
-        success: false,
-        memories: [],
-        speech: 'There was a problem and I could not retrieve the memories.'
-      }
     }
   } else {
     console.error('rest.list received null $vivContext')
-    return {
-      success: false,
-      memories: [],
-      speech: 'I could not understand who was asking.',
-    }
   }
+  return {
+    success: false,
+    memories: [],
+  }  
 }
 
 /**
