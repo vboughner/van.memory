@@ -1,0 +1,4 @@
+dialog (Progress) {
+  match: DeleteJustMemorizedResponse
+  template-macro (DELETING_THE_MEMORY)
+}

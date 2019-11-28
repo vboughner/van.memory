@@ -1,6 +1,0 @@
-dialog (Progress) {
-  match {
-    RecallLastMemoryResponse
-  }
-  template("Recalling most recent memory...")
-}

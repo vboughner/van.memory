@@ -1,7 +1,0 @@
-dialog (Progress) {
-  match {
-    DeleteAllResponse
-  }
-  template("Deleting all memories...")
-}
-

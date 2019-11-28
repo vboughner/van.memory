@@ -1,0 +1,4 @@
+dialog (ActionAborted) {
+  match: DeleteAllAction
+  template-macro (WONT_DELETE_ANY)
+}

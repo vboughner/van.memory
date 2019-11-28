@@ -1,0 +1,4 @@
+dialog (Confirmation) {
+  match: DeleteLastMemoryAction
+  template-macro (CONFIRM_DELETE_RECENT)
+}

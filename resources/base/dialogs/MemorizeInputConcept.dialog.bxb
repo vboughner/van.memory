@@ -1,0 +1,4 @@
+dialog (Elicitation) {
+  match: MemorizeInputConcept
+  template-macro (WHAT_TO_MEMORIZE)
+}

@@ -1,0 +1,4 @@
+dialog (Progress) {
+  match: MemorizeResponse
+  template-macro (STORING_MEMORY)
+}

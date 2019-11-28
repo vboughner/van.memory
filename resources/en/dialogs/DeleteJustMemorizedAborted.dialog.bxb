@@ -1,4 +1,0 @@
-dialog (ActionAborted) {
-  match : DeleteJustMemorizedAction
-  template ("Okay, I won't delete it.")
-}

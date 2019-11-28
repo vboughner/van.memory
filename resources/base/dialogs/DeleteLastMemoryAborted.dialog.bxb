@@ -1,0 +1,4 @@
+dialog (ActionAborted) {
+  match: DeleteLastMemoryAction
+  template-macro (WONT_DELETE_IT)
+}

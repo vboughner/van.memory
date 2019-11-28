@@ -1,4 +1,0 @@
-dialog (ActionAborted) {
-  match : DeleteLastMemoryAction
-  template ("Okay, I won't delete it.")
-}

@@ -1,0 +1,8 @@
+dialog (Confirmation) {
+  match: DeleteSomeAction
+  if ($handsFree) {
+    template-macro (CONFIRM_DELETE_MATCHED)
+  } else {
+    template-macro (CONFIRM_DELETE_SHOWN)
+  }
+}

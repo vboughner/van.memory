@@ -1,6 +1,0 @@
-dialog (Progress) {
-  match {
-    DeleteSomeResponse
-  }
-  template("Deleting what was shown...")
-}

@@ -1,6 +1,0 @@
-dialog (Elicitation) {
-  match {
-    MemorizeInputConcept
-  }
-  template("What would you like me to memorize for you?")
-}

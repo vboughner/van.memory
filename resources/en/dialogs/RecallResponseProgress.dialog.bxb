@@ -1,6 +1,0 @@
-dialog (Progress) {
-  match {
-    RecallResponse
-  }
-  template("Searching memories...")
-}

@@ -1,0 +1,347 @@
+template-macro-def (WONT_DELETE_ANY) {
+  content {
+    template ("Okay, I won't delete any memories.")
+  }
+}
+
+template-macro-def (CONFIRM_DELETE_ALL) {
+  content {
+    template("Are you sure you want to delete all memories?")
+  }
+}
+
+template-macro-def (DELETING_ALL) {
+  content {
+    template ("Deleting all memories...")
+  }
+}
+
+template-macro-def (WONT_DELETE_IT) {
+  content {
+    template ("Okay, I won't delete it.")
+  }
+}
+
+template-macro-def (CONFIRM_DELETE_JUST_REMEMBERED) {
+  content {
+    template ("You just asked me to remember that. Are you sure you want to delete it?")
+  }
+}
+
+template-macro-def (DELETING_THE_MEMORY) {
+  content {
+    template ("Deleting the memory...")
+  }
+}
+
+template-macro-def (CONFIRM_DELETE_RECENT) {
+  content {
+    template ("Are you sure you want to delete the most recently stored memory?")
+  }
+}
+
+template-macro-def (DELETING_RECENT) {
+  content {
+    template ("Deleting most recently stored memory...")
+  }
+}
+
+template-macro-def (DELETING_ONE) {
+  content {
+    template ("Deleting one memory...")
+  }
+}
+
+template-macro-def (CONFIRM_DELETE_MATCHED) {
+  content {
+    template ("Are you sure you want to delete everything that matched?")
+  }
+}
+
+template-macro-def (CONFIRM_DELETE_SHOWN) {
+  content {
+    template ("Are you sure you want to delete what was shown?")
+  }
+}
+
+template-macro-def (DELETING_SHOWN) {
+  content {
+    template ("Deleting what was shown...")
+  }
+}
+
+template-macro-def (GETTING_MEMORIES) {
+  content {
+    template ("Getting memories...")
+  }
+}
+
+template-macro-def (WHAT_TO_MEMORIZE) {
+  content {
+    template ("What would you like me to memorize for you?")
+  }
+}
+
+template-macro-def (STORING_MEMORY) {
+  content {
+    template ("Storing memory...")
+  }
+}
+
+template-macro-def (WHAT_TO_RECALL) {
+  content {
+    template ("What would you like me to recall for you?")
+  }
+}
+
+template-macro-def (RECALLING_RECENT) {
+  content {
+    template ("Recalling most recent memory...")
+  }
+}
+
+template-macro-def (SEARCHING_MEMORIES) {
+  content {
+    template ("Searching memories...")
+  }
+}
+
+template-macro-def (WILL_REMEMBER) {
+  params {
+    param (spokenText) {
+      type (core.Text)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("I'll remember what you said.") {
+      speech ("#{value(spokenText)}")
+    }
+  }
+}
+
+template-macro-def (HERES_RECENT_SPOKEN) {
+  params {
+    param (spokenText) {
+      type (core.Text)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("Here's the most recent memory.") {
+      speech ("#{value(spokenText)}")
+    }
+  }
+}
+
+template-macro-def (HERES_MATCH) {
+  content {
+    template ("Here's the best match.")
+  }
+}
+
+template-macro-def (HERES_MATCH_SPOKEN) {
+  params {
+    param (spokenText) {
+      type (core.Text)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("Here's the best match.") {
+      speech ("#{value(spokenText)}")
+    }
+  }
+}
+
+template-macro-def (HERES_SIMILAR) {
+  content {
+    template ("Here are similar memories.")
+  }
+}
+
+template-macro-def (FIRST_MEMORY) {
+  content {
+    template ("This is the first memory.")
+  }
+}
+
+template-macro-def (ALL_MEMORIES) {
+  content {
+    template ("Those are all the memories.")
+  }
+}
+
+template-macro-def (NEXT_MEMORY) {
+  content {
+    template ("Would you like to hear the next matching memory?")
+  }
+}
+
+template-macro-def (YOU_TOLD_ME) {
+  params {
+    param (memory) {
+      type (Memory)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("You told me #{value(memory.howLongAgo)}, #{value(memory.text)}")
+  }
+}
+
+template-macro-def (ALL_SIMILAR_MEMORIES) {
+  params {
+    param (spokenText) {
+      type (core.Text)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("Here are similar memories.") {
+      speech ("#{value(spokenText)} Here are all memories that sound similar:")
+    }
+  }
+}
+
+template-macro-def (FIRST_N_MEMORIES) {
+  params {
+    param (pageSize) {
+      type (core.Integer)
+      min (Required)
+    }
+  }
+  content {
+    template ("The first #{value(pageSize)} memories are:")
+  }
+}
+
+template-macro-def (LAST_N_MEMORIES) {
+  params {
+    param (pageSize) {
+      type (core.Integer)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("The last #{value(pageSize)} memories are:")
+  }
+}
+
+template-macro-def (NEXT_N_MEMORIES) {
+  params {
+    param (pageSize) {
+      type (core.Integer)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("The next #{value(pageSize)} memories are:")
+  }
+}
+
+template-macro-def (LAST_MEMORY) {
+  content {
+    template ("The last memory is:")
+  }
+}
+
+template-macro-def (THIS_MEMORY) {
+  content {
+    template ("This memory is:")
+  }
+}
+
+template-macro-def (THESE_MEMORIES) {
+  content {
+    template ("These memories are:")
+  }
+}
+
+template-macro-def (WHAT_TO_DO) {
+  content {
+    template (What would you like to do?)
+  }
+}
+
+template-macro-def (WOULD_LIKE_TO_HEAR_MORE) {
+  content {
+    template (Would you like to hear more memories?)
+  }
+}
+
+template-macro-def (WHAT_IS_UPDATED_MEMORY) {
+  content {
+    template ("What is the updated memory?")
+  }
+}
+
+template-macro-def (UPDATED_MEMORY_SPOKEN) {
+  params {
+    param (spokenText) {
+      type (core.Text)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("I updated that memory.") {
+      speech ("#{value(spokenText)}")
+    }
+  }
+}
+
+template-macro-def (CV_LIST_ALL_MEMORIES) {
+  content {
+    template ("List all memories")
+  }
+}
+
+template-macro-def (CV_REMEMBER_HELP) {
+  content {
+    template ("Remember that I heard the help")
+  }
+}
+
+template-macro-def (CV_HEARD_HELP) {
+  content {
+    template ("Have I heard the help?")
+  }
+}
+
+template-macro-def (CV_MOST_RECENT_MEMORY) {
+  content {
+    template ("Most recent memory")
+  }
+}
+
+template-macro-def (CV_DELETE_ALL_MEMORIES) {
+  content {
+    template ("Delete all memories")
+  }
+}
+
+template-macro-def (CV_DELETE_THIS_MEMORY) {
+  content {
+    template ("Delete this memory")
+  }
+}
+
+template-macro-def (CV_DELETE_THESE_MEMORIES) {
+  content {
+    template ("Delete these memories")
+  }
+}
+
+template-macro-def (CV_EDIT_THIS_MEMORY) {
+  content {
+    template ("Edit this memory")
+  }
+}

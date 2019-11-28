@@ -1,0 +1,23 @@
+result-view {
+  match: HelpResponse (this)
+
+  message {
+    template ("#{value(this.speech)}")
+  }
+
+  render {
+    nothing
+  }
+
+  conversation-drivers {
+    conversation-driver {
+      template-macro (CV_REMEMBER_HELP)
+    }
+    conversation-driver {
+      template-macro (CV_HEARD_HELP)
+    }
+    conversation-driver {
+      template-macro (CV_LIST_ALL_MEMORIES)
+    }
+  }
+}

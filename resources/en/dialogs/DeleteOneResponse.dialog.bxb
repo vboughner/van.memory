@@ -1,6 +1,0 @@
-dialog (Progress) {
-  match {
-    DeleteOneResponse
-  }
-  template("Deleting one memory...")
-}

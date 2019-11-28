@@ -1,0 +1,4 @@
+dialog (Progress) {
+  match: RecallResponse
+  template-macro (SEARCHING_MEMORIES)
+}

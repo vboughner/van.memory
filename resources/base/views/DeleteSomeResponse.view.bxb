@@ -1,0 +1,15 @@
+result-view {
+  match: DeleteSomeResponse (this)
+
+  render {
+    nothing
+  }
+
+  message ("#{value(this)}")
+
+  conversation-drivers {
+    conversation-driver {
+      template-macro (CV_LIST_ALL_MEMORIES)
+    }
+  }
+}

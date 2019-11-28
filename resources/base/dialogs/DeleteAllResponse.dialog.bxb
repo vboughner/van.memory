@@ -1,0 +1,4 @@
+dialog (Progress) {
+  match: DeleteAllResponse
+  template-macro (DELETING_ALL)
+}

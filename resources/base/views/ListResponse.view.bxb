@@ -1,0 +1,89 @@
+result-view {
+  match: ListResponse (this) {
+    min (Required)
+    max (One)
+  }
+
+  message {
+    template ("#{value(this.speech)}")
+  }
+
+  render {
+    list-of (this.memories) {
+      navigation-mode {
+        if ($handsFree) {
+          read-many-and-next {
+            page-size (5)
+            list-summary ("#{value(this.speech)}")
+            page-content (page) {
+              page-marker {
+                if (size(page) >= 1) {
+                  if (size(this.memories) > 5) {
+                    if (isFirstNavPage(page)) {
+                      template-macro (FIRST_N_MEMORIES) {
+                        param (pageSize) {
+                          expression (size(page))
+                        }
+                      }
+                    } else-if (isLastNavPage(page)) {
+                      if (size(page) == 1) {
+                        template-macro (LAST_MEMORY)
+                      } else {
+                        template-macro (LAST_N_MEMORIES) {
+                          param (pageSize) {
+                            expression (size(page))
+                          }
+                        }
+                      }
+                    } else {
+                      template-macro (NEXT_N_MEMORIES) {
+                        param (pageSize) {
+                          expression (size(page))
+                        }
+                      }
+                    }
+                  } else-if (size(this.memories) == 1) {
+                    template-macro (THIS_MEMORY)
+                  } else {
+                    template-macro (THESE_MEMORIES)
+                  }
+                }
+              }
+
+              underflow-statement {
+                template-macro (FIRST_MEMORY)
+              }
+              overflow-statement {
+                template-macro (ALL_MEMORIES)
+              }
+              overflow-question {
+                template-macro (WHAT_TO_DO)
+              }
+              next-page-question {
+                template-macro (WOULD_LIKE_TO_HEAR_MORE)
+              }
+            }
+          }
+        }
+      }
+      where-each (item) {
+        layout-macro (memory-summary) {
+          param (memory) {
+            expression (item)
+          }
+        }
+      }
+    }
+  }
+
+  conversation-drivers {
+    if (size (this.memories) > 0) {
+      conversation-driver {
+        template-macro (CV_MOST_RECENT_MEMORY)
+      }
+      conversation-driver {
+        template-macro (CV_DELETE_ALL_MEMORIES)
+      }
+    }
+  }
+}

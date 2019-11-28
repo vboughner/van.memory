@@ -1,0 +1,4 @@
+dialog (Confirmation) {
+  match: DeleteJustMemorizedAction
+  template-macro (CONFIRM_DELETE_JUST_REMEMBERED)
+}

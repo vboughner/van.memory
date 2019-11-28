@@ -1,4 +1,0 @@
-dialog (ActionAborted) {
-  match : DeleteSomeAction
-  template ("Okay, I won't delete any memories.")
-}

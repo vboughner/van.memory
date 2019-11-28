@@ -1,0 +1,4 @@
+dialog (Progress) {
+  match: ListResponse
+  template-macro (GETTING_MEMORIES)
+}

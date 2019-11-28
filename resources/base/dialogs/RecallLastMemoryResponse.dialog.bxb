@@ -1,0 +1,4 @@
+dialog (Progress) {
+  match: RecallLastMemoryResponse
+  template-macro (RECALLING_RECENT)
+}

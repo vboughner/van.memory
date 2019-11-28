@@ -1,0 +1,4 @@
+dialog (Confirmation) {
+  match: DeleteAllAction
+  template-macro (CONFIRM_DELETE_ALL)
+}

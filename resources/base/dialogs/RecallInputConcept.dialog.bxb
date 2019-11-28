@@ -1,0 +1,4 @@
+dialog (Elicitation) {
+  match: RecallInputConcept
+  template-macro (WHAT_TO_RECALL)
+}

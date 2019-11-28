@@ -1,0 +1,4 @@
+dialog (Progress) {
+  match: DeleteLastMemoryResponse
+  template-macro (DELETING_RECENT)
+}

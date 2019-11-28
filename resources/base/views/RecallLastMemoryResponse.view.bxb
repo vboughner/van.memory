@@ -1,0 +1,42 @@
+result-view {
+  match: RecallLastMemoryResponse (this)
+
+  message {
+    if (this.success) {
+      template-macro (HERES_RECENT_SPOKEN) {
+        param (spokenText) {
+          expression (this.speech)
+        }
+      }
+    } else {
+      template ("#{value(this.speech)}")
+    }
+  }
+
+  render {
+    if (this.success) {
+      list-of (this.memories) {
+        where-each (item) {
+          layout-macro (memory-summary) {
+            param (memory) {
+              expression (item)
+            }
+          }
+        }
+      }
+    } else {
+      nothing
+    }
+  }
+
+  conversation-drivers {
+    conversation-driver {
+      template-macro (CV_LIST_ALL_MEMORIES)
+    }
+    if (this.success) {
+      conversation-driver {
+        template-macro (CV_DELETE_THIS_MEMORY)
+      }
+    }
+  }
+}

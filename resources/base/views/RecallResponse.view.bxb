@@ -1,0 +1,76 @@
+result-view {
+  match: RecallResponse (this)
+
+  message {
+    if (size (this.memories) == 0) {
+      template ("#{value(this.speech)}")
+    } else-if (size (this.memories) == 1) {
+      if ($handsFree) {
+        template-macro (HERES_MATCH)
+      } else {
+        template-macro (HERES_MATCH_SPOKEN) {
+          param (spokenText) {
+            expression (this.speech)
+          }
+        }
+      }
+    } else {
+      template-macro (ALL_SIMILAR_MEMORIES) {
+        param (spokenText) {
+          expression (this.speech)
+        }
+      }
+    }
+  }
+
+  render {
+    list-of (this.memories) {
+      navigation-mode {
+        if ($handsFree) {
+          read-one-and-next {
+            page-content {
+              underflow-statement {
+                template-macro (FIRST_MEMORY)
+              }
+              overflow-statement {
+                template-macro (ALL_MEMORIES)
+              }
+              next-item-question {
+                template-macro (NEXT_MEMORY)
+              }
+            }
+          }
+        }
+      }
+      where-each (item) {
+        spoken-summary {
+          template-macro (YOU_TOLD_ME) {
+            param (memory) {
+              expression (item)
+            }
+          }
+        }
+        layout-macro (memory-summary) {
+          param (memory) {
+            expression (item)
+          }
+        }
+      }
+    }
+  }
+
+  conversation-drivers {
+    conversation-driver {
+      template-macro (CV_LIST_ALL_MEMORIES)
+    }
+    if (size (this.memories) == 1) {
+      conversation-driver {
+        template-macro (CV_DELETE_THIS_MEMORY)
+      }
+    } else-if (size (this.memories) > 1) {
+      conversation-driver {
+        template-macro (CV_DELETE_THESE_MEMORIES)
+      }
+    }
+  }
+}
