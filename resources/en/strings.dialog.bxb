@@ -108,16 +108,22 @@ template-macro-def (SEARCHING_MEMORIES) {
 
 template-macro-def (WILL_REMEMBER) {
   params {
-    param (spokenText) {
-      type (core.Text)
-      min (Required)
-      max (One)
+    param (memories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
     }
   }
   content {
     template ("I'll remember what you said.") {
-      speech ("#{value(spokenText)}")
+      speech ("I will remember that you said: #{value(memories[0].text)}.")
     }
+  }
+}
+
+template-macro-def (PROBLEM_CANNOT_STORE) {
+  content {
+    template ("I ran into a problem and could not store what you said.")
   }
 }
 

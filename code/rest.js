@@ -81,7 +81,6 @@ const makeMemoriesFromAnswers = function(answers) {
  *       howLongAgo,
  *     },
  *   ],
- *   speech,
  * }
  *
  * @param $vivContext
@@ -89,7 +88,7 @@ const makeMemoriesFromAnswers = function(answers) {
  * @returns {Object}
  */
 rest.memorize = function($vivContext, statement) {
-  if ($vivContext !== null && statement !== null) {
+  if ($vivContext && statement) {
     const params = {
       actionType: types.ACTION_TYPE_MEMORIZE,
       statement: statement,
@@ -97,7 +96,7 @@ rest.memorize = function($vivContext, statement) {
     const body = postQuery($vivContext, SERVICE_URL, params)
     if (body['success']) {
       return {
-        success: body['success'],
+        success: true,
         memories: [
           {
             text: body['text'],
@@ -105,23 +104,16 @@ rest.memorize = function($vivContext, statement) {
             howLongAgo: body['howLongAgo'],
           },
         ],
-        speech: 'I will remember that you said: ' + body['text'] + '.',
       }
     } else {
       console.error('rest.memorize received an error: ', body['errorCode'], body['errorMessage'])
-      return {
-        success: body['success'],
-        memories: [],
-        speech: 'I ran into a problem and could not store what you said.'
-      }
     }
   } else {
     console.error('rest.memorize received null $vivContext or statement')
-    return {
-      success: false,
-      memories: [],
-      speech: 'Unfortunately, I had a problem and could not store what you said. Please try again.',
-    }
+  }
+  return {
+    success: false,
+    memories: [],
   }
 }
 

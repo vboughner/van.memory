@@ -4,12 +4,12 @@ result-view {
   message {
     if (this.success) {
       template-macro (WILL_REMEMBER) {
-        param (spokenText) {
-          expression (this.speech)
+        param (memories) {
+          expression (this.memories)
         }
       }
     } else {
-      template ("#{value(this.speech)}")
+      template-macro (PROBLEM_CANNOT_STORE)
     }
   }
 
