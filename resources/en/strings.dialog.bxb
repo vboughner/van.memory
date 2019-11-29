@@ -163,7 +163,7 @@ template-macro-def (HERES_NO_MATCH) {
     if (memoryCount == 0) {
       template ("There are no memories, please ask me to remember something first.")
     } else-if (exists(searchText)) {
-      template ("I can't find a memory that matches a search for #{value(searchText)}. Please try another question.")
+      template ("I can't find a memory that matches a search for \"#{value(searchText)}\". Please try another question.")
     } else {
       template ("I can't find a memory that makes sense as an answer for that.")
     }
