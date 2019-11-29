@@ -5,19 +5,19 @@
  */
 module.exports.function = function deleteSomeAction($vivContext, recallResponse) {
   const rest = require("rest.js")
-  let count = 0
+  const deletedMemories = []
   if (recallResponse.memories) {
     for (let i = 0; i < recallResponse.memories.length; i++) {
       // TODO: replace with a more efficient REST api for deleting some memories
       const response = rest.deleteOne($vivContext, recallResponse.memories[i])
       if (response.success) {
-        count++
+        deletedMemories.push(recallResponse.memories[i])
       }
     }
   }
-  const success = Boolean(count == recallResponse.memories.length)
+  const success = Boolean(deletedMemories.length == recallResponse.memories.length)
   return {
     success: success,
-    count: count,
+    deletedMemories: deletedMemories,
   }
 }

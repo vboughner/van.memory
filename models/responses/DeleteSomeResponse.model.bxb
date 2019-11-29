@@ -4,8 +4,8 @@ structure (DeleteSomeResponse) {
     type (SuccessConcept)
     min (Required) max (One)
   }
-  property (count) {
-    type (core.Integer)
-    min (Required) max (One)
+  property (deletedMemories) {
+    type (Memory)
+    min (Optional) max (Many)
   }
 }

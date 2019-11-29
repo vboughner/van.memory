@@ -417,36 +417,36 @@ template-macro-def (COULD_NOT_DELETE_ONE_MEMORY) {
 
 template-macro-def (DELETED_SOME_MEMORIES) {
   params {
-    param (count) {
-      type (core.Integer)
-      min (Required)
-      max (One)
+    param (deletedMemories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
     }
   }
   content {
-    if (count == 1) {
+    if (size(deletedMemories) == 1) {
       template ("I deleted 1 memory.")
     } else {
-      template ("I deleted #{value(count)} memories.")
+      template ("I deleted #{size(deletedMemories)} memories.")
     }
   }
 }
 
 template-macro-def (COULD_NOT_DELETE_SOME_MEMORIES) {
   params {
-    param (count) {
-      type (core.Integer)
-      min (Required)
-      max (One)
+    param (deletedMemories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
     }
   }
   content {
-    if (count == 0) {
+    if (size(deletedMemories) == 0) {
       template ("There was a problem and I could not delete any memories.")
-    } else-if (count == 1) {
+    } else-if (size(deletedMemories) == 1) {
       template ("There was a problem and I could only delete 1 memory.")
     } else {
-      template ("There was a problem and I could only delete #{value(count)} memories.")
+      template ("There was a problem and I could only delete #{size(deletedMemories)} memories.")
     }
   }
 }

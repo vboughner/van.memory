@@ -1,24 +1,24 @@
 result-view {
   match: DeleteSomeResponse (this)
 
-  render {
-    nothing
-  }
-
   message {
     if (this.success) {
       template-macro (DELETED_SOME_MEMORIES) {
-        param (count) {
-          expression (this.count)
+        param (deletedMemories) {
+          expression (this.deletedMemories)
         }
       }
     } else {
       template-macro (COULD_NOT_DELETE_SOME_MEMORIES) {
-        param (count) {
-          expression (this.count)
+        param (deletedMemories) {
+          expression (this.deletedMemories)
         }
       }
     }
+  }
+
+  render {
+    nothing
   }
 
   conversation-drivers {
