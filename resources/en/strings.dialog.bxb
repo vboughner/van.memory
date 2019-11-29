@@ -295,15 +295,19 @@ template-macro-def (WHAT_IS_UPDATED_MEMORY) {
 
 template-macro-def (UPDATED_MEMORY_SPOKEN) {
   params {
-    param (spokenText) {
-      type (core.Text)
-      min (Required)
-      max (One)
+    param (memories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
     }
   }
   content {
-    template ("I updated that memory.") {
-      speech ("#{value(spokenText)}")
+    if (size(memories) > 0) {
+      template ("I updated that memory.") {
+        speech ("I updated that memory, and will remember that you said: #{value(memories[0].text)}.")
+      }
+    } else {
+      template ("There was a problem and I could not update that memory.")
     }
   }
 }

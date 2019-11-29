@@ -2,14 +2,10 @@ result-view {
   match: UpdateTextResponse (this)
 
   message {
-    if (this.success) {
-      template-macro (UPDATED_MEMORY_SPOKEN) {
-        param (spokenText) {
-          expression (this.speech)
-        }
+    template-macro (UPDATED_MEMORY_SPOKEN) {
+      param (memories) {
+        expression (this.memories)
       }
-    } else {
-      template ("#{value(this.speech)}")
     }
   }
 

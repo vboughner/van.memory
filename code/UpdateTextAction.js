@@ -10,9 +10,8 @@ module.exports.function = function updateTextAction($vivContext, memory, replace
     return rest.updateText($vivContext, memory.whenStored, replacementText)
   } else {
     return {
-      success: false,
+      success: true,
       memories: [ memory ],
-      speech: 'That memory remains unchanged.',
     }
   }
 }

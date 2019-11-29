@@ -319,13 +319,12 @@ rest.updateText = function($vivContext, whenStored, replacementText) {
           howLongAgo: body['howLongAgo'],
         },
       ],
-      speech: 'I updated that memory, and will remember that you said: ' + body['text'] + '.',
     }
   } else {
     console.error('rest.updateText received an error: ', body['errorCode'], body['errorMessage'])
     return {
       success: false,
-      speech: 'There was a problem and I could not update that memory.',
+      memories: [],
     }
   }
 }
