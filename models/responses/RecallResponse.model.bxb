@@ -8,12 +8,18 @@ structure (RecallResponse) {
     type (RecallInputConcept)
     min (Required) max (One)
   }
-  property (speech) {
-    type (SpeechConcept)
-    min (Required) max (One)
-  }
   property (memories) {
     type (Memory)
     min (Optional) max (Many)
+  }
+  property (memoryCount) {
+    type (core.Integer)
+    min (Required) max (One)
+    visibility (Private)
+  }
+  property (searchText) {
+    type (SearchTextConcept)
+    min (Optional) max (One)
+    visibility (Private)
   }
 }

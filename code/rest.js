@@ -124,7 +124,6 @@ rest.memorize = function($vivContext, statement) {
  * {
  *   success,
  *   question,
- *   speech,
  *   memories: [
  *     {
  *       text,
@@ -135,6 +134,8 @@ rest.memorize = function($vivContext, statement) {
  *       score,
  *     },
  *   ],
+ *   memoryCount,
+ *   searchText,
  * }
  *
  * @param $vivContext
@@ -151,25 +152,20 @@ rest.recall = function($vivContext, question) {
     if (body['success']) {
       const memories = makeMemoriesFromAnswers(body['answers'])
       return {
-        success: body['success'],
+        success: true,
         question: question,
-        speech: 'You told me ' + memories[0].howLongAgo + ': ' + memories[0].text + '.',
         memories: memories,
+        memoryCount: body['memoryCount'],
+        searchText: body['searchText']
       }
     } else {
       console.error('rest.recall received an error: ', body['errorCode'], body['errorMessage'])
-      let speech = "I can't find a memory that makes sense as an answer for that."
-      if (body['memoryCount'] === 0) {
-        speech = 'There are no memories, please ask me to remember something first.'
-      }
-      else if (body['searchText']) {
-        speech = "I can't find a memory that matches a search for " + body['searchText'] + ". Please try another question."
-      }
       return {
-        success: body['success'],
+        success: false,
         question: question,
-        speech: speech,
         memories: [],
+        memoryCount: body['memoryCount'],
+        searchText: body['searchText']
       }
     }
   } else {
@@ -177,8 +173,9 @@ rest.recall = function($vivContext, question) {
     return {
       success: false,
       question: question,
-      speech: 'Unfortunately, I had a problem and do not know who is asking this question.',
       memories: [],
+      memoryCount: 0,
+      searchText: '',
     }
   }
 }

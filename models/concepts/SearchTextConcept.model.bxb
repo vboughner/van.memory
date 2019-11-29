@@ -1,0 +1,3 @@
+text (SearchTextConcept) {
+  description (Search text used by the server and passed back for display)
+}

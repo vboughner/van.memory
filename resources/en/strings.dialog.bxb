@@ -146,6 +146,30 @@ template-macro-def (HERES_RECENT_SPOKEN) {
   }
 }
 
+template-macro-def (HERES_NO_MATCH) {
+  params {
+    param (memoryCount) {
+      type (core.Integer)
+      min (Required)
+      max (One)
+    }
+    param (searchText) {
+      type (SearchTextConcept)
+      min (Optional)
+      max (One)
+    }
+  }
+  content {
+    if (memoryCount == 0) {
+      template ("There are no memories, please ask me to remember something first.")
+    } else-if (exists(searchText)) {
+      template ("I can't find a memory that matches a search for #{value(searchText)}. Please try another question.")
+    } else {
+      template ("I can't find a memory that makes sense as an answer for that.")
+    }
+  }
+}
+
 template-macro-def (HERES_MATCH) {
   content {
     template ("Here's the best match.")
@@ -154,15 +178,15 @@ template-macro-def (HERES_MATCH) {
 
 template-macro-def (HERES_MATCH_SPOKEN) {
   params {
-    param (spokenText) {
-      type (core.Text)
+    param (memories) {
+      type (Memory)
       min (Required)
-      max (One)
+      max (Many)
     }
   }
   content {
     template ("Here's the best match.") {
-      speech ("#{value(spokenText)}")
+      speech ("You told me #{value(memories[0].howLongAgo)}: #{value(memories[0].text)}.")
     }
   }
 }
@@ -206,15 +230,17 @@ template-macro-def (YOU_TOLD_ME) {
 
 template-macro-def (ALL_SIMILAR_MEMORIES) {
   params {
-    param (spokenText) {
-      type (core.Text)
-      min (Required)
-      max (One)
+    param (memories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
     }
   }
   content {
-    template ("Here are similar memories.") {
-      speech ("#{value(spokenText)} Here are all memories that sound similar:")
+    if (size(memories) > 0) {
+      template ("Here are similar memories.") {
+        speech ("You told me #{value(memories[0].howLongAgo)}: #{value(memories[0].text)}. Here are all memories that sound similar:")
+      }
     }
   }
 }
