@@ -5,7 +5,21 @@ result-view {
     nothing
   }
 
-  message ("#{value(this)}")
+  message {
+    if (this.success) {
+      template-macro (DELETED_SOME_MEMORIES) {
+        param (count) {
+          expression (this.count)
+        }
+      }
+    } else {
+      template-macro (COULD_NOT_DELETE_SOME_MEMORIES) {
+        param (count) {
+          expression (this.count)
+        }
+      }
+    }
+  }
 
   conversation-drivers {
     conversation-driver {

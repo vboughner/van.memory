@@ -1,3 +1,7 @@
-text (DeleteOneResponse) {
-  description (resulting output from deleting one memory)
+structure (DeleteOneResponse) {
+  description (output from deleting one memory)
+  property (success) {
+    type (SuccessConcept)
+    min (Required) max (One)
+  }
 }

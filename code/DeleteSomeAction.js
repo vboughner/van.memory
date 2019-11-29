@@ -10,10 +10,16 @@ module.exports.function = function deleteSomeAction($vivContext, recallResponse)
     for (let i = 0; i < recallResponse.memories.length; i++) {
       // TODO: replace with a more efficient REST api for deleting some memories
       const response = rest.deleteOne($vivContext, recallResponse.memories[i])
-      count++
+      if (response.success) {
+        count++
+      }
     }
   }
-  // TODO: replace speech with what comes from the new REST api and think about returning a more complex response
-  const speech = (count == 1) ? 'I deleted 1 memory.' : 'I deleted ' + count + ' memories.'
-  return speech
+  const success = Boolean(count == recallResponse.memories.length)
+  var console = require('console')
+  console.log('success is', success)
+  return {
+    success: success,
+    count: count,
+  }
 }

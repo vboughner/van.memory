@@ -69,8 +69,8 @@ const makeMemoriesFromAnswers = function(answers) {
 }
 
 /**
- * Gets a statement memorized and returns an object that contains the response speech as
- * well as information about the item just memorized:
+ * Gets a statement memorized and returns an object that contains the response,
+ * as well as information about the item just memorized:
  *
  * {
  *   success,
@@ -219,14 +219,14 @@ rest.list = function($vivContext) {
   return {
     success: false,
     memories: [],
-  }  
+  }
 }
 
 /**
- * Deletes all memories, returns a simple speech string describing the effort.
+ * Deletes all memories, returns an output structure describing if the effort succeeded.
  *
  * @param $vivContext
- * @returns {string}
+ * @returns {object}
  */
 rest.deleteAll = function($vivContext) {
   if ($vivContext !== null) {
@@ -235,23 +235,26 @@ rest.deleteAll = function($vivContext) {
     }
     const body = postQuery($vivContext, SERVICE_URL, params)
     if (body['success']) {
-      return 'I deleted all memories.'
+      return {
+        success: true,
+      }
     } else {
       console.error('rest.deleteAll received an error: ', body['errorCode'], body['errorMessage'])
-      return 'There was a problem and I could not delete all memories.'
     }
   } else {
     console.error('rest.deleteAll received null $vivContext')
-    return 'Unfortunately, I had a problem and do not know who is asking to delete memories.'
+  }
+  return {
+    success: false,
   }
 }
 
 /**
- * Deletes one memory, returns a simple speech string describing the effort.
+ * Deletes one memory, an output structure describing if the effort succeeded.
  *
  * @param $vivContext
- * @param {number} whenStored
- * @returns {string}
+ * @param {object} memory
+ * @returns {object}
  */
 rest.deleteOne = function($vivContext, memory) {
   if ($vivContext !== null && memory && memory.whenStored !== null) {
@@ -261,14 +264,17 @@ rest.deleteOne = function($vivContext, memory) {
     }
     const body = postQuery($vivContext, SERVICE_URL, params)
     if (body['success']) {
-      return 'I deleted that memory.'
+      return {
+        success: true,
+      }
     } else {
       console.error('rest.deleteOne received an error: ', body['errorCode'], body['errorMessage'])
-      return 'There was a problem and I could not delete that memory.'
     }
   } else {
     console.error('rest.deleteOne received null $vivContext, memory, or memory.whenStored')
-    return 'Unfortunately, I had a problem and do not know who is asking to delete a memory.'
+  }
+  return {
+    success: false,
   }
 }
 

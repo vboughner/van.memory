@@ -1,3 +1,11 @@
-text (DeleteSomeResponse) {
-  description (resulting output from deleting some memories)
+structure (DeleteSomeResponse) {
+  description (output from deleting some memories)
+  property (success) {
+    type (SuccessConcept)
+    min (Required) max (One)
+  }
+  property (count) {
+    type (core.Integer)
+    min (Required) max (One)
+  }
 }

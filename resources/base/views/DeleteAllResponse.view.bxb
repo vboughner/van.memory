@@ -5,5 +5,11 @@ result-view {
     nothing
   }
 
-  message ("#{value(this)}")
+  message {
+    if (this.success) {
+      template-macro (DELETED_ALL_MEMORIES)
+    } else {
+      template-macro (COULD_NOT_DELETE_ALL_MEMORIES)
+    }
+  }
 }

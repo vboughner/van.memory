@@ -1,3 +1,8 @@
+train (t-ygqqlwmdgetoole5w7pcmqub3) {
+  utterance ("[g:RecallResponse] who are (my friends)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575006815712)
+}
 train (t-yittx330q3igvko4hg3fs6b3n) {
   utterance ([g:RecallLastMemoryResponse] what was the last memory)
   plan (Y2BkUC5LzNPLTc3NL6rUC0pNTszJ8UksLvEFCwSlFhfk5xWnMoAAI4gAAA==)

@@ -1,3 +1,7 @@
-text (DeleteAllResponse) {
-  description (resulting output from deleting all memories)
+structure (DeleteAllResponse) {
+  description (output from deleting all memories)
+  property (success) {
+    type (SuccessConcept)
+    min (Required) max (One)
+  }
 }

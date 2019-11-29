@@ -391,6 +391,66 @@ template-macro-def (LIST_MEMORIES) {
   }
 }
 
+template-macro-def (DELETED_ALL_MEMORIES) {
+  content {
+    template ("I deleted all memories.")
+  }
+}
+
+template-macro-def (COULD_NOT_DELETE_ALL_MEMORIES) {
+  content {
+    template ("There was a problem and I could not delete all memories.")
+  }
+}
+
+template-macro-def (DELETED_ONE_MEMORY) {
+  content {
+    template ("I deleted that memory.")
+  }
+}
+
+template-macro-def (COULD_NOT_DELETE_ONE_MEMORY) {
+  content {
+    template ("There was a problem and I could not delete that memory.")
+  }
+}
+
+template-macro-def (DELETED_SOME_MEMORIES) {
+  params {
+    param (count) {
+      type (core.Integer)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    if (count == 1) {
+      template ("I deleted 1 memory.")
+    } else {
+      template ("I deleted #{value(count)} memories.")
+    }
+  }
+}
+
+template-macro-def (COULD_NOT_DELETE_SOME_MEMORIES) {
+  params {
+    param (count) {
+      type (core.Integer)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    if (count == 0) {
+      template ("There was a problem and I could not delete any memories.")
+    } else-if (count == 1) {
+      template ("There was a problem and I could only delete 1 memory.")
+    } else {
+      template ("There was a problem and I could only delete #{value(count)} memories.")
+    }
+  }
+}
+
 template-macro-def (CV_LIST_ALL_MEMORIES) {
   content {
     template ("List all memories")
