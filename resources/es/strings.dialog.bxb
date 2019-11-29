@@ -1,108 +1,108 @@
 template-macro-def (WONT_DELETE_ANY) {
   content {
-    template ("Okay, I won't delete any memories.")
+    template ("De acuerdo, no borraré ningún recuerdo.")
   }
 }
 
 template-macro-def (CONFIRM_DELETE_ALL) {
   content {
-    template("Are you sure you want to delete all memories?")
+    template("¿Seguro que quieres borrar todos los recuerdos?")
   }
 }
 
 template-macro-def (DELETING_ALL) {
   content {
-    template ("Deleting all memories...")
+    template ("Borrando todos los recuerdos ...")
   }
 }
 
 template-macro-def (WONT_DELETE_IT) {
   content {
-    template ("Okay, I won't delete it.")
+    template ("Bien, no lo borraré.")
   }
 }
 
 template-macro-def (CONFIRM_DELETE_JUST_REMEMBERED) {
   content {
-    template ("You just asked me to remember that. Are you sure you want to delete it?")
+    template ("Me acabas de pedir que lo recuerde. ¿Estás seguro de que quieres borrarlo?")
   }
 }
 
 template-macro-def (DELETING_THE_MEMORY) {
   content {
-    template ("Deleting the memory...")
+    template ("Borrando el recuerdo ...")
   }
 }
 
 template-macro-def (CONFIRM_DELETE_RECENT) {
   content {
-    template ("Are you sure you want to delete the most recently stored memory?")
+    template ("¿Está seguro de que desea borrar el recuerdo almacenado más recientemente?")
   }
 }
 
 template-macro-def (DELETING_RECENT) {
   content {
-    template ("Deleting most recently stored memory...")
+    template ("Borrando el recuerdo almacenado más recientemente ...")
   }
 }
 
 template-macro-def (DELETING_ONE) {
   content {
-    template ("Deleting one memory...")
+    template ("Borrando un recuerdo ...")
   }
 }
 
 template-macro-def (CONFIRM_DELETE_MATCHED) {
   content {
-    template ("Are you sure you want to delete everything that matched?")
+    template ("¿Estás seguro de que deseas borrar todo lo que coincide?")
   }
 }
 
 template-macro-def (CONFIRM_DELETE_SHOWN) {
   content {
-    template ("Are you sure you want to delete what was shown?")
+    template ("¿Estás seguro de que deseas borrar lo que se muestra?")
   }
 }
 
 template-macro-def (DELETING_SHOWN) {
   content {
-    template ("Deleting what was shown...")
+    template ("Borrando lo que se mostró ...")
   }
 }
 
 template-macro-def (GETTING_MEMORIES) {
   content {
-    template ("Getting memories...")
+    template ("Obteniendo recuerdos ...")
   }
 }
 
 template-macro-def (WHAT_TO_MEMORIZE) {
   content {
-    template ("What would you like me to memorize for you?")
+    template ("¿Qué te gustaría que recordara por ti?")
   }
 }
 
 template-macro-def (STORING_MEMORY) {
   content {
-    template ("Storing memory...")
+    template ("Almacenando el recuerdo ...")
   }
 }
 
 template-macro-def (WHAT_TO_RECALL) {
   content {
-    template ("What would you like me to recall for you?")
+    template ("¿Qué te gustaría que encontrara para ti?")
   }
 }
 
 template-macro-def (RECALLING_RECENT) {
   content {
-    template ("Recalling most recent memory...")
+    template ("Obteniendo el recuerdo más reciente ...")
   }
 }
 
 template-macro-def (SEARCHING_MEMORIES) {
   content {
-    template ("Searching memories...")
+    template ("Buscando recuerdos ...")
   }
 }
 
@@ -115,15 +115,15 @@ template-macro-def (WILL_REMEMBER) {
     }
   }
   content {
-    template ("I'll remember what you said.") {
-      speech ("I will remember that you said: #{value(memories[0].text)}.")
+    template ("Recordaré lo que dijiste.") {
+      speech ("Recordaré que dijiste: #{value(memories[0].text)}.")
     }
   }
 }
 
 template-macro-def (PROBLEM_CANNOT_STORE) {
   content {
-    template ("I ran into a problem and could not store what you said.")
+    template ("Me encontré con un problema y no pude almacenar lo que dijiste.")
   }
 }
 
@@ -137,11 +137,11 @@ template-macro-def (HERES_RECENT_SPOKEN) {
   }
   content {
     if (size(memories) > 0) {
-      template ("Here's the most recent memory.") {
-        speech ("You stored the most recent memory #{value(memories[0].howLongAgo)}. You told me: #{value(memories[0].text)}.")
+      template ("Aquí está el recuerdo más reciente.") {
+        speech ("Almacenaste el recuerdo más reciente #{value(memories[0].howLongAgo)}. Me dijiste: #{value(memories[0].text)}.")
       }
     } else {
-      template ("There are no memories.")
+      template ("No hay recuerdos.")
     }
   }
 }
@@ -161,18 +161,18 @@ template-macro-def (HERES_NO_MATCH) {
   }
   content {
     if (memoryCount == 0) {
-      template ("There are no memories, please ask me to remember something first.")
+      template ("No hay recuerdos, pídeme que recuerde algo primero.")
     } else-if (exists(searchText)) {
-      template ("I can't find a memory that matches a search for \"#{value(searchText)}\". Please try another question.")
+      template ("No puedo encontrar un recuerdo que coincida con la búsqueda de \"#{value(searchText)}\". Por favor intente otra pregunta.")
     } else {
-      template ("I can't find a memory that makes sense as an answer for that.")
+      template ("No puedo encontrar un recuerdo que tenga sentido como respuesta para eso.")
     }
   }
 }
 
 template-macro-def (HERES_MATCH) {
   content {
-    template ("Here's the best match.")
+    template ("Aquí está el mejor partido.")
   }
 }
 
@@ -185,33 +185,33 @@ template-macro-def (HERES_MATCH_SPOKEN) {
     }
   }
   content {
-    template ("Here's the best match.") {
-      speech ("You told me #{value(memories[0].howLongAgo)}: #{value(memories[0].text)}.")
+    template ("Aquí está el mejor partido.") {
+      speech ("Me dijiste #{value(memories[0].howLongAgo)}: #{value(memories[0].text)}.")
     }
   }
 }
 
 template-macro-def (HERES_SIMILAR) {
   content {
-    template ("Here are similar memories.")
+    template ("Aquí hay recuerdos similares.")
   }
 }
 
 template-macro-def (FIRST_MEMORY) {
   content {
-    template ("This is the first memory.")
+    template ("Este es el primer recuerdo.")
   }
 }
 
 template-macro-def (ALL_MEMORIES) {
   content {
-    template ("Those are all the memories.")
+    template ("Esos son todos los recuerdos.")
   }
 }
 
 template-macro-def (NEXT_MEMORY) {
   content {
-    template ("Would you like to hear the next matching memory?")
+    template ("¿Te gustaría escuchar el próximo recuerdo coincidente?")
   }
 }
 
@@ -224,7 +224,7 @@ template-macro-def (YOU_TOLD_ME) {
     }
   }
   content {
-    template ("You told me #{value(memory.howLongAgo)}, #{value(memory.text)}")
+    template ("Me dijiste #{value(memory.howLongAgo)}, #{value(memory.text)}")
   }
 }
 
@@ -238,8 +238,8 @@ template-macro-def (ALL_SIMILAR_MEMORIES) {
   }
   content {
     if (size(memories) > 0) {
-      template ("Here are similar memories.") {
-        speech ("You told me #{value(memories[0].howLongAgo)}: #{value(memories[0].text)}. Here are all memories that sound similar:")
+      template ("Aquí hay recuerdos similares.") {
+        speech ("Me dijiste #{value(memories[0].howLongAgo)}: #{value(memories[0].text)}. Aquí están todos los recuerdos que suenan similares:")
       }
     }
   }
@@ -253,7 +253,7 @@ template-macro-def (FIRST_N_MEMORIES) {
     }
   }
   content {
-    template ("The first #{value(pageSize)} memories are:")
+    template ("Los primeros #{value(pageSize)} recuerdos son:")
   }
 }
 
@@ -266,7 +266,7 @@ template-macro-def (LAST_N_MEMORIES) {
     }
   }
   content {
-    template ("The last #{value(pageSize)} memories are:")
+    template ("Los últimos #{value(pageSize)} recuerdos son:")
   }
 }
 
@@ -279,43 +279,43 @@ template-macro-def (NEXT_N_MEMORIES) {
     }
   }
   content {
-    template ("The next #{value(pageSize)} memories are:")
+    template ("Los siguientes #{value(pageSize)} recuerdos son:")
   }
 }
 
 template-macro-def (LAST_MEMORY) {
   content {
-    template ("The last memory is:")
+    template ("El último recuerdo es:")
   }
 }
 
 template-macro-def (THIS_MEMORY) {
   content {
-    template ("This memory is:")
+    template ("Este recuerdo es:")
   }
 }
 
 template-macro-def (THESE_MEMORIES) {
   content {
-    template ("These memories are:")
+    template ("Estos recuerdos son:")
   }
 }
 
 template-macro-def (WHAT_TO_DO) {
   content {
-    template ("What would you like to do?")
+    template ("¿Que te gustaría hacer?")
   }
 }
 
 template-macro-def (WOULD_LIKE_TO_HEAR_MORE) {
   content {
-    template ("Would you like to hear more memories?")
+    template ("¿Te gustaría escuchar más recuerdos?")
   }
 }
 
 template-macro-def (WHAT_IS_UPDATED_MEMORY) {
   content {
-    template ("What is the updated memory?")
+    template ("¿Cuál es el recuerdo actualizado?")
   }
 }
 
@@ -329,11 +329,11 @@ template-macro-def (UPDATED_MEMORY_SPOKEN) {
   }
   content {
     if (size(memories) > 0) {
-      template ("I updated that memory.") {
-        speech ("I updated that memory, and will remember that you said: #{value(memories[0].text)}.")
+      template ("Actualicé ese recuerdo.") {
+        speech ("Actualicé ese recuerdo y recordaré que dijiste: #{value(memories[0].text)}.")
       }
     } else {
-      template ("There was a problem and I could not update that memory.")
+      template ("Hubo un problema y no pude actualizar ese recuerdo.")
     }
   }
 }
@@ -347,19 +347,19 @@ template-macro-def (VERSION_IS) {
     }
   }
   content {
-    template ("My Brain lambda version is #{value(serverVersion)}")
+    template ("La versión \"Mi Cerebro Lambda\" es #{value(serverVersion)}")
   }
 }
 
 template-macro-def (VERSION_PROBLEM) {
   content {
-    template ("I had a problem trying to get the server version.")
+    template ("Tuve un problema al intentar obtener el número de versión del servidor.")
   }
 }
 
 template-macro-def (HELP_TEXT) {
   content {
-    template("Tell me to remember something, and I'll remember it. Ask me a question that includes a few words from that memory, and I'll find it for you.")
+    template("Dime que recuerde algo y lo recordaré. Hágame una pregunta que incluya algunas palabras de ese recuerdo, y la encontraré para usted.")
   }
 }
 
@@ -379,39 +379,39 @@ template-macro-def (LIST_MEMORIES) {
   content {
     if (success) {
       if (size(memories) == 0) {
-        template ("There are no memories.")
+        template ("No hay recuerdos.")
       } else-if (size(memories) == 1) {
-        template ("You have 1 memory.")
+        template ("Tienes 1 recuerdo.")
       } else {
-        template ("You have #{size(memories)} memories.")
+        template ("Tienes #{size(memories)} recuerdos.")
       }
     } else {
-      template("There was a problem and I could not retrieve the memories.")
+      template("Hubo un problema y no pude recuperar los recuerdos.")
     }
   }
 }
 
 template-macro-def (DELETED_ALL_MEMORIES) {
   content {
-    template ("I deleted all memories.")
+    template ("Borré todos los recuerdos.")
   }
 }
 
 template-macro-def (COULD_NOT_DELETE_ALL_MEMORIES) {
   content {
-    template ("There was a problem and I could not delete all memories.")
+    template ("Hubo un problema y no pude borrar todos los recuerdos.")
   }
 }
 
 template-macro-def (DELETED_ONE_MEMORY) {
   content {
-    template ("I deleted that memory.")
+    template ("Borré un recuerdo.")
   }
 }
 
 template-macro-def (COULD_NOT_DELETE_ONE_MEMORY) {
   content {
-    template ("There was a problem and I could not delete that memory.")
+    template ("Hubo un problema y no pude borrar ese recuerdo.")
   }
 }
 
@@ -425,9 +425,9 @@ template-macro-def (DELETED_SOME_MEMORIES) {
   }
   content {
     if (size(deletedMemories) == 1) {
-      template ("I deleted 1 memory.")
+      template ("Borré un recuerdo.")
     } else {
-      template ("I deleted #{size(deletedMemories)} memories.")
+      template ("Borré #{size(deletedMemories)} recuerdos.")
     }
   }
 }
@@ -442,59 +442,59 @@ template-macro-def (COULD_NOT_DELETE_SOME_MEMORIES) {
   }
   content {
     if (size(deletedMemories) == 0) {
-      template ("There was a problem and I could not delete any memories.")
+      template ("Hubo un problema y no pude borrar ningún recuerdo.")
     } else-if (size(deletedMemories) == 1) {
-      template ("There was a problem and I could only delete 1 memory.")
+      template ("Hubo un problema y solo pude borrar un recuerdo.")
     } else {
-      template ("There was a problem and I could only delete #{size(deletedMemories)} memories.")
+      template ("Hubo un problema y solo pude borrar #{size(deletedMemories)} recuerdos.")
     }
   }
 }
 
 template-macro-def (CV_LIST_ALL_MEMORIES) {
   content {
-    template ("List all memories")
+    template ("Lista todos los recuerdos")
   }
 }
 
 template-macro-def (CV_REMEMBER_HELP) {
   content {
-    template ("Remember that I heard the help")
+    template ("Recuerda que escuché la ayuda")
   }
 }
 
 template-macro-def (CV_HEARD_HELP) {
   content {
-    template ("Have I heard the help?")
+    template ("¿He escuchado la ayuda?")
   }
 }
 
 template-macro-def (CV_MOST_RECENT_MEMORY) {
   content {
-    template ("Most recent memory")
+    template ("Recuerdo más reciente")
   }
 }
 
 template-macro-def (CV_DELETE_ALL_MEMORIES) {
   content {
-    template ("Delete all memories")
+    template ("Borra todos los recuerdos")
   }
 }
 
 template-macro-def (CV_DELETE_THIS_MEMORY) {
   content {
-    template ("Delete this memory")
+    template ("Borra este recuerdo")
   }
 }
 
 template-macro-def (CV_DELETE_THESE_MEMORIES) {
   content {
-    template ("Delete these memories")
+    template ("Borra estos recuerdos")
   }
 }
 
 template-macro-def (CV_EDIT_THIS_MEMORY) {
   content {
-    template ("Edit this memory")
+    template ("Edita este recuerdo")
   }
 }
