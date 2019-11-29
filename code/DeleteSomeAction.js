@@ -16,8 +16,6 @@ module.exports.function = function deleteSomeAction($vivContext, recallResponse)
     }
   }
   const success = Boolean(count == recallResponse.memories.length)
-  var console = require('console')
-  console.log('success is', success)
   return {
     success: success,
     count: count,

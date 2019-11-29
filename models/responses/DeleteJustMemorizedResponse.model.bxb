@@ -1,3 +1,7 @@
-text (DeleteJustMemorizedResponse) {
-  description (speech output from deleting the memory that was just added)
+structure (DeleteJustMemorizedResponse) {
+  description (output from deleting the memory that was just added)
+  property (success) {
+    type (SuccessConcept)
+    min (Required) max (One)
+  }
 }

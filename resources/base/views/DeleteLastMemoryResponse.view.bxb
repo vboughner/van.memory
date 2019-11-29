@@ -5,8 +5,14 @@ result-view {
     nothing
   }
 
-  message ("#{value(this)}")
-
+  message {
+    if (this.success) {
+      template-macro (DELETED_ONE_MEMORY)
+    } else {
+      template-macro (COULD_NOT_DELETE_ONE_MEMORY)
+    }
+  }
+  
   conversation-drivers {
     conversation-driver {
       template-macro (CV_LIST_ALL_MEMORIES)

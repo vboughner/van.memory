@@ -1,3 +1,7 @@
-text (DeleteLastMemoryResponse) {
-  description (speech output from deleting the last memory that was stored)
+structure (DeleteLastMemoryResponse) {
+  description (output from deleting the last memory that was stored)
+  property (success) {
+    type (SuccessConcept)
+    min (Required) max (One)
+  }
 }
