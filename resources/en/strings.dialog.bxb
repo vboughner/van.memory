@@ -129,15 +129,19 @@ template-macro-def (PROBLEM_CANNOT_STORE) {
 
 template-macro-def (HERES_RECENT_SPOKEN) {
   params {
-    param (spokenText) {
-      type (core.Text)
-      min (Required)
-      max (One)
+    param (memories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
     }
   }
   content {
-    template ("Here's the most recent memory.") {
-      speech ("#{value(spokenText)}")
+    if (size(memories) > 0) {
+      template ("Here's the most recent memory.") {
+        speech ("You stored the most recent memory #{value(memories[0].howLongAgo)}. You told me: #{value(memories[0].text)}.")
+      }
+    } else {
+      template ("There are no memories.")
     }
   }
 }
