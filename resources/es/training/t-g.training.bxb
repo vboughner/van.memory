@@ -1,0 +1,10 @@
+train (t-g46e49nzxqpwgoeohw6e6y3bv) {
+  utterance ("[g:MemorizeResponse] memoriza (todos los cepillos de dientes que hay en el gabinete)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1575075075790)
+}
+train (t-gc46fbzscrvd4lzzk44u9g6mi) {
+  utterance ("[g:RecallResponse] dime (el número mágico que Sam escogió)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575075738724)
+}

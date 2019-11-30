@@ -1,0 +1,20 @@
+train (t-7fy4zj3y2lmr66hezukq3d37w) {
+  utterance ("[g:RecallResponse] recuerda lo que dije sobre (el viaje a florida)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575074190162)
+}
+train (t-7m5ilubnl7waiqtzh2jqwpnx3) {
+  utterance ("[g:MemorizeResponse] recuerda (que la vida es lo que haces de ella)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1575070932961)
+}
+train (t-7sglur6y4h54g69xqbammtpd7) {
+  utterance ("[g:RecallResponse] busca (los cumpleaños)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575075393013)
+}
+train (t-7zv2bhqmysfqnxmuoji4gf4il) {
+  utterance ("[g:DeleteConfirmation:prompt] (no lo hagas)[v:DeleteConfirmation:false]")
+  plan (Y2BikC1LzNPLTc3NL6rUc0nNSS1Jdc7PS8ssyk0syczPIyTNCIQMDDxAzATEQDYA)
+  last-modified (1575071126191)
+}

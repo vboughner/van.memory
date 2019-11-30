@@ -1,0 +1,10 @@
+train (t-y3cvw39ys2f4wwavqp7gm8gxf) {
+  utterance ([g:ListResponse] muéstrame todos los recuerdos)
+  plan (Y2BkEC9LzNPLTc3NL6rU88ksLglKLS7IzytOZQABRhABAA==)
+  last-modified (1575060844374)
+}
+train (t-yy40aoudfachfey4amnxsoa0l) {
+  utterance ([g:VersionResponse] obtener la versión Mi Cerebro Lambda)
+  plan (Y2BkkCpLzNPLTc3NL6rUC0stKs7MzwtKLS7IzytOZQABRhABAA==)
+  last-modified (1575060389478)
+}

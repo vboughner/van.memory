@@ -1,0 +1,10 @@
+train (t-2hbx6d6aa8u8lytd42r3y9uoe) {
+  utterance ("[g:RecallResponse] encuentra (vitaminas)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575074902007)
+}
+train (t-2p74vzgu1eyp0jxybzawij2rb) {
+  utterance ("[g:RecallResponse] quien (cumple años en marzo)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575070245407)
+}

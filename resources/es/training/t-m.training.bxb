@@ -1,0 +1,15 @@
+train (t-m383s8z327i2cz58y2z31qov4) {
+  utterance ("[g:RecallResponse] cuantos (asientos hay en el cine)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575074520240)
+}
+train (t-mt5j2zoi6xr7gojzp2agjjdx9) {
+  utterance ([g:RecallLastMemoryResponse] cuál fue el último recuerdo almacenado)
+  plan (Y2BkUC5LzNPLTc3NL6rUC0pNTszJ8UksLvEFCwSlFhfk5xWnMoAAI4gAAA==)
+  last-modified (1575060632613)
+}
+train (t-mw97ko2roj7gtmw5wtb177b3b) {
+  utterance ("[g:RecallResponse] mira (el cumpleaños de Fred)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575071426947)
+}

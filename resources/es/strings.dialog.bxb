@@ -405,7 +405,7 @@ template-macro-def (COULD_NOT_DELETE_ALL_MEMORIES) {
 
 template-macro-def (DELETED_ONE_MEMORY) {
   content {
-    template ("Borré un recuerdo.")
+    template ("Borré el recuerdo.")
   }
 }
 

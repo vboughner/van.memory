@@ -1,0 +1,11 @@
+vocab(DeleteConfirmation) {
+  "true" {
+    "borra"
+    "borra todos"
+    "sí"
+  }
+  "false" {
+    "no"
+    "no lo hagas"
+  }
+}

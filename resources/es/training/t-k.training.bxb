@@ -1,0 +1,10 @@
+train (t-kcndynwdccuafhf9vane6sos4) {
+  utterance ([g:DeleteOneResponse:continue:Memory] borra este recuerdo)
+  plan (Y2BkkClLzNPLTc3NL6rUc0nNSS1J9c9LDUotLsjPK05lAAFGEAEA)
+  last-modified (1575073904943)
+}
+train (t-kl1i2hxm6fli2v9xvuyba5bx8) {
+  utterance ("[g:RecallResponse] que (le gusta a Sally)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575075292299)
+}

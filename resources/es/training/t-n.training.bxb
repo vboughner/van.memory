@@ -1,0 +1,10 @@
+train (t-nhil80sevhd3qaj90h9e03tk5) {
+  utterance ("[g:RecallResponse] busca (mi auto)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575072439439)
+}
+train (t-nt3bx562ikbpbxq8agaqp33tn) {
+  utterance ("[g:RecallResponse] pregunta qué (necesito comprar)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575076705343)
+}
