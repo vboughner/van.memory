@@ -8,6 +8,11 @@ train (t-6c53fbr3y8vr80sflqmf0no28) {
   plan (Y2BkkCpLzNPLTc3NL6rUC0stKs7MzwtKLS7IzytOZQABRhABAA==)
   last-modified (1561933023721)
 }
+train (t-6dg6ti0yknw0r0gels0nmitld) {
+  utterance ("[g:MemorizeResponse] remember (the cookies are in the back of the 2nd shelf on the right)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1575483731027)
+}
 train (t-6tq8hxf5j9xvj4flk5xbetqc2) {
   utterance ("[g:RecallResponse] when does (my bus come)[v:RecallInputConcept]")
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
