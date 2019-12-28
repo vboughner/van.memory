@@ -1,0 +1,15 @@
+capsule-info {
+  display-name (Mon Cerveau)
+  developer-name (Van Boughner)
+  icon-asset (head-brains.png)
+  description ("Demandez à My Brain de se souvenir des choses pour vous et de les rappeler plus tard. My Brain peut vous aider à vous souvenir des choses sur les gens, où vous les mettez ou quand vous avez fait quelque chose pour la dernière fois. Il est utile d'inclure quelques mots clés dans votre mémoire que vous pouvez utiliser plus tard dans une question pour vous en souvenir. Le code de cette capsule est disponible gratuitement. J'espère que cela vous sera utile d'une manière ou d'une autre!")
+  dispatch-name (Mon Cerveau)
+  privacy-policy-url (https://www.vanboughner.com/my-brain-privacy-policy-for-bixby/)
+  terms-url (https://www.vanboughner.com/my-brain-terms-of-service-for-bixby/)
+  website-url(https://github.com/vboughner/van.memory)
+  search-keywords {
+    keyword (souvenir)
+    keyword (rappelles)
+    keyword (rappel)
+  }
+}

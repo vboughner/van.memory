@@ -3,10 +3,9 @@ capsule {
   version (1.4.0)
   format (3)
   targets {
-    target (bixby-mobile-en-US)
-    target (bixby-mobile-en-GB)
-    target (bixby-mobile-es-MX)
-    target (bixby-mobile-es-ES)
+    target (bixby-mobile-en)
+    target (bixby-mobile-es)
+    target (bixby-mobile-fr)
   }
   permissions {
     bixby-user-id-access

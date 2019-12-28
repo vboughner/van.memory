@@ -1,0 +1,5 @@
+train (t-3izi0p7ef4k83oqwqwwb8lce5) {
+  utterance ([g:DeleteAllAction] supprimer tous les souvenirs)
+  plan (Y2BikClLzNPLTc3NL6rUc0nNSS1JdczJCUotLsjPK05lkMIm65hckpmfx8AIhAxQDCQB)
+  last-modified (1577499983976)
+}
