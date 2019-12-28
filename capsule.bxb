@@ -16,14 +16,7 @@ capsule {
       as (core)
     }
   }
-  runtime-flags {
-    concepts-inherit-super-type-features
-    support-halt-effect-in-computed-inputs
-    modern-prompt-rejection
-    modern-default-view-behavior
-    no-filtering-with-validation
-    use-input-views-for-selection-list-detail
-  }
+  runtime-version (2)
   store-sections {
     section (Productivity)
     section (Utilities)
