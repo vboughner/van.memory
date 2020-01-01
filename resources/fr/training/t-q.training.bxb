@@ -1,0 +1,25 @@
+train (t-q1rags0yj3bz2pq1pqob9it26) {
+  utterance ("[g:MemorizeResponse] rappelez-vous que (nous avons rendez-vous dimanche à une heure trente)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1577906557359)
+}
+train (t-q2oh7prrv8hw40falf9am3kcz) {
+  utterance ("[g:MemorizeResponse] pour rappeler que (j'aime les tacos au poisson)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1577736812285)
+}
+train (t-q9bdid4f3no96mr2g0ibya5jf) {
+  utterance ("[g:MemorizeResponse] se rappeler de (sortir la poubelle)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1577736543486)
+}
+train (t-qopmrocjqa85ebxg0v9yyjk69) {
+  utterance ("[g:RecallResponse] quand ai-(je pris mes vitamines)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1577900289270)
+}
+train (t-qtodu6bfupxphwn0k3sr768vo) {
+  utterance ("[g:RecallResponse] combien de (places sont au cinéma de Monterey)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1577901424982)
+}

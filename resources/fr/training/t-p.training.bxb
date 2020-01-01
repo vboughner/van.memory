@@ -1,0 +1,20 @@
+train (t-p8newcraf7cry3z8ju3o38dle) {
+  utterance ("[g:RecallResponse] y a-t-il (un bus à 5 heures)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1577901866894)
+}
+train (t-pcudsz5rh132pnwgnvplsdju5) {
+  utterance ("[g:MemorizeResponse] rappelez-vous que (l'anniversaire de ma mère est le 11 février)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1577905511585)
+}
+train (t-pqp5vruryiyxk59mgpfe5s24c) {
+  utterance ("[g:RecallResponse] trouver (des vitamines)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1577901488291)
+}
+train (t-py07uacrwpkz98hdjw3g1uxvt) {
+  utterance ([g:DeleteAllAction:continue:ListResponse] supprimer)
+  plan (Y2BikClLzNPLTc3NL6rUc0nNSS1JdczJCUotLsjPK05lkMIm65hckpmfx8AIhAxQDCQB)
+  last-modified (1577734593436)
+}

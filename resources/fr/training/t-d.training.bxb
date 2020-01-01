@@ -1,3 +1,8 @@
+train (t-d8agip03kijphuf2v3jlb2kkc) {
+  utterance ("[g:RecallResponse] qu'est-ce que j'ai (en juillet)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1577900241640)
+}
 train (t-dqc0xj53ydf3pt89wusalgs2b) {
   utterance ([g:ListResponse] répertorier tous les souvenirs)
   plan (Y2BkEC9LzNPLTc3NL6rU88ksLglKLS7IzytOZQABRhABAA==)

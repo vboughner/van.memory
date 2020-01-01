@@ -30,25 +30,25 @@ template-macro-def (CONFIRM_DELETE_JUST_REMEMBERED) {
 
 template-macro-def (DELETING_THE_MEMORY) {
   content {
-    template ("Supprimer la mémoire...")
+    template ("Supprimer le souvenir...")
   }
 }
 
 template-macro-def (CONFIRM_DELETE_RECENT) {
   content {
-    template ("Voulez-vous vraiment supprimer la dernière mémoire stockée?")
+    template ("Voulez-vous vraiment supprimer le dernier souvenir enregistré?")
   }
 }
 
 template-macro-def (DELETING_RECENT) {
   content {
-    template ("Supprimer la dernière mémoire stockée...")
+    template ("Supprimer le dernier souvenir enregistré...")
   }
 }
 
 template-macro-def (DELETING_ONE) {
   content {
-    template ("Supprimer une mémoire...")
+    template ("Supprimer un souvenir...")
   }
 }
 
@@ -84,7 +84,7 @@ template-macro-def (WHAT_TO_MEMORIZE) {
 
 template-macro-def (STORING_MEMORY) {
   content {
-    template ("Stocker la mémoire...")
+    template ("Stocker le souvenir...")
   }
 }
 
@@ -96,7 +96,7 @@ template-macro-def (WHAT_TO_RECALL) {
 
 template-macro-def (RECALLING_RECENT) {
   content {
-    template ("Rappel de la mémoire la plus récente...")
+    template ("Rappelant le souvenir le plus récent...")
   }
 }
 
@@ -137,8 +137,8 @@ template-macro-def (HERES_RECENT_SPOKEN) {
   }
   content {
     if (size(memories) > 0) {
-      template ("Voici la mémoire la plus récente.") {
-        speech ("Vous avez stocké la mémoire la plus récente #{value(memories[0].howLongAgo)}. Vous m'avez dit: #{value(memories[0].text)}.")
+      template ("Voici le souvenir le plus récent.") {
+        speech ("Vous avez enregistré le souvenir le plus récent #{value(memories[0].howLongAgo)}. Vous m'avez dit: #{value(memories[0].text)}.")
       }
     } else {
       template ("Il n'y a pas de souvenirs.")
@@ -163,7 +163,7 @@ template-macro-def (HERES_NO_MATCH) {
     if (memoryCount == 0) {
       template ("Il n'y a pas de souvenirs, demandez-moi d'abord de me souvenir de quelque chose.")
     } else-if (exists(searchText)) {
-      template ("Je ne trouve pas de mémoire correspondant à une recherche de \"#{value(searchText)}\". Veuillez essayer une autre question.")
+      template ("Je ne trouve aucun souvenir correspondant à une recherche de \"#{value(searchText)}\". Veuillez essayer une autre question.")
     } else {
       template ("Je ne trouve pas de souvenir qui ait du sens comme réponse à cela.")
     }
@@ -211,7 +211,7 @@ template-macro-def (ALL_MEMORIES) {
 
 template-macro-def (NEXT_MEMORY) {
   content {
-    template ("Souhaitez-vous entendre la prochaine mémoire correspondante?")
+    template ("Souhaitez-vous entendre le prochain souvenir correspondant?")
   }
 }
 
@@ -315,7 +315,7 @@ template-macro-def (WOULD_LIKE_TO_HEAR_MORE) {
 
 template-macro-def (WHAT_IS_UPDATED_MEMORY) {
   content {
-    template ("Quelle est la mémoire mise à jour?")
+    template ("Quel est le souvenir mis à jour?")
   }
 }
 
@@ -333,7 +333,7 @@ template-macro-def (UPDATED_MEMORY_SPOKEN) {
         speech ("J'ai mis à jour ce souvenir et je me souviendrai que vous avez dit: #{value(memories[0].text)}.")
       }
     } else {
-      template ("Il y avait un problème et je n'ai pas pu mettre à jour cette mémoire.")
+      template ("Il y avait un problème et je n'ai pas pu mettre à jour ce souvenir.")
     }
   }
 }
@@ -451,6 +451,12 @@ template-macro-def (COULD_NOT_DELETE_SOME_MEMORIES) {
   }
 }
 
+template-macro-def (SAVE) {
+  content {
+    template ("Enregistrer")
+  }
+}
+
 template-macro-def (CV_LIST_ALL_MEMORIES) {
   content {
     template ("Répertorier tous les souvenirs")
@@ -471,7 +477,7 @@ template-macro-def (CV_HEARD_HELP) {
 
 template-macro-def (CV_MOST_RECENT_MEMORY) {
   content {
-    template ("Mémoire la plus récente")
+    template ("Souvenir le plus récent")
   }
 }
 
@@ -495,6 +501,6 @@ template-macro-def (CV_DELETE_THESE_MEMORIES) {
 
 template-macro-def (CV_EDIT_THIS_MEMORY) {
   content {
-    template ("Modifier cette mémoire")
+    template ("Modifier ce souvenir")
   }
 }

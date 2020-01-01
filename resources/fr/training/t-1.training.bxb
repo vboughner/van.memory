@@ -1,0 +1,20 @@
+train (t-14apg27wogmiiw7n85xqqzdla) {
+  utterance ("[g:RecallResponse] quand ai-(je pris mes vitamines)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1577906444614)
+}
+train (t-1kkf4gnwouagkfraz259tkzu4) {
+  utterance ([g:ListResponse] combien de souvenirs y a-t-il)
+  plan (Y2BkEC9LzNPLTc3NL6rU88ksLglKLS7IzytOZQABRhABAA==)
+  last-modified (1577733061564)
+}
+train (t-1t3aiybz5ggr9eq93to8aiklf) {
+  utterance ("[g:RecallResponse] cherche (ma voiture)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1577900871622)
+}
+train (t-1zjq9csl5tscmy0csd66p0e48) {
+  utterance ("[g:RecallResponse] qui est (la soeur de David)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1577901378100)
+}

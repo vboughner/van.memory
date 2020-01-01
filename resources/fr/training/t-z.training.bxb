@@ -1,0 +1,20 @@
+train (t-z75yra3ojv381215x4bu19a0x) {
+  utterance ("[g:RecallResponse] dites-moi combien de (cookies étaient dans le pot)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1577901760097)
+}
+train (t-ziciq08iabsqsjj2lujinyiql) {
+  utterance ("[g:RecallResponse] qu'est-ce que j'ai dit du (29 février)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1577906657306)
+}
+train (t-znz4uejazd36p4q57kxd61g69) {
+  utterance ([g:UpdateTextResponse:continue:Memory] modifier ce souvenir)
+  plan (Y2BkkC1LzNPLTc3NL6rUCy1ISSxJDUmtKAlKLS7IzytOZQABRhABAA==)
+  last-modified (1577735673019)
+}
+train (t-zs9spliu4vvo3tluk2j73s5fc) {
+  utterance ("[g:MemorizeResponse] rappelez-vous (qu'il y a 10 personnes dans le parti)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1577906762523)
+}

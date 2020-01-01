@@ -1,5 +1,20 @@
+train (t-32nxf48mj2y4bakseinpwor0s) {
+  utterance ("[g:RecallInputConcept:prompt] (l'anniversaire de David)[v:RecallInputConcept]")
+  plan (Y2BikC1LzNPLTc3NL6rUC0pNTszJ8cwrKC1xzs9LTi0oISTNCIQMDDxAzATEQDYA)
+  last-modified (1577735861717)
+}
 train (t-3izi0p7ef4k83oqwqwwb8lce5) {
   utterance ([g:DeleteAllAction] supprimer tous les souvenirs)
   plan (Y2BikClLzNPLTc3NL6rUc0nNSS1JdczJCUotLsjPK05lkMIm65hckpmfx8AIhAxQDCQB)
   last-modified (1577499983976)
+}
+train (t-3m6d8439agf28mog5145rbh4a) {
+  utterance ([g:RecallLastMemoryResponse] quelle est la dernière chose dont tu te souviens)
+  plan (Y2BkUC5LzNPLTc3NL6rUC0pNTszJ8UksLvEFCwSlFhfk5xWnMoAAI4gAAA==)
+  last-modified (1577733527279)
+}
+train (t-3mw9ymmea63xa4tr7jn2rwhvb) {
+  utterance ("[g:RecallResponse] de quoi ai-(je besoin pour acheter)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1577901062472)
 }

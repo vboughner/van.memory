@@ -1,0 +1,25 @@
+train (t-e3l3t6mwri1vvjeb4l5fx1jy9) {
+  utterance ("[g:MemorizeResponse] se rappeler de (la vie est ce que tu penses)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1577736558620)
+}
+train (t-e4ryx2nvhi6s71t8gd7bctj50) {
+  utterance ("[g:RecallResponse] qu'est-ce que j'ai dit sur (le voyage en Floride)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1577906392156)
+}
+train (t-eo4f7goau3a74u6e50tqvb0wp) {
+  utterance ([g:DeleteJustMemorizedAction:continue:MemorizeResponse] supprimer ce souvenir)
+  plan (Y2BmUCtLzNPLTc3NL6rUc0nNSS1J9SotLvEFCWRWpaYEpRYX5OcVpzKo4FfnmFySmZ/HII2kCiYHN4KJgRGIGYAkIwMDjAYA)
+  last-modified (1577733226797)
+}
+train (t-eupkdowmjjcr7hvmwdkvt1bnv) {
+  utterance ([g:DeleteLastMemoryAction:continue:RecallLastMemoryResponse] supprimer)
+  plan (Y2BmUC5LzNPLTc3NL6rUc0nNSS1J9UksLvEFCwSlFhfk5xWnMijiUeSYXJKZn4diTlBqcmJODhZzmBgYgZgBSDIyMMBoAA==)
+  last-modified (1577734320018)
+}
+train (t-ey4ibda6dhczcmaxyc2y3y54p) {
+  utterance ("[g:RecallResponse] parle moi de (lasagne)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1577901454113)
+}

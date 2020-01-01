@@ -1,0 +1,15 @@
+train (t-g3o9qz6q7r5v0om0q4l8g5lze) {
+  utterance ("[g:RecallResponse] qui sont (mes amis)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1577901716262)
+}
+train (t-gpqf3doz3t7022rsf85ia14n4) {
+  utterance ([g:ListResponse] quels sont mes souvenirs)
+  plan (Y2BkEC9LzNPLTc3NL6rU88ksLglKLS7IzytOZQABRhABAA==)
+  last-modified (1577733085068)
+}
+train (t-gyr7y86ef7a7jribg5rq8kyrc) {
+  utterance ("[g:RecallResponse] chercher où (j'ai garé ma voiture)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1577900137903)
+}

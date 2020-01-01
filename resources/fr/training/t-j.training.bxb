@@ -1,0 +1,15 @@
+train (t-j9j1d40yuppo5qv0zbyr560dy) {
+  utterance ("[g:RecallResponse] quand ai-(je pris mes médicaments)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1577900909637)
+}
+train (t-jivvk17vol7ojolcumu518wi8) {
+  utterance ("[g:MemorizeResponse] se rappeler que (j'ai pris mes vitamines)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1577737013323)
+}
+train (t-joz652bopfdwpv25ab8n5152v) {
+  utterance ([g:DeleteSomeAction:continue:RecallResponse] supprimer ce souvenir)
+  plan (Y2BmkC1LzNPLTc3NL6rUc0nNSS1JDc7PTQ1KLS7IzytOZZDGKu2YXJKZn8cgiSQZlJqcmJMD18fEwAjEDECSkYEBRgMA)
+  last-modified (1577733248405)
+}

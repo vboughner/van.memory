@@ -451,6 +451,12 @@ template-macro-def (COULD_NOT_DELETE_SOME_MEMORIES) {
   }
 }
 
+template-macro-def (SAVE) {
+  content {
+    template ("Save")
+  }
+}
+
 template-macro-def (CV_LIST_ALL_MEMORIES) {
   content {
     template ("List all memories")

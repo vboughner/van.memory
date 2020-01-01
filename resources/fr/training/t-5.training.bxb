@@ -1,0 +1,10 @@
+train (t-5018y7nenupp51nio2k7ty1v1) {
+  utterance ([g:DeleteLastMemoryAction:continue:RecallLastMemoryResponse] supprimer ce souvenir)
+  plan (Y2BmUC5LzNPLTc3NL6rUc0nNSS1J9UksLvEFCwSlFhfk5xWnMijiUeSYXJKZn4diTlBqcmJODhZzmBgYgZgBSDIyMMBoAA==)
+  last-modified (1577733321090)
+}
+train (t-5n9k6tae9aqr8mnf9ng7sirgw) {
+  utterance ([g:RecallLastMemoryResponse] quel était le dernier souvenir enregistré)
+  plan (Y2BkUC5LzNPLTc3NL6rUC0pNTszJ8UksLvEFCwSlFhfk5xWnMoAAI4gAAA==)
+  last-modified (1577733635951)
+}

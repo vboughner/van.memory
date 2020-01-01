@@ -21,7 +21,9 @@ input-view {
         goal: ReplacementText
         value: viv.core.FormElement(replacementText)
       }
-      submit-button (Save)
+      submit-button {
+        template-macro (SAVE)
+      }
     }
   }
 }

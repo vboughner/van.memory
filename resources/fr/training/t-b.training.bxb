@@ -1,0 +1,20 @@
+train (t-b2moaj2r9ow7x9w7ujpw51sli) {
+  utterance ([g:DeleteAllAction:continue:ListResponse] supprimer ces souvenirs)
+  plan (Y2BikClLzNPLTc3NL6rUc0nNSS1JdczJCUotLsjPK05lkMIm65hckpmfx8AIhAxQDCQB)
+  last-modified (1577733419554)
+}
+train (t-b8amz5e6w5z25ydzedl4ltg1z) {
+  utterance ("[g:MemorizeResponse] pour rappeler que (j'ai pris mes médicaments)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1577736949492)
+}
+train (t-b8s880tlw6vohbij5es6qy9t7) {
+  utterance ([g:DeleteOneResponse:continue:Memory] supprimer)
+  plan (Y2BkkClLzNPLTc3NL6rUc0nNSS1J9c9LDUotLsjPK05lAAFGEAEA)
+  last-modified (1577733912019)
+}
+train (t-blltjxkebophu5esahix8uczh) {
+  utterance ("[g:MemorizeResponse] se rappeler (qu'il y a 10 personnes dans notre groupe)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1577736417642)
+}
