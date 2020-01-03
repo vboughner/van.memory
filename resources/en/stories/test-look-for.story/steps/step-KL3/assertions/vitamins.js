@@ -4,7 +4,7 @@
  */
 
 describe('match', () => {
-  const displayedText = 'Here\'s the best match.'
+  const displayedText = 'Here’s the best match.'
   const spokenText = 'You told me 13 hours ago: I took my vitamins'
   const endCharCount = -18 // just test these characters at the end, the beginning may differ
 

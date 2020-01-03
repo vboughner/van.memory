@@ -4,7 +4,7 @@
  */
 
 describe('recall', () => {
-  const displayedText = 'Here\'s the best match.'
+  const displayedText = 'Here’s the best match.'
   const spokenText = 'You told me a few seconds ago: my mother\'s birthday is January 22nd.'
 
   it(`matches the displayed and spoken text`, () => {

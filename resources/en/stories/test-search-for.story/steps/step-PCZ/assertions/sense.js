@@ -4,7 +4,7 @@
  */
 
 describe('sense', () => {
-  const dialogText = 'I can\'t find a memory that matches a search for \"my parking space\". Please try another question.'
+  const dialogText = 'I can’t find a memory that matches a search for "my parking space". Please try another question.'
 
   it(`matches "${dialogText}"`, () => {
     // get the dialog from the `step` global

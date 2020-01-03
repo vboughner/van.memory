@@ -4,7 +4,7 @@
  */
 
 describe('delete', () => {
-  const dialogText = 'Okay, I won\'t delete any memories.'
+  const dialogText = 'Okay, I won’t delete any memories.'
 
   it(`matches "${dialogText}"`, () => {
     // get the dialog from the `step` global

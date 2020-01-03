@@ -1,12 +1,10 @@
 /**
  * Step assertions documentation
  * https://bixbydevelopers.com/dev/docs/reference/assertions_api/step
- *
- * TODO: Replace `__TEXT__` with step dialog output
  */
 
 describe('no', () => {
-  const dialogText = 'Okay, I won\'t delete any memories.'
+  const dialogText = 'Okay, I won’t delete any memories.'
 
   it(`matches "${dialogText}"`, () => {
     // get the dialog from the `step` global

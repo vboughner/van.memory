@@ -1,8 +1,6 @@
 /**
  * Step assertions documentation
  * https://bixbydevelopers.com/dev/docs/reference/assertions_api/step
- *
- * TODO: Replace `__TEXT__` with step dialog output
  */
 
 describe('remember-birthday', () => {

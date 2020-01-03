@@ -4,7 +4,7 @@
  */
 
 describe('no-delete', () => {
-  const dialogText = 'Okay, I won\'t delete it.'
+  const dialogText = 'Okay, I won’t delete it.'
 
   it(`matches "${dialogText}"`, () => {
     // get the dialog from the `step` global

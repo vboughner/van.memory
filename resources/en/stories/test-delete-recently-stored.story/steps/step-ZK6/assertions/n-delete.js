@@ -4,7 +4,7 @@
  */
 
 describe('n-delete', () => {
-  const dialogText = 'Okay, I won\'t.'
+  const dialogText = 'Okay, I won\'t.' // single-quote instead of apostrophe, comes from viv.core
 
   it(`matches "${dialogText}"`, () => {
     // get the dialog from the `step` global

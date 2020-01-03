@@ -24,7 +24,7 @@ template-macro-def (WONT_DELETE_IT) {
 
 template-macro-def (CONFIRM_DELETE_JUST_REMEMBERED) {
   content {
-    template ("Vous venez de me demander de m'en souvenir. Êtes-vous sûr de vouloir le supprimer?")
+    template ("Vous venez de me demander de m’en souvenir. Êtes-vous sûr de vouloir le supprimer?")
   }
 }
 
@@ -123,7 +123,7 @@ template-macro-def (WILL_REMEMBER) {
 
 template-macro-def (PROBLEM_CANNOT_STORE) {
   content {
-    template ("J'ai rencontré un problème et je n'ai pas pu enregistrer ce que vous avez dit.")
+    template ("J’ai rencontré un problème et je n’ai pas pu enregistrer ce que vous avez dit.")
   }
 }
 
@@ -138,10 +138,10 @@ template-macro-def (HERES_RECENT_SPOKEN) {
   content {
     if (size(memories) > 0) {
       template ("Voici le souvenir le plus récent.") {
-        speech ("Vous avez enregistré le souvenir le plus récent #{value(memories[0].howLongAgo)}. Vous m'avez dit: #{value(memories[0].text)}.")
+        speech ("Vous avez enregistré le souvenir le plus récent #{value(memories[0].howLongAgo)}. Vous m’avez dit: #{value(memories[0].text)}.")
       }
     } else {
-      template ("Il n'y a pas de souvenir enregistré.")
+      template ("Il n’y a pas de souvenir enregistré.")
     }
   }
 }
@@ -161,7 +161,7 @@ template-macro-def (HERES_NO_MATCH) {
   }
   content {
     if (memoryCount == 0) {
-      template ("Il n'y a pas de souvenir enregistré, demandez-moi d'abord de me souvenir de quelque chose.")
+      template ("Il n’y a pas de souvenir enregistré, demandez-moi d’abord de me souvenir de quelque chose.")
     } else-if (exists(searchText)) {
       template ("Je ne trouve aucun souvenir correspondant à une recherche de \"#{value(searchText)}\". Veuillez essayer une autre question.")
     } else {
@@ -186,7 +186,7 @@ template-macro-def (HERES_MATCH_SPOKEN) {
   }
   content {
     template ("Voici le souvenir qui correspond le mieux à votre recherche.") {
-      speech ("Vous m'avez dit #{value(memories[0].howLongAgo)}: #{value(memories[0].text)}.")
+      speech ("Vous m’avez dit #{value(memories[0].howLongAgo)}: #{value(memories[0].text)}.")
     }
   }
 }
@@ -224,7 +224,7 @@ template-macro-def (YOU_TOLD_ME) {
     }
   }
   content {
-    template ("Vous m'avez dit #{value(memory.howLongAgo)}, #{value(memory.text)}")
+    template ("Vous m’avez dit #{value(memory.howLongAgo)}, #{value(memory.text)}")
   }
 }
 
@@ -239,7 +239,7 @@ template-macro-def (ALL_SIMILAR_MEMORIES) {
   content {
     if (size(memories) > 0) {
       template ("Voici des souvenirs similaires.") {
-        speech ("Vous m'avez dit #{value(memories[0].howLongAgo)}: #{value(memories[0].text)}. Voici tous les souvenirs qui semblent similaires:")
+        speech ("Vous m’avez dit #{value(memories[0].howLongAgo)}: #{value(memories[0].text)}. Voici tous les souvenirs qui semblent similaires:")
       }
     }
   }
@@ -309,7 +309,7 @@ template-macro-def (WHAT_TO_DO) {
 
 template-macro-def (WOULD_LIKE_TO_HEAR_MORE) {
   content {
-    template ("Voulez-vous entendre d'autres souvenirs?")
+    template ("Voulez-vous entendre d’autres souvenirs?")
   }
 }
 
@@ -329,11 +329,11 @@ template-macro-def (UPDATED_MEMORY_SPOKEN) {
   }
   content {
     if (size(memories) > 0) {
-      template ("J'ai mis à jour ce souvenir.") {
-        speech ("J'ai mis à jour ce souvenir et je me souviendrai que vous avez dit: #{value(memories[0].text)}.")
+      template ("J’ai mis à jour ce souvenir.") {
+        speech ("J’ai mis à jour ce souvenir et je me souviendrai que vous avez dit: #{value(memories[0].text)}.")
       }
     } else {
-      template ("J'ai rencontré un problème et je n'ai pas pu mettre à jour ce souvenir.")
+      template ("J’ai rencontré un problème et je n’ai pas pu mettre à jour ce souvenir.")
     }
   }
 }
@@ -353,13 +353,13 @@ template-macro-def (VERSION_IS) {
 
 template-macro-def (VERSION_PROBLEM) {
   content {
-    template ("J'ai rencontré un problème pour obtenir la version du serveur.")
+    template ("J’ai rencontré un problème pour obtenir la version du serveur.")
   }
 }
 
 template-macro-def (HELP_TEXT) {
   content {
-    template("Dites-moi de me souvenir de quelque chose et je m'en souviendrai. Posez-moi une question qui comprend quelques mots de ce souvenir, et je la trouverai pour vous.")
+    template("Dites-moi de me souvenir de quelque chose et je m’en souviendrai. Posez-moi une question qui comprend quelques mots de ce souvenir, et je la trouverai pour vous.")
   }
 }
 
@@ -379,39 +379,39 @@ template-macro-def (LIST_MEMORIES) {
   content {
     if (success) {
       if (size(memories) == 0) {
-        template ("Il n'y a pas de souvenir.")
+        template ("Il n’y a pas de souvenir.")
       } else-if (size(memories) == 1) {
         template ("Vous avez 1 souvenir.")
       } else {
         template ("Vous avez #{size(memories)} souvenirs.")
       }
     } else {
-      template("J'ai rencontré un problème et je n'ai pas pu récupérer les souvenirs.")
+      template("J’ai rencontré un problème et je n’ai pas pu récupérer les souvenirs.")
     }
   }
 }
 
 template-macro-def (DELETED_ALL_MEMORIES) {
   content {
-    template ("J'ai supprimé tous les souvenirs.")
+    template ("J’ai supprimé tous les souvenirs.")
   }
 }
 
 template-macro-def (COULD_NOT_DELETE_ALL_MEMORIES) {
   content {
-    template ("J'ai rencontré un problème et je n'ai pas pu supprimer tous les souvenirs.")
+    template ("J’ai rencontré un problème et je n’ai pas pu supprimer tous les souvenirs.")
   }
 }
 
 template-macro-def (DELETED_ONE_MEMORY) {
   content {
-    template ("J'ai supprimé ce souvenir.")
+    template ("J’ai supprimé ce souvenir.")
   }
 }
 
 template-macro-def (COULD_NOT_DELETE_ONE_MEMORY) {
   content {
-    template ("J'ai rencontré un problème et je n'ai pas pu supprimer ce souvenir.")
+    template ("J’ai rencontré un problème et je n’ai pas pu supprimer ce souvenir.")
   }
 }
 
@@ -425,9 +425,9 @@ template-macro-def (DELETED_SOME_MEMORIES) {
   }
   content {
     if (size(deletedMemories) == 1) {
-      template ("J'ai supprimé 1 souvenir.")
+      template ("J’ai supprimé 1 souvenir.")
     } else {
-      template ("J'ai supprimé #{size(deletedMemories)} souvenirs.")
+      template ("J’ai supprimé #{size(deletedMemories)} souvenirs.")
     }
   }
 }
@@ -442,11 +442,11 @@ template-macro-def (COULD_NOT_DELETE_SOME_MEMORIES) {
   }
   content {
     if (size(deletedMemories) == 0) {
-      template ("J'ai rencontré un problème et je n'ai pu supprimer de souvenir.")
+      template ("J’ai rencontré un problème et je n’ai pu supprimer de souvenir.")
     } else-if (size(deletedMemories) == 1) {
-      template ("J'ai rencontré un problème et je n'ai pu supprimer qu'un seul souvenir.")
+      template ("J’ai rencontré un problème et je n’ai pu supprimer qu’un seul souvenir.")
     } else {
-      template ("J'ai rencontré un problème et je n'ai pu supprimer que #{size(deletedMemories)} souvenirs.")
+      template ("J’ai rencontré un problème et je n’ai pu supprimer que #{size(deletedMemories)} souvenirs.")
     }
   }
 }
@@ -465,13 +465,13 @@ template-macro-def (CV_LIST_ALL_MEMORIES) {
 
 template-macro-def (CV_REMEMBER_HELP) {
   content {
-    template ("Rappelez-vous que j'ai entendu l'aide")
+    template ("Rappelez-vous que j’ai entendu l’aide")
   }
 }
 
 template-macro-def (CV_HEARD_HELP) {
   content {
-    template ("Ai-je entendu l'aide?")
+    template ("Ai-je entendu l’aide?")
   }
 }
 

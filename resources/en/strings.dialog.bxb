@@ -1,6 +1,6 @@
 template-macro-def (WONT_DELETE_ANY) {
   content {
-    template ("Okay, I won't delete any memories.")
+    template ("Okay, I won’t delete any memories.")
   }
 }
 
@@ -18,7 +18,7 @@ template-macro-def (DELETING_ALL) {
 
 template-macro-def (WONT_DELETE_IT) {
   content {
-    template ("Okay, I won't delete it.")
+    template ("Okay, I won’t delete it.")
   }
 }
 
@@ -115,7 +115,7 @@ template-macro-def (WILL_REMEMBER) {
     }
   }
   content {
-    template ("I'll remember what you said.") {
+    template ("I’ll remember what you said.") {
       speech ("I will remember that you said: #{value(memories[0].text)}.")
     }
   }
@@ -137,7 +137,7 @@ template-macro-def (HERES_RECENT_SPOKEN) {
   }
   content {
     if (size(memories) > 0) {
-      template ("Here's the most recent memory.") {
+      template ("Here’s the most recent memory.") {
         speech ("You stored the most recent memory #{value(memories[0].howLongAgo)}. You told me: #{value(memories[0].text)}.")
       }
     } else {
@@ -163,16 +163,16 @@ template-macro-def (HERES_NO_MATCH) {
     if (memoryCount == 0) {
       template ("There are no memories, please ask me to remember something first.")
     } else-if (exists(searchText)) {
-      template ("I can't find a memory that matches a search for \"#{value(searchText)}\". Please try another question.")
+      template ("I can’t find a memory that matches a search for \"#{value(searchText)}\". Please try another question.")
     } else {
-      template ("I can't find a memory that makes sense as an answer for that.")
+      template ("I can’t find a memory that makes sense as an answer for that.")
     }
   }
 }
 
 template-macro-def (HERES_MATCH) {
   content {
-    template ("Here's the best match.")
+    template ("Here’s the best match.")
   }
 }
 
@@ -185,7 +185,7 @@ template-macro-def (HERES_MATCH_SPOKEN) {
     }
   }
   content {
-    template ("Here's the best match.") {
+    template ("Here’s the best match.") {
       speech ("You told me #{value(memories[0].howLongAgo)}: #{value(memories[0].text)}.")
     }
   }
@@ -359,7 +359,7 @@ template-macro-def (VERSION_PROBLEM) {
 
 template-macro-def (HELP_TEXT) {
   content {
-    template("Tell me to remember something, and I'll remember it. Ask me a question that includes a few words from that memory, and I'll find it for you.")
+    template("Tell me to remember something, and I’ll remember it. Ask me a question that includes a few words from that memory, and I’ll find it for you.")
   }
 }
 

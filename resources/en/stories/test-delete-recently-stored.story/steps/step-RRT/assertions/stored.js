@@ -4,7 +4,7 @@
  */
 
 describe('stored', () => {
-  const displayedText = 'Here\'s the most recent memory.'
+  const displayedText = 'Here’s the most recent memory.'
   const spokenText = 'You stored the most recent memory a few seconds ago. You told me: I stored this memory just a moment ago.'
 
   it(`matches the displayed and spoken text`, () => {
