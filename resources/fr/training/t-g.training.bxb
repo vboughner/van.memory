@@ -3,6 +3,11 @@ train (t-g3o9qz6q7r5v0om0q4l8g5lze) {
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
   last-modified (1577901716262)
 }
+train (t-gdp3a7r0ykcq985hrqwdus6vp) {
+  utterance ([g:RecallLastMemoryResponse] quel est mon dernier souvenir)
+  plan (Y2BkUC5LzNPLTc3NL6rUC0pNTszJ8UksLvEFCwSlFhfk5xWnMoAAI4gAAA==)
+  last-modified (1579214116242)
+}
 train (t-gpqf3doz3t7022rsf85ia14n4) {
   utterance ([g:ListResponse] quels sont mes souvenirs)
   plan (Y2BkEC9LzNPLTc3NL6rU88ksLglKLS7IzytOZQABRhABAA==)

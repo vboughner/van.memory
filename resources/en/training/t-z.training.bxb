@@ -3,3 +3,8 @@ train (t-zcaebd0h0y69o3g1s4uxc2m3j) {
   plan (Y2BkEC9LzNPLTc3NL6rU80jNKQhKLS7IzytOZQABRhABAA==)
   last-modified (1572716115333)
 }
+train (t-zx7885d26zfbgbd1808xnpyt8) {
+  utterance ([g:RecallLastMemoryResponse] what is my latest memory)
+  plan (Y2BkUC5LzNPLTc3NL6rUC0pNTszJ8UksLvEFCwSlFhfk5xWnMoAAI4gAAA==)
+  last-modified (1579213963411)
+}
