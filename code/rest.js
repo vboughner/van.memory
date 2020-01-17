@@ -2,7 +2,7 @@
 
 const rest = {}
 
-const CLIENT_VERSION = '1.4.0'
+const CLIENT_VERSION = '1.4.1'
 const SERVICE_URL = '/list'
 
 var types = require('types.js')
