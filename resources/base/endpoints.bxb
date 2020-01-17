@@ -58,5 +58,10 @@ endpoints {
        accepted-inputs ($vivContext, memory, replacementText)
        local-endpoint ("UpdateTextAction.js")
      }
+
+     action-endpoint (UpdateTextAfterMemorizeAction) {
+       accepted-inputs ($vivContext, memorizeResponse, replacementText)
+       local-endpoint ("UpdateTextAfterMemorizeAction.js")
+     }
   }
 }

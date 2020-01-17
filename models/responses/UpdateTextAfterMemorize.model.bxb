@@ -1,0 +1,11 @@
+structure (UpdateTextAfterMemorizeResponse) {
+  description (The resulting output after updating the text of a memory that was just memorized)
+  property (success) {
+    type (SuccessConcept)
+    min (Required) max (One)
+  }
+  property (memories) {
+    type (Memory)
+    min (Optional) max (Many)
+  }
+}

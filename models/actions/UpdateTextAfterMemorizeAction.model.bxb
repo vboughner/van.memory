@@ -1,0 +1,15 @@
+action (UpdateTextAfterMemorizeAction) {
+  description (updates a memory that was just memorized)
+  type (Search)
+  collect {
+    input (memorizeResponse) {
+      type (MemorizeResponse)
+      min (Required) max (One)
+    }
+    input (replacementText) {
+      type (ReplacementText)
+      min (Required) max (One)
+    }
+  }
+  output (UpdateTextAfterMemorizeResponse)
+}
