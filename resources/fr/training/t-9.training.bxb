@@ -1,3 +1,8 @@
+train (t-91nutlmu25ms32kubekqv9132) {
+  utterance ([g:ListResponse] quels sont tous mes souvenirs)
+  plan (Y2BkEC9LzNPLTc3NL6rU88ksLglKLS7IzytOZQABRhABAA==)
+  last-modified (1579280947132)
+}
 train (t-97qwddhhshrpl2pty57p0k6ui) {
   utterance ("[g:RecallResponse] quand (mon bus arrive)[v:RecallInputConcept]")
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
