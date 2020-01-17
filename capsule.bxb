@@ -9,8 +9,6 @@ capsule {
   }
   permissions {
     bixby-user-id-access
-    full-utterance-access
-    lock-screen-enabled
   }
   capsule-imports {
     import (viv.core) {
