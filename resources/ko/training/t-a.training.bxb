@@ -1,0 +1,5 @@
+train (t-a7una5k6whv367679lwqfk6s9) {
+  utterance ([g:ListResponse] 모든 추억을 나열)
+  plan (Y2BkEC9LzNPLTc3NL6rU88ksLglKLS7IzytOZQABRhABAA==)
+  last-modified (1579316178826)
+}

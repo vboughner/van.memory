@@ -4,5 +4,4 @@ structure (HelpResponse) {
     type (SuccessConcept)
     min (Required) max (One)
   }
-
 }

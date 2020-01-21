@@ -1,0 +1,506 @@
+template-macro-def (WONT_DELETE_ANY) {
+  content {
+    template ("Okay, I won’t delete any memories.")
+  }
+}
+
+template-macro-def (CONFIRM_DELETE_ALL) {
+  content {
+    template("Are you sure you want to delete all memories?")
+  }
+}
+
+template-macro-def (DELETING_ALL) {
+  content {
+    template ("Deleting all memories...")
+  }
+}
+
+template-macro-def (WONT_DELETE_IT) {
+  content {
+    template ("Okay, I won’t delete it.")
+  }
+}
+
+template-macro-def (CONFIRM_DELETE_JUST_REMEMBERED) {
+  content {
+    template ("You just asked me to remember that. Are you sure you want to delete it?")
+  }
+}
+
+template-macro-def (DELETING_THE_MEMORY) {
+  content {
+    template ("Deleting the memory...")
+  }
+}
+
+template-macro-def (CONFIRM_DELETE_RECENT) {
+  content {
+    template ("Are you sure you want to delete the most recently stored memory?")
+  }
+}
+
+template-macro-def (DELETING_RECENT) {
+  content {
+    template ("Deleting most recently stored memory...")
+  }
+}
+
+template-macro-def (DELETING_ONE) {
+  content {
+    template ("Deleting one memory...")
+  }
+}
+
+template-macro-def (CONFIRM_DELETE_MATCHED) {
+  content {
+    template ("Are you sure you want to delete everything that matched?")
+  }
+}
+
+template-macro-def (CONFIRM_DELETE_SHOWN) {
+  content {
+    template ("Are you sure you want to delete what was shown?")
+  }
+}
+
+template-macro-def (DELETING_SHOWN) {
+  content {
+    template ("Deleting what was shown...")
+  }
+}
+
+template-macro-def (GETTING_MEMORIES) {
+  content {
+    template ("Getting memories...")
+  }
+}
+
+template-macro-def (WHAT_TO_MEMORIZE) {
+  content {
+    template ("What would you like me to memorize for you?")
+  }
+}
+
+template-macro-def (STORING_MEMORY) {
+  content {
+    template ("Storing memory...")
+  }
+}
+
+template-macro-def (WHAT_TO_RECALL) {
+  content {
+    template ("What would you like me to recall for you?")
+  }
+}
+
+template-macro-def (RECALLING_RECENT) {
+  content {
+    template ("Recalling most recent memory...")
+  }
+}
+
+template-macro-def (SEARCHING_MEMORIES) {
+  content {
+    template ("Searching memories...")
+  }
+}
+
+template-macro-def (WILL_REMEMBER) {
+  params {
+    param (memories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
+    }
+  }
+  content {
+    template ("I’ll remember what you said.") {
+      speech ("I will remember that you said: #{value(memories[0].text)}.")
+    }
+  }
+}
+
+template-macro-def (PROBLEM_CANNOT_STORE) {
+  content {
+    template ("I ran into a problem and could not store what you said.")
+  }
+}
+
+template-macro-def (HERES_RECENT_SPOKEN) {
+  params {
+    param (memories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
+    }
+  }
+  content {
+    if (size(memories) > 0) {
+      template ("Here’s the most recent memory.") {
+        speech ("You stored the most recent memory #{value(memories[0].howLongAgo)}. You told me: #{value(memories[0].text)}.")
+      }
+    } else {
+      template ("There are no memories.")
+    }
+  }
+}
+
+template-macro-def (HERES_NO_MATCH) {
+  params {
+    param (memoryCount) {
+      type (core.Integer)
+      min (Required)
+      max (One)
+    }
+    param (searchText) {
+      type (SearchTextConcept)
+      min (Optional)
+      max (One)
+    }
+  }
+  content {
+    if (memoryCount == 0) {
+      template ("There are no memories, please ask me to remember something first.")
+    } else-if (exists(searchText)) {
+      template ("I can’t find a memory that matches a search for \"#{value(searchText)}\". Please try another question.")
+    } else {
+      template ("I can’t find a memory that makes sense as an answer for that.")
+    }
+  }
+}
+
+template-macro-def (HERES_MATCH) {
+  content {
+    template ("Here’s the best match.")
+  }
+}
+
+template-macro-def (HERES_MATCH_SPOKEN) {
+  params {
+    param (memories) {
+      type (Memory)
+      min (Required)
+      max (Many)
+    }
+  }
+  content {
+    template ("Here’s the best match.") {
+      speech ("You told me #{value(memories[0].howLongAgo)}: #{value(memories[0].text)}.")
+    }
+  }
+}
+
+template-macro-def (HERES_SIMILAR) {
+  content {
+    template ("Here are similar memories.")
+  }
+}
+
+template-macro-def (FIRST_MEMORY) {
+  content {
+    template ("This is the first memory.")
+  }
+}
+
+template-macro-def (ALL_MEMORIES) {
+  content {
+    template ("Those are all the memories.")
+  }
+}
+
+template-macro-def (NEXT_MEMORY) {
+  content {
+    template ("Would you like to hear the next matching memory?")
+  }
+}
+
+template-macro-def (YOU_TOLD_ME) {
+  params {
+    param (memory) {
+      type (Memory)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("You told me #{value(memory.howLongAgo)}, #{value(memory.text)}")
+  }
+}
+
+template-macro-def (ALL_SIMILAR_MEMORIES) {
+  params {
+    param (memories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
+    }
+  }
+  content {
+    if (size(memories) > 0) {
+      template ("Here are similar memories.") {
+        speech ("You told me #{value(memories[0].howLongAgo)}: #{value(memories[0].text)}. Here are all memories that sound similar:")
+      }
+    }
+  }
+}
+
+template-macro-def (FIRST_N_MEMORIES) {
+  params {
+    param (pageSize) {
+      type (core.Integer)
+      min (Required)
+    }
+  }
+  content {
+    template ("The first #{value(pageSize)} memories are:")
+  }
+}
+
+template-macro-def (LAST_N_MEMORIES) {
+  params {
+    param (pageSize) {
+      type (core.Integer)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("The last #{value(pageSize)} memories are:")
+  }
+}
+
+template-macro-def (NEXT_N_MEMORIES) {
+  params {
+    param (pageSize) {
+      type (core.Integer)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("The next #{value(pageSize)} memories are:")
+  }
+}
+
+template-macro-def (LAST_MEMORY) {
+  content {
+    template ("The last memory is:")
+  }
+}
+
+template-macro-def (THIS_MEMORY) {
+  content {
+    template ("This memory is:")
+  }
+}
+
+template-macro-def (THESE_MEMORIES) {
+  content {
+    template ("These memories are:")
+  }
+}
+
+template-macro-def (WHAT_TO_DO) {
+  content {
+    template ("What would you like to do?")
+  }
+}
+
+template-macro-def (WOULD_LIKE_TO_HEAR_MORE) {
+  content {
+    template ("Would you like to hear more memories?")
+  }
+}
+
+template-macro-def (WHAT_IS_UPDATED_MEMORY) {
+  content {
+    template ("What is the updated memory?")
+  }
+}
+
+template-macro-def (UPDATED_MEMORY_SPOKEN) {
+  params {
+    param (memories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
+    }
+  }
+  content {
+    if (size(memories) > 0) {
+      template ("I updated that memory.") {
+        speech ("I updated that memory, and will remember that you said: #{value(memories[0].text)}.")
+      }
+    } else {
+      template ("There was a problem and I could not update that memory.")
+    }
+  }
+}
+
+template-macro-def (VERSION_IS) {
+  params {
+    param (serverVersion) {
+      type (core.Text)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("My Brain lambda version is #{value(serverVersion)}")
+  }
+}
+
+template-macro-def (VERSION_PROBLEM) {
+  content {
+    template ("I had a problem trying to get the server version.")
+  }
+}
+
+template-macro-def (HELP_TEXT) {
+  content {
+    template("Tell me to remember something, and I’ll remember it. Ask me a question that includes a few words from that memory, and I’ll find it for you.")
+  }
+}
+
+template-macro-def (LIST_MEMORIES) {
+  params {
+    param (success) {
+      type (core.Boolean)
+      min (Required)
+      max(One)
+    }
+    param (memories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
+    }
+  }
+  content {
+    if (success) {
+      if (size(memories) == 0) {
+        template ("There are no memories.")
+      } else-if (size(memories) == 1) {
+        template ("You have 1 memory.")
+      } else {
+        template ("You have #{size(memories)} memories.")
+      }
+    } else {
+      template("There was a problem and I could not retrieve the memories.")
+    }
+  }
+}
+
+template-macro-def (DELETED_ALL_MEMORIES) {
+  content {
+    template ("I deleted all memories.")
+  }
+}
+
+template-macro-def (COULD_NOT_DELETE_ALL_MEMORIES) {
+  content {
+    template ("There was a problem and I could not delete all memories.")
+  }
+}
+
+template-macro-def (DELETED_ONE_MEMORY) {
+  content {
+    template ("I deleted that memory.")
+  }
+}
+
+template-macro-def (COULD_NOT_DELETE_ONE_MEMORY) {
+  content {
+    template ("There was a problem and I could not delete that memory.")
+  }
+}
+
+template-macro-def (DELETED_SOME_MEMORIES) {
+  params {
+    param (deletedMemories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
+    }
+  }
+  content {
+    if (size(deletedMemories) == 1) {
+      template ("I deleted 1 memory.")
+    } else {
+      template ("I deleted #{size(deletedMemories)} memories.")
+    }
+  }
+}
+
+template-macro-def (COULD_NOT_DELETE_SOME_MEMORIES) {
+  params {
+    param (deletedMemories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
+    }
+  }
+  content {
+    if (size(deletedMemories) == 0) {
+      template ("There was a problem and I could not delete any memories.")
+    } else-if (size(deletedMemories) == 1) {
+      template ("There was a problem and I could only delete 1 memory.")
+    } else {
+      template ("There was a problem and I could only delete #{size(deletedMemories)} memories.")
+    }
+  }
+}
+
+template-macro-def (SAVE) {
+  content {
+    template ("저장")
+  }
+}
+
+template-macro-def (CV_LIST_ALL_MEMORIES) {
+  content {
+    template ("모든 추억을 나열")
+  }
+}
+
+template-macro-def (CV_REMEMBER_HELP) {
+  content {
+    template ("Remember that I heard the help")
+  }
+}
+
+template-macro-def (CV_HEARD_HELP) {
+  content {
+    template ("Have I heard the help?")
+  }
+}
+
+template-macro-def (CV_MOST_RECENT_MEMORY) {
+  content {
+    template ("가장 최근의 기억")
+  }
+}
+
+template-macro-def (CV_DELETE_ALL_MEMORIES) {
+  content {
+    template ("모든 추억을 삭제")
+  }
+}
+
+template-macro-def (CV_DELETE_THIS_MEMORY) {
+  content {
+    template ("이 메모리를 삭제")
+  }
+}
+
+template-macro-def (CV_DELETE_THESE_MEMORIES) {
+  content {
+    template ("이 추억을 삭제")
+  }
+}
+
+template-macro-def (CV_EDIT_THIS_MEMORY) {
+  content {
+    template ("이 기억을 편집하다")
+  }
+}
