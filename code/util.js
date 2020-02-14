@@ -12,9 +12,15 @@ util.cleanString = function(utterance) {
 util.getConfigAndSecrets = function() {
   const config = require('config');
   const secret = require('secret');
+
   const whereami = config.get('whereami');
   const brainLambdaUrl = config.get('brainLambdaUrl');
-  const secretClientApiKey = secret.get('secretClientApiKey');
+  let secretClientApiKey = secret.get('secretClientApiKey');
+  if (!secretClientApiKey) {
+    // get an example key from the capsule.properties file
+    secretClientApiKey = config.get('secretClientApiKey');
+  }
+
   return {
     whereami: whereami,
     brainLambdaUrl: brainLambdaUrl,

@@ -1,6 +1,6 @@
 capsule {
-  id (van.memory)
-  version (1.4.2)
+  id (example.memory)
+  version (1.4.3)
   format (3)
   targets {
     target (bixby-mobile-en)
@@ -15,7 +15,7 @@ capsule {
       as (core)
     }
   }
-  runtime-version (2)
+  runtime-version (3)
   store-sections {
     section (Productivity)
     section (Utilities)
