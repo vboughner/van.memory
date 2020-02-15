@@ -2,7 +2,7 @@ capsule-info {
   display-name (Mi Cerebro)
   developer-name (Van Boughner)
   icon-asset (head-brains.png)
-  description ("Pídele a My Brain que te recuerde cosas. Mi cerebro puede ayudarte a recordar cosas sobre las personas, dónde colocaste algo o cuándo fue la última vez que hiciste algo. Ayuda a incluir un par de palabras clave en su memoria que puede usar más adelante en una pregunta. El código de esta cápsula está disponible de forma gratuita. ¡Espero que encuentres esto útil de alguna manera!")
+  description ("Pídele a Mi Cerebro que te recuerde cosas. Mi cerebro puede ayudarte a recordar cosas sobre las personas, dónde colocaste algo o cuándo fue la última vez que hiciste algo. Ayuda a incluir un par de palabras clave en su memoria que puede usar más adelante en una pregunta. El código de esta cápsula está disponible de forma gratuita. ¡Espero que encuentres esto útil de alguna manera!")
   dispatch-name (Mi Cerebro)
   privacy-policy-url (https://www.vanboughner.com/my-brain-privacy-policy-for-bixby-in-spanish/)
   terms-url (https://www.vanboughner.com/my-brain-terms-of-service-for-bixby-in-spanish/)
