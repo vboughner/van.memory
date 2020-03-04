@@ -1,3 +1,8 @@
+train (t-k1egmbwb3nez4ju95qrqztvdv) {
+  utterance ("[g:RecallResponse] what do you remember about (cookies and cats)[v:RecallInputConcept]")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583285127067)
+}
 train (t-k1r6uxishqm5poskyiuuvlu3d) {
   utterance ("[g:RecallResponse] recall what I said about (march 29th)[v:RecallInputConcept]")
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
