@@ -1,0 +1,506 @@
+template-macro-def (WONT_DELETE_ANY) {
+  content {
+    template ("좋아, 나는 기억을 삭제하지 않습니다.")
+  }
+}
+
+template-macro-def (CONFIRM_DELETE_ALL) {
+  content {
+    template("모든 기억을 삭제 하시겠습니까?")
+  }
+}
+
+template-macro-def (DELETING_ALL) {
+  content {
+    template ("모든 기억을 삭제하는 중 ...")
+  }
+}
+
+template-macro-def (WONT_DELETE_IT) {
+  content {
+    template ("좋아요, 삭제하지 않겠습니다.")
+  }
+}
+
+template-macro-def (CONFIRM_DELETE_JUST_REMEMBERED) {
+  content {
+    template ("이건 방금 저장한 기억입니다. 정말 삭제 하시겠습니까?")
+  }
+}
+
+template-macro-def (DELETING_THE_MEMORY) {
+  content {
+    template ("기억 삭제 중 ...")
+  }
+}
+
+template-macro-def (CONFIRM_DELETE_RECENT) {
+  content {
+    template ("가장 최근에 저장된 기억 삭제 하시겠습니까?")
+  }
+}
+
+template-macro-def (DELETING_RECENT) {
+  content {
+    template ("가장 최근에 저장된 기억 삭제 중 ...")
+  }
+}
+
+template-macro-def (DELETING_ONE) {
+  content {
+    template ("하나의 기억 삭제하는 중 ...")
+  }
+}
+
+template-macro-def (CONFIRM_DELETE_MATCHED) {
+  content {
+    template ("일치하는 모든 항목을 삭제 하시겠습니까?")
+  }
+}
+
+template-macro-def (CONFIRM_DELETE_SHOWN) {
+  content {
+    template ("표시된 내용을 삭제 하시겠습니까?")
+  }
+}
+
+template-macro-def (DELETING_SHOWN) {
+  content {
+    template ("표시된 내용 삭제 중 ...")
+  }
+}
+
+template-macro-def (GETTING_MEMORIES) {
+  content {
+    template ("기억 얻기 ...")
+  }
+}
+
+template-macro-def (WHAT_TO_MEMORIZE) {
+  content {
+    template ("내가 당신을 위해 무엇을 외우 길 원하십니까?")
+  }
+}
+
+template-macro-def (STORING_MEMORY) {
+  content {
+    template ("기억 저장 중 ...")
+  }
+}
+
+template-macro-def (WHAT_TO_RECALL) {
+  content {
+    template ("내가 당신을 위해 무엇을 불러오하고 싶습니까?")
+  }
+}
+
+template-macro-def (RECALLING_RECENT) {
+  content {
+    template ("가장 최근의 기억 불러오는 중 ...")
+  }
+}
+
+template-macro-def (SEARCHING_MEMORIES) {
+  content {
+    template ("기억을 찾는 중 ...")
+  }
+}
+
+template-macro-def (WILL_REMEMBER) {
+  params {
+    param (memories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
+    }
+  }
+  content {
+    template ("당신이 한 말을 기억할 것입니다.") {
+      speech ("나는 당신이 말한 것을 기억할 것입니다: #{value(memories[0].text)}.")
+    }
+  }
+}
+
+template-macro-def (PROBLEM_CANNOT_STORE) {
+  content {
+    template ("문제가 발생하여 말한 내용을 저장할 수 없습니다.")
+  }
+}
+
+template-macro-def (HERES_RECENT_SPOKEN) {
+  params {
+    param (memories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
+    }
+  }
+  content {
+    if (size(memories) > 0) {
+      template ("다음은 가장 최근의 기억이다.") {
+        speech ("#{value(memories[0].howLongAgo)} 당신은 기억을 저장. 당신은 나에게 말했다: #{value(memories[0].text)}.")
+      }
+    } else {
+      template ("저장된 기억이 없습니다.")
+    }
+  }
+}
+
+template-macro-def (HERES_NO_MATCH) {
+  params {
+    param (memoryCount) {
+      type (core.Integer)
+      min (Required)
+      max (One)
+    }
+    param (searchText) {
+      type (SearchTextConcept)
+      min (Optional)
+      max (One)
+    }
+  }
+  content {
+    if (memoryCount == 0) {
+      template ("저장된 기억이 없습니다. 나에게 무언가를 기억해달라고 부탁하십시오.")
+    } else-if (exists(searchText)) {
+      template ("#{value (searchText)} 에 대한 검색 결과가 없습니다. 다른 질문을 시도하십시오.")
+    } else {
+      template ("이에 대한 해답이되는 기억을 찾을 수 없습니다.")
+    }
+  }
+}
+
+template-macro-def (HERES_MATCH) {
+  content {
+    template ("가장 좋은 대답은 다음과 같습니다.")
+  }
+}
+
+template-macro-def (HERES_MATCH_SPOKEN) {
+  params {
+    param (memories) {
+      type (Memory)
+      min (Required)
+      max (Many)
+    }
+  }
+  content {
+    template ("가장 좋은 대답은 다음과 같습니다.") {
+      speech ("#{value(memories[0].howLongAgo)} 당신은 나에게 말했다: #{value(memories[0].text)}.")
+    }
+  }
+}
+
+template-macro-def (HERES_SIMILAR) {
+  content {
+    template ("이것들은 비슷한 기억입니다.")
+  }
+}
+
+template-macro-def (FIRST_MEMORY) {
+  content {
+    template ("이것은 첫 번째 기억입니다.")
+  }
+}
+
+template-macro-def (ALL_MEMORIES) {
+  content {
+    template ("그것들은 모두 기억입니다.")
+  }
+}
+
+template-macro-def (NEXT_MEMORY) {
+  content {
+    template ("일치하는 다음 기억을 듣고 싶습니다?")
+  }
+}
+
+template-macro-def (YOU_TOLD_ME) {
+  params {
+    param (memory) {
+      type (Memory)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("#{value(memory.howLongAgo)} 당신은 나에게 말했다: #{value(memory.text)}.")
+  }
+}
+
+template-macro-def (ALL_SIMILAR_MEMORIES) {
+  params {
+    param (memories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
+    }
+  }
+  content {
+    if (size(memories) > 0) {
+      template ("이것들은 비슷한 기억입니다.") {
+        speech ("#{value(memories[0].howLongAgo)} 당신은 나에게 말했다: #{value(memories[0].text)}. 이것들은 비슷한 기억입니다.")
+      }
+    }
+  }
+}
+
+template-macro-def (FIRST_N_MEMORIES) {
+  params {
+    param (pageSize) {
+      type (core.Integer)
+      min (Required)
+    }
+  }
+  content {
+    template ("처음 #{value(pageSize)} 개의 기억은:")
+  }
+}
+
+template-macro-def (LAST_N_MEMORIES) {
+  params {
+    param (pageSize) {
+      type (core.Integer)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("마지막 #{value(pageSize)} 개의 기억은:")
+  }
+}
+
+template-macro-def (NEXT_N_MEMORIES) {
+  params {
+    param (pageSize) {
+      type (core.Integer)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("다음 #{value(pageSize)} 개의 기억은:")
+  }
+}
+
+template-macro-def (LAST_MEMORY) {
+  content {
+    template ("마지막 기억은:")
+  }
+}
+
+template-macro-def (THIS_MEMORY) {
+  content {
+    template ("이 기억은:")
+  }
+}
+
+template-macro-def (THESE_MEMORIES) {
+  content {
+    template ("이 기억들은:")
+  }
+}
+
+template-macro-def (WHAT_TO_DO) {
+  content {
+    template ("무엇을 하시겠습니까?")
+  }
+}
+
+template-macro-def (WOULD_LIKE_TO_HEAR_MORE) {
+  content {
+    template ("당신은 더 많은 기억을 듣고 하시겠습니까?")
+  }
+}
+
+template-macro-def (WHAT_IS_UPDATED_MEMORY) {
+  content {
+    template ("업데이트 된 기억 무엇입니까?")
+  }
+}
+
+template-macro-def (UPDATED_MEMORY_SPOKEN) {
+  params {
+    param (memories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
+    }
+  }
+  content {
+    if (size(memories) > 0) {
+      template ("나는 그 기억을 업데이트했다.") {
+        speech ("기억를 업데이트했으며 다음을 기억할 것입니다: #{value(memories[0].text)}.")
+      }
+    } else {
+      template ("문제가 발생하여 해당 기억를 업데이트 할 수 없습니다.")
+    }
+  }
+}
+
+template-macro-def (VERSION_IS) {
+  params {
+    param (serverVersion) {
+      type (core.Text)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("나의 두뇌 서버 버전은: #{value (serverVersion)}")
+  }
+}
+
+template-macro-def (VERSION_PROBLEM) {
+  content {
+    template ("서버 버전을 가져 오는 중에 문제가 발생했습니다.")
+  }
+}
+
+template-macro-def (HELP_TEXT) {
+  content {
+    template("당신이 무언가를 기억하라고하면, 나는 그것을 기억할 것입니다. 그 기억에서 몇 마디가 들어있는 질문 하나를하면 찾을 것입니다.")
+  }
+}
+
+template-macro-def (LIST_MEMORIES) {
+  params {
+    param (success) {
+      type (core.Boolean)
+      min (Required)
+      max(One)
+    }
+    param (memories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
+    }
+  }
+  content {
+    if (success) {
+      if (size(memories) == 0) {
+        template ("저장된 기억이 없습니다.")
+      } else-if (size(memories) == 1) {
+        template ("기억 1 개 있습니다.")
+      } else {
+        template ("#{size (memories)} 개의 기억가 있습니다.")
+      }
+    } else {
+      template("문제가 발생하여 기억을 검색 할 수 없습니다.")
+    }
+  }
+}
+
+template-macro-def (DELETED_ALL_MEMORIES) {
+  content {
+    template ("모든 기억을 삭제했습니다.")
+  }
+}
+
+template-macro-def (COULD_NOT_DELETE_ALL_MEMORIES) {
+  content {
+    template ("문제가 발생하여 기억을 삭제할 수 없습니다.")
+  }
+}
+
+template-macro-def (DELETED_ONE_MEMORY) {
+  content {
+    template ("그 기억을 삭제했습니다.")
+  }
+}
+
+template-macro-def (COULD_NOT_DELETE_ONE_MEMORY) {
+  content {
+    template ("문제가 발생하여 해당 기억를 삭제할 수 없습니다.")
+  }
+}
+
+template-macro-def (DELETED_SOME_MEMORIES) {
+  params {
+    param (deletedMemories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
+    }
+  }
+  content {
+    if (size(deletedMemories) == 1) {
+      template ("기억 1 개를 삭제했습니다.")
+    } else {
+      template ("#{size(deletedMemories)} 개의 기억을 삭제했습니다.")
+    }
+  }
+}
+
+template-macro-def (COULD_NOT_DELETE_SOME_MEMORIES) {
+  params {
+    param (deletedMemories) {
+      type (Memory)
+      min (Optional)
+      max (Many)
+    }
+  }
+  content {
+    if (size(deletedMemories) == 0) {
+      template ("문제가 발생하여 기억를 삭제할 수 없습니다.")
+    } else-if (size(deletedMemories) == 1) {
+      template ("문제가 발생하여 1 개의 기억 만 삭제할 수 있습니다.")
+    } else {
+      template ("문제가 있으며 #{size(deletedMemories)} 개의 기억 만 삭제되었습니다.")
+    }
+  }
+}
+
+template-macro-def (SAVE) {
+  content {
+    template ("저장")
+  }
+}
+
+template-macro-def (CV_LIST_ALL_MEMORIES) {
+  content {
+    template ("모든 기억을 보여줘")
+  }
+}
+
+template-macro-def (CV_REMEMBER_HELP) {
+  content {
+    template ("내가 도움을 들었다는 것을 기억")
+  }
+}
+
+template-macro-def (CV_HEARD_HELP) {
+  content {
+    template ("도움말 텍스트를 들었습니까?")
+  }
+}
+
+template-macro-def (CV_MOST_RECENT_MEMORY) {
+  content {
+    template ("가장 최근의 기억")
+  }
+}
+
+template-macro-def (CV_DELETE_ALL_MEMORIES) {
+  content {
+    template ("모든 기억을 삭제")
+  }
+}
+
+template-macro-def (CV_DELETE_THIS_MEMORY) {
+  content {
+    template ("이 기억 삭제")
+  }
+}
+
+template-macro-def (CV_DELETE_THESE_MEMORIES) {
+  content {
+    template ("이 기억을 삭제")
+  }
+}
+
+template-macro-def (CV_EDIT_THIS_MEMORY) {
+  content {
+    template ("이 기억을 편집하다")
+  }
+}

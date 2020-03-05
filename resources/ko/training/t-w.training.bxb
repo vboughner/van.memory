@@ -1,0 +1,5 @@
+train (t-w2egudn9j6xag4gmypzvxx5i2) {
+  utterance ("[g:MemorizeResponse] (마지막 쉼표를 생략해야합니다)[v:MemorizeInputConcept] 기억하다")
+  plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
+  last-modified (1583437083510)
+}

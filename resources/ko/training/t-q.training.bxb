@@ -1,0 +1,25 @@
+train (t-q3fp8uvozhqyanapq0qsa3n68) {
+  utterance ([g:DeleteAllAction:continue:ListResponse] 삭제)
+  plan (Y2BiUEitSMwtyEnVy03NzS+q1HNJzUktSXXMyQlKLS7IzytOZZDDpcIxuSQzP4+BEQgZoBhIAgA=)
+  last-modified (1583436687761)
+}
+train (t-q99gyi319wukql9s7iuzosu40) {
+  utterance ([g:DeleteAllAction] 모든 기억을 삭제)
+  plan (Y2BiUEitSMwtyEnVy03NzS+q1HNJzUktSXXMyQlKLS7IzytOZZDDpcIxuSQzP4+BEQgZoBhIAgA=)
+  last-modified (1583434258873)
+}
+train (t-q9ckjee40reuk8gizejjv0jma) {
+  utterance ("[g:MemorizeResponse] (내가 약을 먹었다는 것을)[v:MemorizeInputConcept] 기억")
+  plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
+  last-modified (1583437428683)
+}
+train (t-qnydooq66yj3tr63atoavtnzn) {
+  utterance ("[g:MemorizeResponse] (쓰레기를)[v:MemorizeInputConcept] 버리는 것을 잊지 마십시오")
+  plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
+  last-modified (1583434631910)
+}
+train (t-qyful4n3ci0inymquh45b5fs8) {
+  utterance ([g:ListResponse] 나를 위해 무엇을 기억하고 있습니까)
+  plan (Y2BkkE6tSMwtyEnVy03NzS+q1PPJLC4JSi0uyM8rTmUAAUYQAQA=)
+  last-modified (1583380937973)
+}

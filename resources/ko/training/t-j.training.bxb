@@ -1,0 +1,5 @@
+train (t-j0ay2dk2fd73mldjjd6j9r83n) {
+  utterance ("[g:DeleteConfirmation:prompt] (아니)[v:DeleteConfirmation:false]요 괜찮습니다")
+  plan (Y2BiUEytSMwtyEnVy03NzS+q1HNJzUktSXXOz0vLLMpNLMnMzyNGCSMQMjDwADETEAPZAA==)
+  last-modified (1583435114185)
+}

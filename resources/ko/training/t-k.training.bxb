@@ -1,0 +1,20 @@
+train (t-kauko7o9atbwyku3weu3c694v) {
+  utterance ("[g:RecallResponse] (생일)[v:RecallInputConcept] 검색")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583435456105)
+}
+train (t-khk5kxjjghe3mzal5v8vjxqkn) {
+  utterance ("[g:MemorizeResponse] (어머니의 생일이 1 월 22 일임을)[v:MemorizeInputConcept] 기억해줘")
+  plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
+  last-modified (1583436884521)
+}
+train (t-ktzq1pvp0e01yiwnpkha4x3ea) {
+  utterance ("[g:RecallResponse] (학교 마지막 날이 언제인지)[v:RecallInputConcept] 불러오다")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583436786125)
+}
+train (t-kw2zar85m9p56u536wipounuv) {
+  utterance ([g:DeleteSomeAction:continue:RecallResponse] 이 기억을 삭제)
+  plan (Y2BmUEytSMwtyEnVy03NzS+q1HNJzUktSQ3Oz00NSi0uyM8rTmWQx6nEMbkkMz+PQRZNQVBqcmJODlw/EwMjEDMASUYGBhgNAA==)
+  last-modified (1583381896602)
+}

@@ -1,0 +1,10 @@
+train (t-sxawhrpmqzxtf89npwlleuawc) {
+  utterance ("[g:RecallResponse] 내 (운동 루틴을)[v:RecallInputConcept] 찾으십시오")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583382280682)
+}
+train (t-sxgos1bswgtc9y4px2l6otb5d) {
+  utterance ([g:DeleteJustMemorizedAction:continue:MemorizeResponse] 이 기억 삭제)
+  plan (Y2Bm0EqtSMwtyEnVy03NzS+q1HNJzUktSfUqLS7xBQlkVqWmBKUWF+TnFacyaBBW65hckpmfxyCPphImDzeKiYERiBmAJCMDA4wGAA==)
+  last-modified (1583382050761)
+}

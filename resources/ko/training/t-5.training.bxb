@@ -1,0 +1,35 @@
+train (t-5flmdd3z4y6r9lyr5itvlj8vf) {
+  utterance ([g:UpdateTextResponse:continue:Memory] 이 기억을 편집하다)
+  plan (Y2BkUEytSMwtyEnVy03NzS+q1AstSEksSQ1JrSgJSi0uyM8rTmUAAUYQAQA=)
+  last-modified (1583434559259)
+}
+train (t-5g9f9xdq3rzovguee45paoxw0) {
+  utterance ("[g:RecallResponse] (항아리에 쿠키가)[v:RecallInputConcept] 몇 개인 지 불러오다")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583437290296)
+}
+train (t-5gww980m2k2xbxmsf9e3nb7iv) {
+  utterance ([g:DeleteAllAction] 모든 기억을 지워줘)
+  plan (Y2BiUEitSMwtyEnVy03NzS+q1HNJzUktSXXMyQlKLS7IzytOZZDDpcIxuSQzP4+BEQgZoBhIAgA=)
+  last-modified (1583434272573)
+}
+train (t-5hbv16v5l3gqi8w9f6uymklkp) {
+  utterance ([g:ListResponse] 모든 기억을 보여)
+  plan (Y2BkkE6tSMwtyEnVy03NzS+q1PPJLC4JSi0uyM8rTmUAAUYQAQA=)
+  last-modified (1583380802072)
+}
+train (t-5l39zexv4cbb9q27xs1uo9uhq) {
+  utterance ([g:DeleteAllAction:continue:ListResponse] 이 기억을 지우다)
+  plan (Y2BiUEitSMwtyEnVy03NzS+q1HNJzUktSXXMyQlKLS7IzytOZZDDpcIxuSQzP4+BEQgZoBhIAgA=)
+  last-modified (1583437160767)
+}
+train (t-5n0igmab3gmtnj3b11vtcr576) {
+  utterance ("[g:MemorizeResponse] (감자를 사야한다는 것을)[v:MemorizeInputConcept] 기억하다")
+  plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
+  last-modified (1583435839548)
+}
+train (t-5v3ay35lxk1xrmgtsbixfv6ac) {
+  utterance ("[g:RecallInputConcept:prompt] (어머니의 생일)[v:RecallInputConcept]")
+  plan (Y2BiUEytSMwtyEnVy03NzS+q1AtKTU7MyfHMKygtcc7PS04tKCFGCSMQMjDwADETEAPZAA==)
+  last-modified (1583437249164)
+}

@@ -1,0 +1,20 @@
+train (t-x64q8dxdt3znaih6w9li19nle) {
+  utterance ("[g:RecallResponse] (내 친구는)[v:RecallInputConcept] 누구야")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583437556699)
+}
+train (t-xalxe4xqeztpabqnas83v3lr9) {
+  utterance ([g:DeleteAllAction:continue:ListResponse] 이 기억 지우다)
+  plan (Y2BiUEitSMwtyEnVy03NzS+q1HNJzUktSXXMyQlKLS7IzytOZZDDpcIxuSQzP4+BEQgZoBhIAgA=)
+  last-modified (1583436032917)
+}
+train (t-xqgy93bdxvldgnxelibgagtr4) {
+  utterance ([g:DeleteOneResponse:continue:Memory] 지우다)
+  plan (Y2BkUEitSMwtyEnVy03NzS+q1HNJzUktSfXPSw1KLS7IzytOZQABRhABAA==)
+  last-modified (1583432176775)
+}
+train (t-xrlrr31gzhvtgw0vwmtckdmdx) {
+  utterance ([g:RecallLastMemoryResponse] 가장 최근의 기억)
+  plan (Y2BkUE+tSMwtyEnVy03NzS+q1AtKTU7MyfFJLC7xBQsEpRYX5OcVpzKAACOIAAA=)
+  last-modified (1583381679364)
+}

@@ -1,0 +1,20 @@
+train (t-b2unhcnqc58ztg07dmjed70xr) {
+  utterance ([g:DeleteAllAction:continue:ListResponse] 이 기억 지워줘)
+  plan (Y2BiUEitSMwtyEnVy03NzS+q1HNJzUktSXXMyQlKLS7IzytOZZDDpcIxuSQzP4+BEQgZoBhIAgA=)
+  last-modified (1583436014144)
+}
+train (t-bbbo62zy8tkqa4wenzbnl1drw) {
+  utterance ("[g:RecallResponse] (프레드가 한 말을)[v:RecallInputConcept] 불러오다")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583436491284)
+}
+train (t-befccyhdu45kx5kmp2auk7nz2) {
+  utterance ([g:DeleteJustMemorizedAction:continue:MemorizeResponse] 이 기억 지우다)
+  plan (Y2Bm0EqtSMwtyEnVy03NzS+q1HNJzUktSfUqLS7xBQlkVqWmBKUWF+TnFacyaBBW65hckpmfxyCPphImDzeKiYERiBmAJCMDA4wGAA==)
+  last-modified (1583382104162)
+}
+train (t-bn5kx2moq28a1egmnvk4bmtg9) {
+  utterance ([g:RecallLastMemoryResponse] 가장 최근의 기억은 무엇입니까)
+  plan (Y2BkUE+tSMwtyEnVy03NzS+q1AtKTU7MyfFJLC7xBQsEpRYX5OcVpzKAACOIAAA=)
+  last-modified (1583435248265)
+}

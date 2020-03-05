@@ -1,0 +1,15 @@
+train (t-2skxuldrje8qdgjs79shckp6f) {
+  utterance ("[g:RecallResponse] 누가 (3 월에 생일)[v:RecallInputConcept]을합니까?")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583381787540)
+}
+train (t-2tbd5ximjcf7if36o57mchh69) {
+  utterance ("[g:MemorizeResponse] (우리 파티에는 10 명이 있다고)[v:MemorizeInputConcept] 기억해")
+  plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
+  last-modified (1583432583560)
+}
+train (t-2vie8apbzr32ujejgecqv41x0) {
+  utterance ("[g:DeleteConfirmation:prompt] (해)[v:DeleteConfirmation:true]")
+  plan (Y2BiUEytSMwtyEnVy03NzS+q1HNJzUktSXXOz0vLLMpNLMnMzyNGCSMQMjDwADETEAPZAA==)
+  last-modified (1583436988616)
+}

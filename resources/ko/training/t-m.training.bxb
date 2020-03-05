@@ -1,0 +1,25 @@
+train (t-m0k8t88qgapjabfosjc3g999s) {
+  utterance ([g:ListResponse] 내 모든 기억을 말해줘)
+  plan (Y2BkkE6tSMwtyEnVy03NzS+q1PPJLC4JSi0uyM8rTmUAAUYQAQA=)
+  last-modified (1583437514116)
+}
+train (t-magjlecgyh9afch3eo5pku6av) {
+  utterance ([g:RecallLastMemoryResponse] 내 최신 기억은 무엇입니까)
+  plan (Y2BkUE+tSMwtyEnVy03NzS+q1AtKTU7MyfFJLC7xBQsEpRYX5OcVpzKAACOIAAA=)
+  last-modified (1583437660566)
+}
+train (t-md4byd09c2gtv88hfg46hhx1d) {
+  utterance ([g:DeleteAllAction:continue:ListResponse] 이 기억 삭제)
+  plan (Y2BiUEitSMwtyEnVy03NzS+q1HNJzUktSXXMyQlKLS7IzytOZZDDpcIxuSQzP4+BEQgZoBhIAgA=)
+  last-modified (1583435993492)
+}
+train (t-mgu1diwhdhroip1uf3uh1q938) {
+  utterance ("[g:RecallResponse] (버스 일정을)[v:RecallInputConcept] 검색")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583437212715)
+}
+train (t-muywzkqf9p59gf9z5r9gov3z8) {
+  utterance ([g:DeleteAllAction] 모든 기억을 삭제하다)
+  plan (Y2BiUEitSMwtyEnVy03NzS+q1HNJzUktSXXMyQlKLS7IzytOZZDDpcIxuSQzP4+BEQgZoBhIAgA=)
+  last-modified (1583434292145)
+}

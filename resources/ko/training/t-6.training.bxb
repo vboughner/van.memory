@@ -1,0 +1,15 @@
+train (t-64cbgfs4el1d2kmrmo2fxd4nm) {
+  utterance ([g:DeleteSomeAction:continue:RecallResponse] 이 기억 삭제)
+  plan (Y2BmUEytSMwtyEnVy03NzS+q1HNJzUktSQ3Oz00NSi0uyM8rTmWQx6nEMbkkMz+PQRZNQVBqcmJODlw/EwMjEDMASUYGBhgNAA==)
+  last-modified (1583431860677)
+}
+train (t-6i7p7nfx2iebnqzxakr8l9lr6) {
+  utterance ("[g:RecallResponse] (어머니의 생일은)[v:RecallInputConcept] 무엇입니까")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583431531323)
+}
+train (t-6ouvdk1gommuf4hvdbyvr8auo) {
+  utterance ([g:ListResponse] 기억이 몇 개인가)
+  plan (Y2BkkE6tSMwtyEnVy03NzS+q1PPJLC4JSi0uyM8rTmUAAUYQAQA=)
+  last-modified (1583380749949)
+}

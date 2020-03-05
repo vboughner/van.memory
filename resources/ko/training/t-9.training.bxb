@@ -1,0 +1,15 @@
+train (t-9ljuy48zwataqqoutvuw8fx32) {
+  utterance ([g:DeleteOneResponse:continue:Memory] 이 기억 지우다)
+  plan (Y2BkUEitSMwtyEnVy03NzS+q1HNJzUktSfXPSw1KLS7IzytOZQABRhABAA==)
+  last-modified (1583435390322)
+}
+train (t-9rgftwovljvlz6uyucl7aq7hn) {
+  utterance ([g:DeleteSomeAction:continue:RecallResponse] 지우다)
+  plan (Y2BmUEytSMwtyEnVy03NzS+q1HNJzUktSQ3Oz00NSi0uyM8rTmWQx6nEMbkkMz+PQRZNQVBqcmJODlw/EwMjEDMASUYGBhgNAA==)
+  last-modified (1583435639384)
+}
+train (t-9v8sscink0vr7qapq4apzgi5y) {
+  utterance ("[g:RecallResponse] (토요일)[v:RecallInputConcept]에해야 할 일")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583431460687)
+}

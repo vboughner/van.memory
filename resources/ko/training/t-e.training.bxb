@@ -1,0 +1,35 @@
+train (t-e0kfkik5uipkts2sfpif1oflj) {
+  utterance ([g:DeleteLastMemoryAction:continue:RecallLastMemoryResponse] 삭제하다)
+  plan (Y2BmUE+tSMwtyEnVy03NzS+q1HNJzUktSfVJLC7xBQsEpRYX5OcVpzKoElDomFySmZ+HYV5QanJiTg4W85gYGIGYAUgyMjDAaAA=)
+  last-modified (1583434450039)
+}
+train (t-ecxdjeo53jl8tx32h07gjlpkt) {
+  utterance ("[g:RecallResponse] (5시 버스가)[v:RecallInputConcept] 있습니까")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583437476315)
+}
+train (t-ee2kypatsgjixu5s7a607krk4) {
+  utterance ([g:ListResponse] 내 기억은 뭐니)
+  plan (Y2BkkE6tSMwtyEnVy03NzS+q1PPJLC4JSi0uyM8rTmUAAUYQAQA=)
+  last-modified (1583380594752)
+}
+train (t-eg8nvpor8muotqgi4mlnfwi7d) {
+  utterance ([g:HelpResponse] 도와줘)
+  plan (Y2BkkE6tSMwtyEnVy03NzS+q1PNIzSkISi0uyM8rTmUAAUYQAQA=)
+  last-modified (1583436367935)
+}
+train (t-ehu5rkj3wnn8e3k88leykcct2) {
+  utterance ("[g:MemorizeResponse] 기억하다 (쿠키는 오른쪽의 두 번째 선반 뒤에 있습니다)[v:MemorizeInputConcept]")
+  plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
+  last-modified (1583431242715)
+}
+train (t-elmkaf7zlgtbml35p4v8jl41h) {
+  utterance ([g:DeleteAllAction:continue:ListResponse] 이 기억을 삭제)
+  plan (Y2BiUEitSMwtyEnVy03NzS+q1HNJzUktSXXMyQlKLS7IzytOZZDDpcIxuSQzP4+BEQgZoBhIAgA=)
+  last-modified (1583437124106)
+}
+train (t-euxb0wp2m1pu4apkvpiau02sg) {
+  utterance ("[g:RecallResponse] 무엇을 (사야합니까)[v:RecallInputConcept]")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583438569905)
+}

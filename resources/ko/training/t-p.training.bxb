@@ -1,0 +1,25 @@
+train (t-p4eh0fbd8ds3n3ii0dc40z38e) {
+  utterance ("[g:RecallResponse] (라자냐에)[v:RecallInputConcept] 대해 말해줘")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583436351259)
+}
+train (t-p5pc5xbo85o4ms7dbvwu2t870) {
+  utterance ([g:ListResponse] 모든 기억을 보여줘)
+  plan (Y2BkkE6tSMwtyEnVy03NzS+q1PPJLC4JSi0uyM8rTmUAAUYQAQA=)
+  last-modified (1583381006934)
+}
+train (t-p6oreq8qe9vw1l93nrm83obi2) {
+  utterance ("[g:MemorizeResponse] (내가 싱크대 밑에 쿠키를 넣었다는 걸)[v:MemorizeInputConcept] 기억하다")
+  plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
+  last-modified (1583436278894)
+}
+train (t-pc1st2cp9hp5fiuseznug9o8x) {
+  utterance ("[g:RecallResponse] (내 운동 일수)[v:RecallInputConcept]에 대해 무엇이든 찾기")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583435427775)
+}
+train (t-pyf7utdoni3bckzzvyigc63oh) {
+  utterance ([g:DeleteLastMemoryAction:continue:RecallLastMemoryResponse] 삭제)
+  plan (Y2BmUE+tSMwtyEnVy03NzS+q1HNJzUktSfVJLC7xBQsEpRYX5OcVpzKoElDomFySmZ+HYV5QanJiTg4W85gYGIGYAUgyMjDAaAA=)
+  last-modified (1583434473747)
+}

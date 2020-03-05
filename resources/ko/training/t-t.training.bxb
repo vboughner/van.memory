@@ -1,0 +1,25 @@
+train (t-t09h0sjx90gkrc41r026hhxoo) {
+  utterance ("[g:RecallResponse] (다윗의 생일을)[v:RecallInputConcept] 불러오다")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583432097850)
+}
+train (t-t3yz0kwuyizfkt6sx2fkcrp9a) {
+  utterance ("[g:MemorizeResponse] 기억해줘 (인생은 당신이 만드는 것입니다)[v:MemorizeInputConcept]")
+  plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
+  last-modified (1583382182144)
+}
+train (t-t9f9r24qimrxo8zyojhoiqyr1) {
+  utterance ([g:DeleteLastMemoryAction:continue:RecallLastMemoryResponse] 이 기억 삭제)
+  plan (Y2BmUE+tSMwtyEnVy03NzS+q1HNJzUktSfVJLC7xBQsEpRYX5OcVpzKoElDomFySmZ+HYV5QanJiTg4W85gYGIGYAUgyMjDAaAA=)
+  last-modified (1583437602074)
+}
+train (t-tszu8740dggbkypnpcz25c4lk) {
+  utterance ("[g:MemorizeResponse] (나는 생선 타코를 좋아한다는)[v:MemorizeInputConcept] 것을 기억해줘")
+  plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
+  last-modified (1583436454361)
+}
+train (t-tvtfy39lpb0eeluzq8xj1ztq2) {
+  utterance ([g:RecallLastMemoryResponse] 내가 마지막으로 기억 한 것은 무엇인가)
+  plan (Y2BkUE+tSMwtyEnVy03NzS+q1AtKTU7MyfFJLC7xBQsEpRYX5OcVpzKAACOIAAA=)
+  last-modified (1583431136102)
+}
