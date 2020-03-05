@@ -1,108 +1,108 @@
 template-macro-def (WONT_DELETE_ANY) {
   content {
-    template ("Okay, I won’t delete any memories.")
+    template ("좋아, 나는 기억을 삭제하지 않습니다.")
   }
 }
 
 template-macro-def (CONFIRM_DELETE_ALL) {
   content {
-    template("Are you sure you want to delete all memories?")
+    template("모든 기억을 삭제 하시겠습니까?")
   }
 }
 
 template-macro-def (DELETING_ALL) {
   content {
-    template ("Deleting all memories...")
+    template ("모든 기억을 삭제하는 중 ...")
   }
 }
 
 template-macro-def (WONT_DELETE_IT) {
   content {
-    template ("Okay, I won’t delete it.")
+    template ("좋아요, 삭제하지 않겠습니다.")
   }
 }
 
 template-macro-def (CONFIRM_DELETE_JUST_REMEMBERED) {
   content {
-    template ("You just asked me to remember that. Are you sure you want to delete it?")
+    template ("이건 방금 저장한 기억입니다. 정말 삭제 하시겠습니까?")
   }
 }
 
 template-macro-def (DELETING_THE_MEMORY) {
   content {
-    template ("Deleting the memory...")
+    template ("기억 삭제 중 ...")
   }
 }
 
 template-macro-def (CONFIRM_DELETE_RECENT) {
   content {
-    template ("Are you sure you want to delete the most recently stored memory?")
+    template ("가장 최근에 저장된 기억 삭제 하시겠습니까?")
   }
 }
 
 template-macro-def (DELETING_RECENT) {
   content {
-    template ("Deleting most recently stored memory...")
+    template ("가장 최근에 저장된 기억 삭제 중 ...")
   }
 }
 
 template-macro-def (DELETING_ONE) {
   content {
-    template ("Deleting one memory...")
+    template ("하나의 기억 삭제하는 중 ...")
   }
 }
 
 template-macro-def (CONFIRM_DELETE_MATCHED) {
   content {
-    template ("Are you sure you want to delete everything that matched?")
+    template ("일치하는 모든 항목을 삭제 하시겠습니까?")
   }
 }
 
 template-macro-def (CONFIRM_DELETE_SHOWN) {
   content {
-    template ("Are you sure you want to delete what was shown?")
+    template ("표시된 내용을 삭제 하시겠습니까?")
   }
 }
 
 template-macro-def (DELETING_SHOWN) {
   content {
-    template ("Deleting what was shown...")
+    template ("표시된 내용 삭제 중 ...")
   }
 }
 
 template-macro-def (GETTING_MEMORIES) {
   content {
-    template ("Getting memories...")
+    template ("기억 얻기 ...")
   }
 }
 
 template-macro-def (WHAT_TO_MEMORIZE) {
   content {
-    template ("What would you like me to memorize for you?")
+    template ("내가 당신을 위해 무엇을 외우 길 원하십니까?")
   }
 }
 
 template-macro-def (STORING_MEMORY) {
   content {
-    template ("Storing memory...")
+    template ("기억 저장 중 ...")
   }
 }
 
 template-macro-def (WHAT_TO_RECALL) {
   content {
-    template ("What would you like me to recall for you?")
+    template ("내가 당신을 위해 무엇을 불러오하고 싶습니까?")
   }
 }
 
 template-macro-def (RECALLING_RECENT) {
   content {
-    template ("Recalling most recent memory...")
+    template ("가장 최근의 기억 불러오는 중 ...")
   }
 }
 
 template-macro-def (SEARCHING_MEMORIES) {
   content {
-    template ("Searching memories...")
+    template ("기억을 찾는 중 ...")
   }
 }
 
@@ -115,15 +115,15 @@ template-macro-def (WILL_REMEMBER) {
     }
   }
   content {
-    template ("I’ll remember what you said.") {
-      speech ("I will remember that you said: #{value(memories[0].text)}.")
+    template ("당신이 한 말을 기억할 것입니다.") {
+      speech ("나는 당신이 말한 것을 기억할 것입니다: #{value(memories[0].text)}.")
     }
   }
 }
 
 template-macro-def (PROBLEM_CANNOT_STORE) {
   content {
-    template ("I ran into a problem and could not store what you said.")
+    template ("문제가 발생하여 말한 내용을 저장할 수 없습니다.")
   }
 }
 
@@ -137,11 +137,11 @@ template-macro-def (HERES_RECENT_SPOKEN) {
   }
   content {
     if (size(memories) > 0) {
-      template ("Here’s the most recent memory.") {
-        speech ("You stored the most recent memory #{value(memories[0].howLongAgo)}. You told me: #{value(memories[0].text)}.")
+      template ("다음은 가장 최근의 기억이다.") {
+        speech ("#{value(memories[0].howLongAgo)} 당신은 기억을 저장. 당신은 나에게 말했다: #{value(memories[0].text)}.")
       }
     } else {
-      template ("There are no memories.")
+      template ("저장된 기억이 없습니다.")
     }
   }
 }
@@ -161,18 +161,18 @@ template-macro-def (HERES_NO_MATCH) {
   }
   content {
     if (memoryCount == 0) {
-      template ("There are no memories, please ask me to remember something first.")
+      template ("저장된 기억이 없습니다. 나에게 무언가를 기억해달라고 부탁하십시오.")
     } else-if (exists(searchText)) {
-      template ("I can’t find a memory that matches a search for \"#{value(searchText)}\". Please try another question.")
+      template ("#{value (searchText)} 에 대한 검색 결과가 없습니다. 다른 질문을 시도하십시오.")
     } else {
-      template ("I can’t find a memory that makes sense as an answer for that.")
+      template ("이에 대한 해답이되는 기억을 찾을 수 없습니다.")
     }
   }
 }
 
 template-macro-def (HERES_MATCH) {
   content {
-    template ("Here’s the best match.")
+    template ("가장 좋은 대답은 다음과 같습니다.")
   }
 }
 
@@ -185,33 +185,33 @@ template-macro-def (HERES_MATCH_SPOKEN) {
     }
   }
   content {
-    template ("Here’s the best match.") {
-      speech ("You told me #{value(memories[0].howLongAgo)}: #{value(memories[0].text)}.")
+    template ("가장 좋은 대답은 다음과 같습니다.") {
+      speech ("#{value(memories[0].howLongAgo)} 당신은 나에게 말했다: #{value(memories[0].text)}.")
     }
   }
 }
 
 template-macro-def (HERES_SIMILAR) {
   content {
-    template ("Here are similar memories.")
+    template ("이것들은 비슷한 기억입니다.")
   }
 }
 
 template-macro-def (FIRST_MEMORY) {
   content {
-    template ("This is the first memory.")
+    template ("이것은 첫 번째 기억입니다.")
   }
 }
 
 template-macro-def (ALL_MEMORIES) {
   content {
-    template ("Those are all the memories.")
+    template ("그것들은 모두 기억입니다.")
   }
 }
 
 template-macro-def (NEXT_MEMORY) {
   content {
-    template ("Would you like to hear the next matching memory?")
+    template ("일치하는 다음 기억을 듣고 싶습니다?")
   }
 }
 
@@ -224,7 +224,7 @@ template-macro-def (YOU_TOLD_ME) {
     }
   }
   content {
-    template ("You told me #{value(memory.howLongAgo)}, #{value(memory.text)}")
+    template ("#{value(memory.howLongAgo)} 당신은 나에게 말했다: #{value(memory.text)}.")
   }
 }
 
@@ -238,8 +238,8 @@ template-macro-def (ALL_SIMILAR_MEMORIES) {
   }
   content {
     if (size(memories) > 0) {
-      template ("Here are similar memories.") {
-        speech ("You told me #{value(memories[0].howLongAgo)}: #{value(memories[0].text)}. Here are all memories that sound similar:")
+      template ("이것들은 비슷한 기억입니다.") {
+        speech ("#{value(memories[0].howLongAgo)} 당신은 나에게 말했다: #{value(memories[0].text)}. 이것들은 비슷한 기억입니다.")
       }
     }
   }

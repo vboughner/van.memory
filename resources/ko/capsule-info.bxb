@@ -8,8 +8,9 @@ capsule-info {
   terms-url (https://www.vanboughner.com/my-brain-terms-of-service-for-bixby/)
   website-url(https://www.vanboughner.com/my-brain/)
   search-keywords {
-    keyword (memory)
-    keyword (remember)
-    keyword (recall)
+    keyword (기억)
+    keyword (기억하다)
+    keyword (기억해줘)
+    keyword (불러오다)
   }
 }
