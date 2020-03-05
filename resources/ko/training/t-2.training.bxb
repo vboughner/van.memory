@@ -1,0 +1,5 @@
+train (t-2skxuldrje8qdgjs79shckp6f) {
+  utterance ("[g:RecallResponse] 누가 (3 월에 생일)[v:RecallInputConcept]을합니까?")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583381787540)
+}

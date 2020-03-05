@@ -1,0 +1,10 @@
+train (t-d64sle6h0gm9egqu07nwqlgan) {
+  utterance ("[g:RecallResponse] (주차장)[v:RecallInputConcept] 검색")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583381835101)
+}
+train (t-dkve9n5ajlaww7thl0t6usmc8) {
+  utterance ([g:ListResponse] 모든 것을 불러오다)
+  plan (Y2BkkE6tSMwtyEnVy03NzS+q1PPJLC4JSi0uyM8rTmUAAUYQAQA=)
+  last-modified (1583380913949)
+}

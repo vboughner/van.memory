@@ -1,0 +1,5 @@
+train (t-qyful4n3ci0inymquh45b5fs8) {
+  utterance ([g:ListResponse] 나를 위해 무엇을 기억하고 있습니까)
+  plan (Y2BkkE6tSMwtyEnVy03NzS+q1PPJLC4JSi0uyM8rTmUAAUYQAQA=)
+  last-modified (1583380937973)
+}

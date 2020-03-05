@@ -1,0 +1,5 @@
+train (t-kw2zar85m9p56u536wipounuv) {
+  utterance ([g:DeleteSomeAction:continue:RecallResponse] 이 기억을 삭제)
+  plan (Y2BmUEytSMwtyEnVy03NzS+q1HNJzUktSQ3Oz00NSi0uyM8rTmWQx6nEMbkkMz+PQRZNQVBqcmJODlw/EwMjEDMASUYGBhgNAA==)
+  last-modified (1583381896602)
+}

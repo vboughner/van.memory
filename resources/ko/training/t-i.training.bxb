@@ -1,0 +1,5 @@
+train (t-i72r4yseuinj2pqhvqxlwe9y5) {
+  utterance ([g:ListResponse] 내 모든 기억을 말해줘)
+  plan (Y2BkkE6tSMwtyEnVy03NzS+q1PPJLC4JSi0uyM8rTmUAAUYQAQA=)
+  last-modified (1583380981610)
+}

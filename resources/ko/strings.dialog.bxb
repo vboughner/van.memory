@@ -253,7 +253,7 @@ template-macro-def (FIRST_N_MEMORIES) {
     }
   }
   content {
-    template ("The first #{value(pageSize)} memories are:")
+    template ("처음 #{value(pageSize)} 개의 기억은:")
   }
 }
 
@@ -266,7 +266,7 @@ template-macro-def (LAST_N_MEMORIES) {
     }
   }
   content {
-    template ("The last #{value(pageSize)} memories are:")
+    template ("마지막 #{value(pageSize)} 개의 기억은:")
   }
 }
 
@@ -279,43 +279,43 @@ template-macro-def (NEXT_N_MEMORIES) {
     }
   }
   content {
-    template ("The next #{value(pageSize)} memories are:")
+    template ("다음 #{value(pageSize)} 개의 기억은:")
   }
 }
 
 template-macro-def (LAST_MEMORY) {
   content {
-    template ("The last memory is:")
+    template ("마지막 기억은:")
   }
 }
 
 template-macro-def (THIS_MEMORY) {
   content {
-    template ("This memory is:")
+    template ("이 기억은:")
   }
 }
 
 template-macro-def (THESE_MEMORIES) {
   content {
-    template ("These memories are:")
+    template ("이 기억들은:")
   }
 }
 
 template-macro-def (WHAT_TO_DO) {
   content {
-    template ("What would you like to do?")
+    template ("무엇을 하시겠습니까?")
   }
 }
 
 template-macro-def (WOULD_LIKE_TO_HEAR_MORE) {
   content {
-    template ("Would you like to hear more memories?")
+    template ("당신은 더 많은 기억을 듣고 하시겠습니까?")
   }
 }
 
 template-macro-def (WHAT_IS_UPDATED_MEMORY) {
   content {
-    template ("What is the updated memory?")
+    template ("업데이트 된 기억 무엇입니까?")
   }
 }
 
@@ -329,11 +329,11 @@ template-macro-def (UPDATED_MEMORY_SPOKEN) {
   }
   content {
     if (size(memories) > 0) {
-      template ("I updated that memory.") {
-        speech ("I updated that memory, and will remember that you said: #{value(memories[0].text)}.")
+      template ("나는 그 기억을 업데이트했다.") {
+        speech ("기억를 업데이트했으며 다음을 기억할 것입니다: #{value(memories[0].text)}.")
       }
     } else {
-      template ("There was a problem and I could not update that memory.")
+      template ("문제가 발생하여 해당 기억를 업데이트 할 수 없습니다.")
     }
   }
 }
@@ -347,19 +347,19 @@ template-macro-def (VERSION_IS) {
     }
   }
   content {
-    template ("My Brain lambda version is #{value(serverVersion)}")
+    template ("나의 두뇌 서버 버전은: #{value (serverVersion)}")
   }
 }
 
 template-macro-def (VERSION_PROBLEM) {
   content {
-    template ("I had a problem trying to get the server version.")
+    template ("서버 버전을 가져 오는 중에 문제가 발생했습니다.")
   }
 }
 
 template-macro-def (HELP_TEXT) {
   content {
-    template("Tell me to remember something, and I’ll remember it. Ask me a question that includes a few words from that memory, and I’ll find it for you.")
+    template("당신이 무언가를 기억하라고하면, 나는 그것을 기억할 것입니다. 그 기억에서 몇 마디가 들어있는 질문 하나를하면 찾을 것입니다.")
   }
 }
 
@@ -379,39 +379,39 @@ template-macro-def (LIST_MEMORIES) {
   content {
     if (success) {
       if (size(memories) == 0) {
-        template ("There are no memories.")
+        template ("저장된 기억이 없습니다.")
       } else-if (size(memories) == 1) {
-        template ("You have 1 memory.")
+        template ("기억 1 개 있습니다.")
       } else {
-        template ("You have #{size(memories)} memories.")
+        template ("#{size (memories)} 개의 기억가 있습니다.")
       }
     } else {
-      template("There was a problem and I could not retrieve the memories.")
+      template("문제가 발생하여 기억을 검색 할 수 없습니다.")
     }
   }
 }
 
 template-macro-def (DELETED_ALL_MEMORIES) {
   content {
-    template ("I deleted all memories.")
+    template ("모든 기억을 삭제했습니다.")
   }
 }
 
 template-macro-def (COULD_NOT_DELETE_ALL_MEMORIES) {
   content {
-    template ("There was a problem and I could not delete all memories.")
+    template ("문제가 발생하여 기억을 삭제할 수 없습니다.")
   }
 }
 
 template-macro-def (DELETED_ONE_MEMORY) {
   content {
-    template ("I deleted that memory.")
+    template ("그 기억을 삭제했습니다.")
   }
 }
 
 template-macro-def (COULD_NOT_DELETE_ONE_MEMORY) {
   content {
-    template ("There was a problem and I could not delete that memory.")
+    template ("문제가 발생하여 해당 기억를 삭제할 수 없습니다.")
   }
 }
 
@@ -425,9 +425,9 @@ template-macro-def (DELETED_SOME_MEMORIES) {
   }
   content {
     if (size(deletedMemories) == 1) {
-      template ("I deleted 1 memory.")
+      template ("기억 1 개를 삭제했습니다.")
     } else {
-      template ("I deleted #{size(deletedMemories)} memories.")
+      template ("#{size(deletedMemories)} 개의 기억을 삭제했습니다.")
     }
   }
 }
@@ -442,11 +442,11 @@ template-macro-def (COULD_NOT_DELETE_SOME_MEMORIES) {
   }
   content {
     if (size(deletedMemories) == 0) {
-      template ("There was a problem and I could not delete any memories.")
+      template ("문제가 발생하여 기억를 삭제할 수 없습니다.")
     } else-if (size(deletedMemories) == 1) {
-      template ("There was a problem and I could only delete 1 memory.")
+      template ("문제가 발생하여 1 개의 기억 만 삭제할 수 있습니다.")
     } else {
-      template ("There was a problem and I could only delete #{size(deletedMemories)} memories.")
+      template ("문제가 있으며 #{size(deletedMemories)} 개의 기억 만 삭제되었습니다.")
     }
   }
 }
@@ -459,19 +459,19 @@ template-macro-def (SAVE) {
 
 template-macro-def (CV_LIST_ALL_MEMORIES) {
   content {
-    template ("모든 추억을 나열")
+    template ("모든 기억을 보여줘")
   }
 }
 
 template-macro-def (CV_REMEMBER_HELP) {
   content {
-    template ("Remember that I heard the help")
+    template ("내가 도움을 들었다는 것을 기억")
   }
 }
 
 template-macro-def (CV_HEARD_HELP) {
   content {
-    template ("Have I heard the help?")
+    template ("도움말 텍스트를 들었습니까?")
   }
 }
 
@@ -483,19 +483,19 @@ template-macro-def (CV_MOST_RECENT_MEMORY) {
 
 template-macro-def (CV_DELETE_ALL_MEMORIES) {
   content {
-    template ("모든 추억을 삭제")
+    template ("모든 기억을 삭제")
   }
 }
 
 template-macro-def (CV_DELETE_THIS_MEMORY) {
   content {
-    template ("이 메모리를 삭제")
+    template ("이 기억 삭제")
   }
 }
 
 template-macro-def (CV_DELETE_THESE_MEMORIES) {
   content {
-    template ("이 추억을 삭제")
+    template ("이 기억을 삭제")
   }
 }
 

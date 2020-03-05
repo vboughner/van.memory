@@ -1,0 +1,5 @@
+train (t-7no8s1sj4adm1pg4yik97d5vz) {
+  utterance ("[g:RecallResponse] 라자냐를 (얼마나 더워)[v:RecallInputConcept] 야합니까")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583382239092)
+}

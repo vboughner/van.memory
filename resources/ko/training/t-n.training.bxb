@@ -1,0 +1,5 @@
+train (t-nziloorf7sq15ltib6tr8ilep) {
+  utterance ([g:DeleteJustMemorizedAction:continue:MemorizeResponse] 이 기억 지워줘)
+  plan (Y2Bm0EqtSMwtyEnVy03NzS+q1HNJzUktSfUqLS7xBQlkVqWmBKUWF+TnFacyaBBW65hckpmfxyCPphImDzeKiYERiBmAJCMDA4wGAA==)
+  last-modified (1583382076570)
+}
