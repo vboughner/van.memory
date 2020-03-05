@@ -1,5 +1,35 @@
+train (t-a0hrx0jc263b8wwswpnwn1oi7) {
+  utterance ([g:DeleteOneResponse:continue:Memory] 삭제)
+  plan (Y2BkUEitSMwtyEnVy03NzS+q1HNJzUktSfXPSw1KLS7IzytOZQABRhABAA==)
+  last-modified (1583432151699)
+}
+train (t-a6rv7orcrhhlqxajpne1qkfi4) {
+  utterance ("[g:RecallResponse] (다윗의 누이는)[v:RecallInputConcept] 누구입니까")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583436084928)
+}
 train (t-a7una5k6whv367679lwqfk6s9) {
   utterance ([g:ListResponse] 모든 추억을 나열)
   plan (Y2BkkE6tSMwtyEnVy03NzS+q1PPJLC4JSi0uyM8rTmUAAUYQAQA=)
   last-modified (1583380505081)
+}
+train (t-ab4x4lsstrb5surft4q0em1ik) {
+  utterance ("[g:MemorizeResponse] (내가 싱크대 밑에 쿠키를 넣었다는 걸)[v:MemorizeInputConcept] 기억해")
+  plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
+  last-modified (1583436243846)
+}
+train (t-ajnk2p6wkiidhab61jgflqlgv) {
+  utterance ([g:RecallLastMemoryResponse] 가장 최근의 기억을 얻다)
+  plan (Y2BkUE+tSMwtyEnVy03NzS+q1AtKTU7MyfFJLC7xBQsEpRYX5OcVpzKAACOIAAA=)
+  last-modified (1583436746409)
+}
+train (t-au9te94wnsmgpycdg0x2vniuz) {
+  utterance ("[g:RecallResponse] (3 월에해야)[v:RecallInputConcept] 할 일")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583431059624)
+}
+train (t-auhie5xcvvhgcoqljzh2hgxc2) {
+  utterance ("[g:RecallResponse] (샘은 어떤 번호를 선택)[v:RecallInputConcept] 했습니까")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583437392988)
 }

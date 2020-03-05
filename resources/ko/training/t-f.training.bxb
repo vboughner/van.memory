@@ -1,0 +1,10 @@
+train (t-f8x7fwudwp7wm8ytmkks6opn3) {
+  utterance ("[g:RecallResponse] (차가)[v:RecallInputConcept] 어디 있어요")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583435148519)
+}
+train (t-fztlrg236np3bpibpa7rdy4e8) {
+  utterance ("[g:RecallResponse] (샐리는)[v:RecallInputConcept] 무엇을 좋아합니까")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583436835723)
+}

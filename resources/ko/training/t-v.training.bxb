@@ -1,0 +1,5 @@
+train (t-ve853zhi70zorv1bkm0au0ams) {
+  utterance ("[g:RecallInputConcept:prompt] (다윗의 생일)[v:RecallInputConcept]")
+  plan (Y2BiUEytSMwtyEnVy03NzS+q1AtKTU7MyfHMKygtcc7PS04tKCFGCSMQMjDwADETEAPZAA==)
+  last-modified (1583436413155)
+}

@@ -1,5 +1,35 @@
+train (t-g1ojgkxgw0r54mqzdifx6jg72) {
+  utterance ("[g:MemorizeResponse] (어머니의 생일을 4 월 22 일)[v:MemorizeInputConcept] 외우세요")
+  plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
+  last-modified (1583435682816)
+}
+train (t-g4cz8gfzthi4eoqhauvfskm1y) {
+  utterance ([g:DeleteLastMemoryAction:continue:RecallLastMemoryResponse] 이 기억 지우다)
+  plan (Y2BmUE+tSMwtyEnVy03NzS+q1HNJzUktSfVJLC7xBQsEpRYX5OcVpzKoElDomFySmZ+HYV5QanJiTg4W85gYGIGYAUgyMjDAaAA=)
+  last-modified (1583437643756)
+}
 train (t-gcgb9imuk8dpjxj54xfrbxsvb) {
   utterance ([g:ListResponse] 얼마나 많은 기억)
   plan (Y2BkkE6tSMwtyEnVy03NzS+q1PPJLC4JSi0uyM8rTmUAAUYQAQA=)
   last-modified (1583380633059)
+}
+train (t-gfafifp2lgmfn95kxxxgh9276) {
+  utterance ([g:HelpResponse] 열다)
+  plan (Y2BkkE6tSMwtyEnVy03NzS+q1PNIzSkISi0uyM8rTmUAAUYQAQA=)
+  last-modified (1583436728232)
+}
+train (t-gkxobf1tizg8kjcurng579elq) {
+  utterance ("[g:RecallResponse] (차를 어디에 주차)[v:RecallInputConcept] 했습니까")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583435500443)
+}
+train (t-gpccicv60j4w27sayvm6nub7t) {
+  utterance ("[g:RecallResponse] (차를)[v:RecallInputConcept] 어디에 주차했는지 찾아 봐")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583435715688)
+}
+train (t-gypcyyhv9dr98l0hw4uwgiicz) {
+  utterance ("[g:RecallResponse] (디즈니 랜드 휴가는)[v:RecallInputConcept] 언제")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583432363770)
 }

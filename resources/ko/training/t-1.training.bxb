@@ -1,0 +1,40 @@
+train (t-13t6qt8ou6xklq0953knd7cuc) {
+  utterance ([g:RecallLastMemoryResponse] 마지막 기억은 무엇 이었습니까)
+  plan (Y2BkUE+tSMwtyEnVy03NzS+q1AtKTU7MyfFJLC7xBQsEpRYX5OcVpzKAACOIAAA=)
+  last-modified (1583434352245)
+}
+train (t-14yzyfusxbbjq5k5sqber1zlb) {
+  utterance ("[g:RecallResponse] (전화 번호)[v:RecallInputConcept] 불러오다")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583434397228)
+}
+train (t-1a8w7ksvy94ysu9u15fuaa0cm) {
+  utterance ([g:DeleteSomeAction:continue:RecallResponse] 이 기억 지워줘)
+  plan (Y2BmUEytSMwtyEnVy03NzS+q1HNJzUktSQ3Oz00NSi0uyM8rTmWQx6nEMbkkMz+PQRZNQVBqcmJODlw/EwMjEDMASUYGBhgNAA==)
+  last-modified (1583431884543)
+}
+train (t-1fgfwj5pjta3ihkozs4427k6g) {
+  utterance ("[g:RecallResponse] 내가 (3 월 29 일에)[v:RecallInputConcept] 대해 말한 것을 불러오다")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583435901009)
+}
+train (t-1lctly2lzfyogo6mh7cz9w46z) {
+  utterance ([g:UpdateTextAfterMemorizeResponse:continue:MemorizeResponse] 이 기억을 편집하다)
+  plan (Y2Bk0EutSMwtyEnVy03NzS+q1AstSEksSQ1JrShxTCtJLfIFiWZWpQalFhfk5xWnMoAAI4gAAA==)
+  last-modified (1583431020901)
+}
+train (t-1q0j7hmw1dcijr3w3f3nxmsqy) {
+  utterance ("[g:RecallResponse] (라자냐를)[v:RecallInputConcept] 어떻게 구워야합니까")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583434718368)
+}
+train (t-1rtr4jte18vs7cf9w7scsx9n9) {
+  utterance ("[g:RecallResponse] (약을 복용했을 때)[v:RecallInputConcept] 불러오다")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583435286519)
+}
+train (t-1toyfenenue4nnwg69qsw6dyh) {
+  utterance ([g:DeleteJustMemorizedAction:continue:MemorizeResponse] 삭제하다)
+  plan (Y2Bm0EqtSMwtyEnVy03NzS+q1HNJzUktSfUqLS7xBQlkVqWmBKUWF+TnFacyaBBW65hckpmfxyCPphImDzeKiYERiBmAJCMDA4wGAA==)
+  last-modified (1583436600085)
+}

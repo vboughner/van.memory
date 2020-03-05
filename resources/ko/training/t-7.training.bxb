@@ -1,5 +1,20 @@
+train (t-7dkcgsesnm2j4ox2i8n18pwjd) {
+  utterance ("[g:RecallResponse] (스티브의 생일을)[v:RecallInputConcept] 불러오다")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583431665925)
+}
+train (t-7lmnpdacovxke44ify9g69nf1) {
+  utterance ("[g:MemorizeResponse] 기억해줘 (쿠키는 오른쪽의 두 번째 선반 뒤에 있습니다)[v:MemorizeInputConcept]")
+  plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
+  last-modified (1583431332738)
+}
 train (t-7no8s1sj4adm1pg4yik97d5vz) {
   utterance ("[g:RecallResponse] 라자냐를 (얼마나 더워)[v:RecallInputConcept] 야합니까")
   plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
   last-modified (1583382239092)
+}
+train (t-7rlvfvb5o9mgo80whj53ciawc) {
+  utterance ([g:RecallLastMemoryResponse] 당신이 마지막으로 기억하는 것은 무엇입니까)
+  plan (Y2BkUE+tSMwtyEnVy03NzS+q1AtKTU7MyfFJLC7xBQsEpRYX5OcVpzKAACOIAAA=)
+  last-modified (1583431482391)
 }

@@ -3,3 +3,13 @@ train (t-y8k5rintc89rk9z6kwhklcrxc) {
   plan (Y2BkkE6tSMwtyEnVy03NzS+q1PPJLC4JSi0uyM8rTmUAAUYQAQA=)
   last-modified (1583380416104)
 }
+train (t-ypsssldxzid9baw6pcjlh6re5) {
+  utterance ("[g:RecallResponse] (바나나는 몇 칼로리가)[v:RecallInputConcept] 있습니까")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1583435755167)
+}
+train (t-ytaxqi3qgams8ncnah7e1dwy5) {
+  utterance ([g:DeleteJustMemorizedAction:continue:MemorizeResponse] 삭제)
+  plan (Y2Bm0EqtSMwtyEnVy03NzS+q1HNJzUktSfUqLS7xBQlkVqWmBKUWF+TnFacyaBBW65hckpmfxyCPphImDzeKiYERiBmAJCMDA4wGAA==)
+  last-modified (1583436619540)
+}

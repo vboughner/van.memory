@@ -1,0 +1,5 @@
+train (t-347zj645rswtzdottgpu9eppn) {
+  utterance ("[g:DeleteConfirmation:prompt] (하지마)[v:DeleteConfirmation:false]")
+  plan (Y2BiUEytSMwtyEnVy03NzS+q1HNJzUktSXXOz0vLLMpNLMnMzyNGCSMQMjDwADETEAPZAA==)
+  last-modified (1583434673544)
+}
