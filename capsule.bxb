@@ -16,7 +16,7 @@ capsule {
       as (core)
     }
   }
-  runtime-version (3)
+  runtime-version (4)
   store-sections {
     section (Productivity)
     section (Utilities)

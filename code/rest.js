@@ -29,7 +29,19 @@ const postQuery = function($vivContext, urlSuffix, additionalParams) {
     const params = {
       secretClientApiKey: secretClientApiKey,
       clientVersion: CLIENT_VERSION,
-      vivContext: $vivContext,
+      // limit what we place in vivContext so story caching will work
+      vivContext: {
+        bixbyUserId: $vivContext.bixbyUserId,
+        canTypeId: $vivContext.canTypeId,
+        device: $vivContext.device,
+        deviceModel: $vivContext.deviceModel,
+        handsFree: $vivContext.handsFree,
+        is24HourFormat: $vivContext.is24HourFormat,
+        locale: $vivContext.locale,
+        timezone: $vivContext.timezone,
+        storeCountry: $vivContext.storeCountry,
+        userId: $vivContext.userId,
+      },
     }
     const combinedParams = Object.assign(params, additionalParams)
     const options = {
