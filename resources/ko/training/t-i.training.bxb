@@ -8,6 +8,11 @@ train (t-i72r4yseuinj2pqhvqxlwe9y5) {
   plan (Y2BkkE6tSMwtyEnVy03NzS+q1PPJLC4JSi0uyM8rTmUAAUYQAQA=)
   last-modified (1583380981610)
 }
+train (t-i908cgwbvjf0nvbihvixiich2) {
+  utterance ("[g:RecallResponse] (차 열쇠는)[v:RecallInputConcept] 어디에 두었습니까")
+  plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1584838202979)
+}
 train (t-iembx53zl47w4q8rsu667rvnf) {
   utterance ([g:DeleteAllAction:continue:ListResponse] 지우다)
   plan (Y2BiUEitSMwtyEnVy03NzS+q1HNJzUktSXXMyQlKLS7IzytOZZDDpcIxuSQzP4+BEQgZoBhIAgA=)

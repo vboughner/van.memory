@@ -24,7 +24,7 @@ train (t-5l39zexv4cbb9q27xs1uo9uhq) {
   last-modified (1583437160767)
 }
 train (t-5n0igmab3gmtnj3b11vtcr576) {
-  utterance ("[g:MemorizeResponse] (감자를 사야한다는 것을)[v:MemorizeInputConcept] 기억하다")
+  utterance ("[g:MemorizeResponse] (감자를 사야한다는)[v:MemorizeInputConcept] 것을 기억하다")
   plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
   last-modified (1583435839548)
 }

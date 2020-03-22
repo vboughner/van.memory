@@ -1,5 +1,5 @@
 train (t-z5yq9ib89g5oij952k7zxkkcv) {
-  utterance ("[g:MemorizeResponse] (감자를 사야한다는 것을)[v:MemorizeInputConcept] 기억해줘")
+  utterance ("[g:MemorizeResponse] (감자를 사야한다는)[v:MemorizeInputConcept] 것을 기억해줘")
   plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
   last-modified (1583435866496)
 }

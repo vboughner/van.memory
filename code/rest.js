@@ -2,7 +2,7 @@
 
 const rest = {}
 
-const CLIENT_VERSION = '1.4.1'
+const CLIENT_VERSION = '1.5.0'
 const SERVICE_URL = '/list'
 
 var types = require('types.js')
@@ -40,7 +40,7 @@ const postQuery = function($vivContext, urlSuffix, additionalParams) {
         locale: $vivContext.locale,
         timezone: $vivContext.timezone,
         storeCountry: $vivContext.storeCountry,
-        userId: $vivContext.userId,
+        userId: $vivContext['userId'], // remove once userId is fully deprecated
       },
     }
     const combinedParams = Object.assign(params, additionalParams)

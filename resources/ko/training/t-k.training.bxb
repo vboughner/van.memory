@@ -3,6 +3,11 @@ train (t-kauko7o9atbwyku3weu3c694v) {
   plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
   last-modified (1583435456105)
 }
+train (t-kets18mey87cuholksmchucwf) {
+  utterance ("[g:MemorizeResponse] (열쇠는 부엌의 벽에 있다는)[v:MemorizeInputConcept] 것을 기억하")
+  plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
+  last-modified (1584836807154)
+}
 train (t-khk5kxjjghe3mzal5v8vjxqkn) {
   utterance ("[g:MemorizeResponse] (어머니의 생일이 1 월 22 일임을)[v:MemorizeInputConcept] 기억해줘")
   plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
