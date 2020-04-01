@@ -33,3 +33,7 @@ train (t-auhie5xcvvhgcoqljzh2hgxc2) {
   plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
   last-modified (1583437392988)
 }
+train (t-a7l4taq7jguqllca7est40916) {
+  utterance ("[g:RecallResponse] 내 (보안 질문은)[v:RecallInputConcept] 무엇입니까")
+  last-modified (1585701347868)
+}

@@ -33,3 +33,7 @@ train (t-5v3ay35lxk1xrmgtsbixfv6ac) {
   plan (Y2BiUEytSMwtyEnVy03NzS+q1AtKTU7MyfHMKygtcc7PS04tKCFGCSMQMjDwADETEAPZAA==)
   last-modified (1583437249164)
 }
+train (t-5rsnkx66k0zwdj6clem2dkyiu) {
+  utterance ("[g:MemorizeResponse] (1 월 30 일에 일을 시작했음을)[v:MemorizeInputConcept] 기억하")
+  last-modified (1585768823060)
+}

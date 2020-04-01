@@ -8,3 +8,7 @@ train (t-sxgos1bswgtc9y4px2l6otb5d) {
   plan (Y2Bm0EqtSMwtyEnVy03NzS+q1HNJzUktSfUqLS7xBQlkVqWmBKUWF+TnFacyaBBW65hckpmfxyCPphImDzeKiYERiBmAJCMDA4wGAA==)
   last-modified (1583382050761)
 }
+train (t-smypu25cpatah49w6r9lii17l) {
+  utterance ("[g:MemorizeResponse] (교체 할 점화 플러그는 5 번임을)[v:MemorizeInputConcept] 기억하")
+  last-modified (1585701094460)
+}
