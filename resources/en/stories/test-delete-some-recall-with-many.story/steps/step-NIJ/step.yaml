@@ -4,4 +4,5 @@ data:
       goal { DeleteConfirmation }
       value { DeleteConfirmation (false) }
     }
+screenshot: screenshot-2020-05-15T17-08-04.262Z-bixby-mobile-en-US-device-note.png
 type: intent

@@ -7,3 +7,4 @@ data:
   tz: America/Los_Angeles
 steps:
   step-SPO: ~
+version: 2

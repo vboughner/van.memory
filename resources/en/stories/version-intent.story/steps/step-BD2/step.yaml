@@ -3,4 +3,5 @@ data:
     intent {
       goal: VersionResponse
     }
+screenshot: screenshot-2020-05-15T17-15-59.115Z-bixby-mobile-en-US-device-note.png
 type: intent
