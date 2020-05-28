@@ -1,3 +1,8 @@
+train (t-76ve12hi47xr480e8x0zo88al) {
+  utterance ("[g:ReplacementText:prompt] (este es un nuevo recuerdo)[v:ReplacementText]")
+  plan (Y2BikCpLzNPLTc3NL6rUC0otyElMTs1NzSsJSa0owSvHCIQMDDxAzATEQDYA)
+  last-modified (1590624215575)
+}
 train (t-7fy4zj3y2lmr66hezukq3d37w) {
   utterance ("[g:RecallResponse] recuerda lo que dije sobre (el viaje a florida)[v:RecallInputConcept]")
   plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)

@@ -3,6 +3,11 @@ train (t-o98wp74vrs3hn9mulrazks3v6) {
   plan (Y2BikClLzNPLTc3NL6rUc0nNSS1JdczJCUotLsjPK05lkMIm65hckpmfx8AIhAxQDCQB)
   last-modified (1565105625569)
 }
+train (t-o9p7n70ee0dvpf7fkpxtk4mun) {
+  utterance ("[g:ReplacementText:prompt] (this is a new memory)[v:ReplacementText]")
+  plan (Y2BikCpLzNPLTc3NL6rUC0otyElMTs1NzSsJSa0owSvHCIQMDDxAzATEQDYA)
+  last-modified (1590623706157)
+}
 train (t-odcql3ze2fgqu57j1a1bs7v7p) {
   utterance ([g:ListResponse] how many memories are there)
   plan (Y2BkEC9LzNPLTc3NL6rU88ksLglKLS7IzytOZQABRhABAA==)

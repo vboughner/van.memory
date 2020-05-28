@@ -1,3 +1,8 @@
+train (t-u0io5z2mb7a614ht0noooxsxn) {
+  utterance ("[g:ReplacementText:prompt] (couple words)[v:ReplacementText]")
+  plan (Y2BikCpLzNPLTc3NL6rUC0otyElMTs1NzSsJSa0owSvHCIQMDDxAzATEQDYA)
+  last-modified (1590623793595)
+}
 train (t-uj5pxri3o8y4om1cz4g7fc4q0) {
   utterance ([g:DeleteAllAction:continue:ListResponse] delete these memories)
   plan (Y2BikClLzNPLTc3NL6rUc0nNSS1JdczJCUotLsjPK05lkMIm65hckpmfx8AIhAxQDCQB)

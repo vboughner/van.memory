@@ -13,6 +13,11 @@ train (t-eo4f7goau3a74u6e50tqvb0wp) {
   plan (Y2BmUCtLzNPLTc3NL6rUc0nNSS1J9SotLvEFCWRWpaYEpRYX5OcVpzKo4FfnmFySmZ/HII2kCiYHN4KJgRGIGYAkIwMDjAYA)
   last-modified (1577733226797)
 }
+train (t-erwuu3ndxj2zh3namprtyn4um) {
+  utterance ("[g:ReplacementText:prompt] (ceci est un nouveau souvenir long sur un tas de choses après l'édition)[v:ReplacementText]")
+  plan (Y2BikCpLzNPLTc3NL6rUC0otyElMTs1NzSsJSa0owSvHCIQMDDxAzATEQDYA)
+  last-modified (1590624331621)
+}
 train (t-eupkdowmjjcr7hvmwdkvt1bnv) {
   utterance ([g:DeleteLastMemoryAction:continue:RecallLastMemoryResponse] supprimer)
   plan (Y2BmUC5LzNPLTc3NL6rUc0nNSS1J9UksLvEFCwSlFhfk5xWnMijiUeSYXJKZn4diTlBqcmJODhZzmBgYgZgBSDIyMMBoAA==)

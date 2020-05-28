@@ -13,3 +13,8 @@ train (t-joz652bopfdwpv25ab8n5152v) {
   plan (Y2BmkC1LzNPLTc3NL6rUc0nNSS1JDc7PTQ1KLS7IzytOZZDGKu2YXJKZn8cgiSQZlJqcmJMD18fEwAjEDECSkYEBRgMA)
   last-modified (1577733248405)
 }
+train (t-ju7pfwzgikndmffb6azv5dzg5) {
+  utterance ("[g:ReplacementText:prompt] (c'est un nouveau souvenir)[v:ReplacementText]")
+  plan (Y2BikCpLzNPLTc3NL6rUC0otyElMTs1NzSsJSa0owSvHCIQMDDxAzATEQDYA)
+  last-modified (1590624285014)
+}

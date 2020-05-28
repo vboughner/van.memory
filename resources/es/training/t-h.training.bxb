@@ -8,6 +8,11 @@ train (t-h96uucsnfyhmpl9cxq2l0qrbq) {
   plan (Y2BmkC1LzNPLTc3NL6rUc0nNSS1JDc7PTQ1KLS7IzytOZZDGKu2YXJKZn8cgiSQZlJqcmJMD18fEwAjEDECSkYEBRgMA)
   last-modified (1575070503775)
 }
+train (t-hltnq53dmfqijd7anutv258qj) {
+  utterance ("[g:ReplacementText:prompt] (dos palabras)[v:ReplacementText]")
+  plan (Y2BikCpLzNPLTc3NL6rUC0otyElMTs1NzSsJSa0owSvHCIQMDDxAzATEQDYA)
+  last-modified (1590624182331)
+}
 train (t-hmee3o3gtwo0n81zdp3nzqvve) {
   utterance ([g:DeleteAllAction:continue:ListResponse] borra estos recuerdos)
   plan (Y2BikClLzNPLTc3NL6rUc0nNSS1JdczJCUotLsjPK05lkMIm65hckpmfx8AIhAxQDCQB)
