@@ -1,0 +1,18 @@
+data:
+  deviceIsInHandsFreeMode: false
+  geo:
+    latitude: 32.987506
+    longitude: -96.700365
+  time: '2020-06-26T21:25:26.657Z'
+  tz: America/Los_Angeles
+steps:
+  step-PEB:
+    step-HQ0:
+      step-96R:
+        step-7Z9:
+          step-CMF:
+            step-DDK:
+              step-XMZ:
+                step-IKX:
+                  step-XTX: ~
+version: 2

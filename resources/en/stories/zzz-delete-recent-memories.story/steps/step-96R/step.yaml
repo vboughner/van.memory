@@ -1,0 +1,8 @@
+data:
+  sixtree: |-
+    intent {
+      goal { DeleteConfirmation }
+      value { DeleteConfirmation (true) }
+    }
+screenshot: screenshot-2020-06-26T21-25-01.925Z-bixby-mobile-en-GB-device-note.png
+type: intent
