@@ -10,8 +10,8 @@ capsule {
     target (bixby-watch-es)
     target (bixby-watch-fr)
     // Korean translations not fully reviewed yet
-    // target (bixby-mobile-ko)
-    // target (bixby-watch-ko)
+    target (bixby-mobile-ko)
+    target (bixby-watch-ko)
   }
   permissions {
     bixby-user-id-access
