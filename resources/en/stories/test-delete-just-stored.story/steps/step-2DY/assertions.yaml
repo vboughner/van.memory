@@ -1,4 +1,4 @@
 - enabled: true
   fatal: true
-  file: assertions/no-delete.js
+  file: assertions/default-tests.js
   program: mocha

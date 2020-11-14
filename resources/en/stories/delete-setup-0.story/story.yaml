@@ -1,0 +1,11 @@
+data:
+  deviceIsInHandsFreeMode: false
+  geo:
+    latitude: 37.334502
+    longitude: -121.890654
+  hefVersion: 3
+  time: '2020-11-02T18:45:42.000Z'
+  tz: US/Pacific
+steps:
+  step-63Y:
+    step-ECQ: ~

@@ -2,3 +2,7 @@
   fatal: true
   file: assertions/confirm.js
   program: mocha
+- enabled: true
+  fatal: true
+  file: assertions/default-tests.js
+  program: mocha
