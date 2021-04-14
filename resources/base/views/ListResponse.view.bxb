@@ -15,66 +15,64 @@ result-view {
   render {
     list-of (this.memories) {
       navigation-mode {
-        if ($handsFree) {
-          read-many-and-next {
-            page-size (5)
-            list-summary {
-              template-macro (LIST_MEMORIES) {
-                param (success) {
-                  expression (this.success)
-                }
-                param (memories) {
-                  expression (this.memories)
-                }
+        read-many-and-next {
+          page-size (5)
+          list-summary {
+            template-macro (LIST_MEMORIES) {
+              param (success) {
+                expression (this.success)
+              }
+              param (memories) {
+                expression (this.memories)
               }
             }
-            page-content (page) {
-              page-marker {
-                if (size(page) >= 1) {
-                  if (size(this.memories) > 5) {
-                    if (isFirstNavPage(page)) {
-                      template-macro (FIRST_N_MEMORIES) {
-                        param (pageSize) {
-                          expression (size(page))
-                        }
+          }
+          page-content (page) {
+            page-marker {
+              if (size(page) >= 1) {
+                if (size(this.memories) > 5) {
+                  if (isFirstNavPage(page)) {
+                    template-macro (FIRST_N_MEMORIES) {
+                      param (pageSize) {
+                        expression (size(page))
                       }
-                    } else-if (isLastNavPage(page)) {
-                      if (size(page) == 1) {
-                        template-macro (LAST_MEMORY)
-                      } else {
-                        template-macro (LAST_N_MEMORIES) {
-                          param (pageSize) {
-                            expression (size(page))
-                          }
-                        }
-                      }
+                    }
+                  } else-if (isLastNavPage(page)) {
+                    if (size(page) == 1) {
+                      template-macro (LAST_MEMORY)
                     } else {
-                      template-macro (NEXT_N_MEMORIES) {
+                      template-macro (LAST_N_MEMORIES) {
                         param (pageSize) {
                           expression (size(page))
                         }
                       }
                     }
-                  } else-if (size(this.memories) == 1) {
-                    template-macro (THIS_MEMORY)
                   } else {
-                    template-macro (THESE_MEMORIES)
+                  template-macro (NEXT_N_MEMORIES) {
+                      param (pageSize) {
+                        expression (size(page))
+                      }
+                    }
                   }
+                } else-if (size(this.memories) == 1) {
+                  template-macro (THIS_MEMORY)
+                } else {
+                  template-macro (THESE_MEMORIES)
                 }
               }
+            }
 
-              underflow-statement {
-                template-macro (FIRST_MEMORY)
-              }
-              overflow-statement {
-                template-macro (ALL_MEMORIES)
-              }
-              overflow-question {
-                template-macro (WHAT_TO_DO)
-              }
-              next-page-question {
-                template-macro (WOULD_LIKE_TO_HEAR_MORE)
-              }
+            underflow-statement {
+              template-macro (FIRST_MEMORY)
+            }
+            overflow-statement {
+              template-macro (ALL_MEMORIES)
+            }
+            overflow-question {
+              template-macro (WHAT_TO_DO)
+            }
+            next-page-question {
+              template-macro (WOULD_LIKE_TO_HEAR_MORE)
             }
           }
         }

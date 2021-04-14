@@ -33,18 +33,16 @@ result-view {
   render {
     list-of (this.memories) {
       navigation-mode {
-        if ($handsFree) {
-          read-one-and-next {
-            page-content {
-              underflow-statement {
-                template-macro (FIRST_MEMORY)
-              }
-              overflow-statement {
-                template-macro (ALL_MEMORIES)
-              }
-              next-item-question {
-                template-macro (NEXT_MEMORY)
-              }
+        read-one-and-next {
+          page-content {
+            underflow-statement {
+              template-macro (FIRST_MEMORY)
+            }
+            overflow-statement {
+              template-macro (ALL_MEMORIES)
+            }
+            next-item-question {
+              template-macro (NEXT_MEMORY)
             }
           }
         }
