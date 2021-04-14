@@ -1,5 +1,0 @@
-train (t-aatpflbwegmbvrkdvfyqemqet) {
-  utterance ("[g:RecallResponse] pregunta dónde (puse las galletas)[v:RecallInputConcept]")
-  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
-  last-modified (1575076552209)
-}

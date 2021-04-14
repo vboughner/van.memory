@@ -4,14 +4,6 @@ capsule {
   format (3)
   targets {
     target (bixby-mobile-en)
-    target (bixby-mobile-es)
-    target (bixby-mobile-fr)
-    target (bixby-watch-en)
-    target (bixby-watch-es)
-    target (bixby-watch-fr)
-    // Korean translations not fully reviewed yet
-    target (bixby-mobile-ko)
-    target (bixby-watch-ko)
   }
   permissions {
     bixby-user-id-access
@@ -21,7 +13,7 @@ capsule {
       as (core)
     }
   }
-  runtime-version (5)
+  runtime-version (9)
   store-sections {
     section (Productivity)
     section (Utilities)
