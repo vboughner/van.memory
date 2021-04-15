@@ -4,6 +4,7 @@ capsule {
   format (3)
   targets {
     target (bixby-mobile-en)
+    target (bixby-mobile-es)
   }
   permissions {
     bixby-user-id-access

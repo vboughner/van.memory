@@ -1,0 +1,17 @@
+hints {
+  uncategorized {
+    hint ("con Mi Cerebro recuerda que el cumpleaños de mi madre es el 22 de enero")
+    hint ("con Mi Cerebro pregunta cuándo es el cumpleaños de mi madre")
+    hint ("con Mi Cerebro recuerda que los pasteles están en la parte posterior del segundo estante a la derecha")
+    hint ("con Mi Cerebro pregunta dónde puse los pasteles")
+    hint ("con Mi Cerebro recuerda que tomé mis vitaminas")
+    hint ("con Mi Cerebro pregunta cuándo tomé mis vitaminas")
+    hint ("con Mi Cerebro recuerda que necesito comprar papas")
+    hint ("con Mi Cerebro pregunta qué necesito comprar")
+    hint ("con Mi Cerebro borra estos recuerdos")
+    hint ("con Mi Cerebro pregunta cuál fue el último recuerdo")
+    hint ("con Mi Cerebro pregunta cuántos recuerdos hay")
+    hint ("con Mi Cerebro enumera todos los recuerdos")
+    hint ("con Mi Cerebro borra todos los recuerdos")
+  }
+}
