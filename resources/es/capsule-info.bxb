@@ -6,7 +6,7 @@ capsule-info {
   dispatch-name (Mi Cerebro)
   privacy-policy-url (https://www.vanboughner.com/my-brain-privacy-policy-for-bixby-in-spanish/)
   terms-url (https://www.vanboughner.com/my-brain-terms-of-service-for-bixby-in-spanish/)
-  website-url(https://www.vanboughner.com/my-brain/)
+  website-url (https://www.vanboughner.com/my-brain/)
   search-keywords {
     keyword (memoria)
     keyword (recuerda)
