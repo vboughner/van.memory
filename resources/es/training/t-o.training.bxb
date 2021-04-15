@@ -1,0 +1,5 @@
+train (t-otr00uulqp7xagon0cs2x8be9) {
+  utterance ("[g:RecallResponse] pregunta cuándo (tomé mis vitaminas)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575076672915)
+}

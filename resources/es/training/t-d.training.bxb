@@ -1,0 +1,20 @@
+train (t-d9a71ame7etm95ijwfl4hgqcz) {
+  utterance ([g:DeleteAllAction] olvidalo todo)
+  plan (Y2BikClLzNPLTc3NL6rUc0nNSS1JdczJCUotLsjPK05lkMIm65hckpmfx8AIhAxQDCQB)
+  last-modified (1575060988080)
+}
+train (t-dahw8xqk4jnzdii2si7m04qyz) {
+  utterance ("[g:RecallResponse] cual es (el cumpleaños de mi madre)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575076455768)
+}
+train (t-dc9oujz8y64p8neczida6dfvz) {
+  utterance ("[g:MemorizeResponse] recuerda que (necesito comprar papas)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1575074300393)
+}
+train (t-dpyifogqp1kqsvd958ga4o3xh) {
+  utterance ("[g:RecallResponse] recordar cuándo es (el último día de clases)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575075253440)
+}

@@ -1,0 +1,25 @@
+train (t-84nj1x7kq3yeksqj5y95ilfo9) {
+  utterance ("[g:RecallResponse] qué tan caliente debo (cocinar lasaña)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575071009419)
+}
+train (t-8hc61qwse9pjclghx5mvoyzbx) {
+  utterance ("[g:MemorizeResponse] recuerda que (el cumpleaños de mi madre es el 2 de enero)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1575075336872)
+}
+train (t-8svbnx2f8hr3v7mhoy7a3atcp) {
+  utterance ("[g:RecallResponse] donde (estacioné el auto)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575074138506)
+}
+train (t-8wvqn3mw0ceyysknsw4lbis34) {
+  utterance ([g:DeleteLastMemoryAction:continue:RecallLastMemoryResponse] borra este recuerdo)
+  plan (Y2BmUC5LzNPLTc3NL6rUc0nNSS1J9UksLvEFCwSlFhfk5xWnMijiUeSYXJKZn4diTlBqcmJODhZzmBgYgZgBSDIyMMBoAA==)
+  last-modified (1575076048525)
+}
+train (t-8z1yhg2qo5bqtfs562b0cf003) {
+  utterance ("[g:RecallResponse] cuántas (calorías tiene un plátano)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575074256507)
+}

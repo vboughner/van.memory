@@ -1,0 +1,30 @@
+train (t-t3x7u00gqf438lky1dooflq0f) {
+  utterance ([g:ListResponse] cuales son todos mis recuerdos)
+  plan (Y2BkEC9LzNPLTc3NL6rU88ksLglKLS7IzytOZQABRhABAA==)
+  last-modified (1579280002626)
+}
+train (t-t4l28slj1802apzcaqfxlumcc) {
+  utterance ("[g:RecallResponse] dónde está (el coche)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575073751524)
+}
+train (t-ti1derzw1c394phasjogyhybo) {
+  utterance ([g:DeleteLastMemoryAction:continue:RecallLastMemoryResponse] borra)
+  plan (Y2BmUC5LzNPLTc3NL6rUc0nNSS1J9UksLvEFCwSlFhfk5xWnMijiUeSYXJKZn4diTlBqcmJODhZzmBgYgZgBSDIyMMBoAA==)
+  last-modified (1575072393752)
+}
+train (t-tibyectw3r0d4zg8ngk9rfoyv) {
+  utterance ([g:HelpResponse] ayuda)
+  plan (Y2BkEC9LzNPLTc3NL6rU80jNKQhKLS7IzytOZQABRhABAA==)
+  last-modified (1575060271330)
+}
+train (t-tk7adpjn1dlp5ahs5nagl4jyi) {
+  utterance ("[g:RecallResponse] quien (viene para la cena de acción de gracias)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575071947774)
+}
+train (t-tnqc3mlbfx2r1b3utu9euvkx7) {
+  utterance ([g:DeleteSomeAction:continue:RecallResponse] borra este recuerdo)
+  plan (Y2BmkC1LzNPLTc3NL6rUc0nNSS1JDc7PTQ1KLS7IzytOZZDGKu2YXJKZn8cgiSQZlJqcmJMD18fEwAjEDECSkYEBRgMA)
+  last-modified (1575071569628)
+}

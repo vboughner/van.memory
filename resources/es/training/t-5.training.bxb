@@ -1,0 +1,15 @@
+train (t-5alrruf6hietiw003jaqx69y3) {
+  utterance ("[g:MemorizeResponse] recuerda que (hay 10 personas en nuestro grupo)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1575072221514)
+}
+train (t-5f579kmuincozrz3pbqgs2ft3) {
+  utterance ("[g:RecallResponse] busca (estacionamiento)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575070355271)
+}
+train (t-5jwc1ja8fsor877evmwol1ba7) {
+  utterance ("[g:RecallResponse] busca (cumpleaños)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575075117878)
+}

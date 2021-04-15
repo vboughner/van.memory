@@ -1,0 +1,20 @@
+train (t-3ae3lz4bw9b8w74lscskmm337) {
+  utterance ("[g:RecallResponse] que tengo en (marzo)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575071221110)
+}
+train (t-3mitvdmw56k4ix3w972wg32u0) {
+  utterance ("[g:RecallResponse] recuerda lo que dije sobre (el 29 de febrero)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575074347029)
+}
+train (t-3mjje6dsh4s4tm7wwzg8faqtb) {
+  utterance ("[g:RecallInputConcept:prompt] (el cumpleaños de mi madre)[v:RecallInputConcept]")
+  plan (Y2BikC1LzNPLTc3NL6rUC0pNTszJ8cwrKC1xzs9LTi0oISTNCIQMDDxAzATEQDYA)
+  last-modified (1575075633027)
+}
+train (t-3tabcxip7nuddyipuakw1eb87) {
+  utterance ("[g:RecallResponse] quienes son (mis amigos)[v:RecallInputConcept]")
+  plan (Y2BmkCxLzNPLTc3NL6rUC0pNTszJCUotLsjPK05lEMeQckwuyczPY5DFkPDMKygtcc7PS04tKGFgYmAEYgYgycgAAkwQDAA=)
+  last-modified (1575075952552)
+}

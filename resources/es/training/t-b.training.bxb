@@ -1,0 +1,15 @@
+train (t-b4zmapljbdzk1glneeukf293w) {
+  utterance ([g:ListResponse] recuerda todo)
+  plan (Y2BkEC9LzNPLTc3NL6rU88ksLglKLS7IzytOZQABRhABAA==)
+  last-modified (1575060947752)
+}
+train (t-buvm9exlsoa2nh7mphj4ukmh7) {
+  utterance ("[g:MemorizeResponse] recuerda que (me gustan los tacos de pescado de una mas)[v:MemorizeInputConcept]")
+  plan (Y2BmkC5LzNPLTc3NL6rU8wVRmVWpQanFBfl5xakMklgkHZNLMvPzGOSxSHnmFZSWOOfnJacWlDAwMTACMQOQZGQAASYIBgA=)
+  last-modified (1575074963507)
+}
+train (t-byr5qc9aogbl70jub7xie70kd) {
+  utterance ([g:DeleteJustMemorizedAction:continue:MemorizeResponse] borra este recuerdo)
+  plan (Y2BmUCtLzNPLTc3NL6rUc0nNSS1J9SotLvEFCWRWpaYEpRYX5OcVpzKo4FfnmFySmZ/HII2kCiYHN4KJgRGIGYAkIwMDjAYA)
+  last-modified (1575070562862)
+}
