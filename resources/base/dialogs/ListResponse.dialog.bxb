@@ -1,6 +1,4 @@
 dialog (Progress) {
   match: ListResponse
-  template ("Getting memories...")
-  // TODO: line above needs to be converted to this, to be ready for localization:
-  // template-macro (GETTING_MEMORIES)
+  template-macro (GETTING_MEMORIES)
 }

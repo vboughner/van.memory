@@ -2,30 +2,15 @@ result-view {
   match: ListResponse (this)
 
   message {
-    if (this.success) {
-      if (size(this.memories) == 0) {
-        template ("There are no memories.")
-      } else-if (size(this.memories) == 1) {
-        template ("You have 1 memory.")
-      } else {
-        template ("You have #{size(this.memories)} memories.")
+    template-macro (LIST_MEMORIES) {
+      param (success) {
+        expression (this.success)
       }
-    } else {
-      template("There was a problem and I could not retrieve the memories.")
+      param (memories) {
+        expression (this.memories)
+      }
     }
   }
-
-// TODO: message above needs to be converted to this, to be ready for localization:
-//  message {
-//    template-macro (LIST_MEMORIES) {
-//      param (success) {
-//        expression (this.success)
-//      }
-//      param (memories) {
-//        expression (this.memories)
-//      }
-//    }
-//  }
 
   render {
     list-of (this.memories) {
