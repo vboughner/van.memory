@@ -1,6 +1,6 @@
 capsule {
   id (example.memory)
-  version (1.5.1)
+  version (1.5.3)
   format (3)
   targets {
     target (bixby-mobile-en)
@@ -9,9 +9,13 @@ capsule {
     target (bixby-watch-en)
     target (bixby-watch-es)
     target (bixby-watch-fr)
+    target (bixby-fridge-en)
+    target (bixby-fridge-es)
+    target (bixby-fridge-fr)
     // Korean translations not fully reviewed yet
     target (bixby-mobile-ko)
     target (bixby-watch-ko)
+    target (bixby-fridge-ko)
   }
   permissions {
     bixby-user-id-access
