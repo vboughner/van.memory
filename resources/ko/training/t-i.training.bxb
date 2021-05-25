@@ -9,14 +9,14 @@ train (t-i72r4yseuinj2pqhvqxlwe9y5) {
   last-modified (1583380981610)
 }
 train (t-i908cgwbvjf0nvbihvixiich2) {
-  utterance ("[g:RecallResponse] (차 열쇠는)[v:RecallInputConcept] 어디에 두었습니까")
+  utterance ("[g:RecallResponse] (차 열쇠는)[v:RecallInputConcept] 어디에 두었지?")
   plan (Y2BmkE2tSMwtyEnVy03NzS+q1AtKTU7MyQlKLS7IzytOZZDGKu2YXJKZn8egiFXSM6+gtMQ5Py85taCEgYmBEYgZgCQjAwgwQTAA)
-  last-modified (1584838202979)
+  last-modified (1621902301891)
 }
 train (t-iembx53zl47w4q8rsu667rvnf) {
-  utterance ([g:DeleteAllAction:continue:ListResponse] 지우다)
+  utterance ([g:DeleteAllAction:continue:ListResponse] 지워)
   plan (Y2BiUEitSMwtyEnVy03NzS+q1HNJzUktSXXMyQlKLS7IzytOZZDDpcIxuSQzP4+BEQgZoBhIAgA=)
-  last-modified (1583436704558)
+  last-modified (1621902252402)
 }
 train (t-imx2fq391vbc4lpxxh8gur5nc) {
   utterance ([g:DeleteJustMemorizedAction:continue:MemorizeResponse] 지우다)

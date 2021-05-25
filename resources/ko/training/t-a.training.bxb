@@ -37,3 +37,7 @@ train (t-a7l4taq7jguqllca7est40916) {
   utterance ("[g:RecallResponse] 내 (보안 질문은)[v:RecallInputConcept] 무엇입니까")
   last-modified (1585701347868)
 }
+train (t-a7ztjtwryz3k8hwabcafn1x3e) {
+  utterance ("[g:RecallResponse] 내 (보안 질문은)[v:RecallInputConcept] 뭐야?")
+  last-modified (1621902030360)
+}

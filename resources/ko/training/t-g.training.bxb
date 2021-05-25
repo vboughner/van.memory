@@ -4,9 +4,9 @@ train (t-g1ojgkxgw0r54mqzdifx6jg72) {
   last-modified (1583435682816)
 }
 train (t-g4cz8gfzthi4eoqhauvfskm1y) {
-  utterance ([g:DeleteLastMemoryAction:continue:RecallLastMemoryResponse] 이 기억 지우다)
+  utterance ([g:DeleteLastMemoryAction:continue:RecallLastMemoryResponse] 이 기억을 지워줘)
   plan (Y2BmUE+tSMwtyEnVy03NzS+q1HNJzUktSfVJLC7xBQsEpRYX5OcVpzKoElDomFySmZ+HYV5QanJiTg4W85gYGIGYAUgyMjDAaAA=)
-  last-modified (1583437643756)
+  last-modified (1621902111781)
 }
 train (t-gcgb9imuk8dpjxj54xfrbxsvb) {
   utterance ([g:ListResponse] 얼마나 많은 기억)

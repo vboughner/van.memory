@@ -9,9 +9,9 @@ train (t-q99gyi319wukql9s7iuzosu40) {
   last-modified (1583434258873)
 }
 train (t-q9ckjee40reuk8gizejjv0jma) {
-  utterance ("[g:MemorizeResponse] (내가 약을 먹었다는)[v:MemorizeInputConcept] 것을 기억")
+  utterance ("[g:MemorizeResponse] (내가 약을 먹었다는)[v:MemorizeInputConcept] 것을 기억해줘")
   plan (Y2BmkE+tSMwtyEnVy03NzS+q1PMFUZlVqUGpxQX5ecWpDLI4FDgml2Tm5zEo45D2zCsoLXHOz0tOLShhYGJgBGIGIMnIAAJMEAwA)
-  last-modified (1583437428683)
+  last-modified (1621902077720)
 }
 train (t-qnydooq66yj3tr63atoavtnzn) {
   utterance ("[g:MemorizeResponse] (쓰레기를)[v:MemorizeInputConcept] 버리는 것을 잊지 마십시오")
