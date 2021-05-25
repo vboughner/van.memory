@@ -1,5 +1,5 @@
 train (t-5flmdd3z4y6r9lyr5itvlj8vf) {
-  utterance ([g:UpdateTextResponse:continue:Memory] 이 기억을 편집하다)
+  utterance ([g:UpdateTextResponse:continue:Memory] 이 기억을 편집할래)
   plan (Y2BkUEytSMwtyEnVy03NzS+q1AstSEksSQ1JrSgJSi0uyM8rTmUAAUYQAQA=)
   last-modified (1583434559259)
 }
@@ -19,9 +19,9 @@ train (t-5hbv16v5l3gqi8w9f6uymklkp) {
   last-modified (1583380802072)
 }
 train (t-5l39zexv4cbb9q27xs1uo9uhq) {
-  utterance ([g:DeleteAllAction:continue:ListResponse] 이 기억을 지우다)
+  utterance ([g:DeleteAllAction:continue:ListResponse] 이 기억을 지워줘)
   plan (Y2BiUEitSMwtyEnVy03NzS+q1HNJzUktSXXMyQlKLS7IzytOZZDDpcIxuSQzP4+BEQgZoBhIAgA=)
-  last-modified (1583437160767)
+  last-modified (1621902225691)
 }
 train (t-5n0igmab3gmtnj3b11vtcr576) {
   utterance ("[g:MemorizeResponse] (감자를 사야한다는)[v:MemorizeInputConcept] 것을 기억하다")
@@ -34,6 +34,6 @@ train (t-5v3ay35lxk1xrmgtsbixfv6ac) {
   last-modified (1583437249164)
 }
 train (t-5rsnkx66k0zwdj6clem2dkyiu) {
-  utterance ("[g:MemorizeResponse] (1 월 30 일에 일을 시작했음을)[v:MemorizeInputConcept] 기억하")
-  last-modified (1585768823060)
+  utterance ("[g:MemorizeResponse] (1 월 30 일에 일을 시작했음을)[v:MemorizeInputConcept] 기억해")
+  last-modified (1621902142016)
 }

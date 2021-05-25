@@ -315,7 +315,7 @@ template-macro-def (WOULD_LIKE_TO_HEAR_MORE) {
 
 template-macro-def (WHAT_IS_UPDATED_MEMORY) {
   content {
-    template ("업데이트 된 기억 무엇입니까?")
+    template ("기억을 어떻게 바꿀까요?")
   }
 }
 
@@ -501,6 +501,6 @@ template-macro-def (CV_DELETE_THESE_MEMORIES) {
 
 template-macro-def (CV_EDIT_THIS_MEMORY) {
   content {
-    template ("이 기억을 편집하다")
+    template ("이 기억을 편집할래")
   }
 }

@@ -9,8 +9,8 @@ train (t-skgyhniix5ve1hwzehpiq8we8) {
   last-modified (1590624505487)
 }
 train (t-smypu25cpatah49w6r9lii17l) {
-  utterance ("[g:MemorizeResponse] (교체 할 점화 플러그는 5 번임을)[v:MemorizeInputConcept] 기억하")
-  last-modified (1585701094460)
+  utterance ("[g:MemorizeResponse] (교체 할 점화 플러그는 5 번임을)[v:MemorizeInputConcept] 기억해")
+  last-modified (1621902125711)
 }
 train (t-sxawhrpmqzxtf89npwlleuawc) {
   utterance ("[g:RecallResponse] 내 (운동 루틴을)[v:RecallInputConcept] 찾으십시오")
